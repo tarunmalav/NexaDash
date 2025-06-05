@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { IMAGES, SVGICON } from "../../constant/theme"; 
+import { IMAGES, SVGICON } from "../../constant/Theme"; 
 import Marqueedata from "../../components/dashboard/Marquee";
 import RevenueUpdatechart from "../../components/dashboard/RevenueUpdatechart";
 import SelectImg from "../../components/dashboard/SelectImg";

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import CardFooterContent from "./CardFooterContent";
 
 function BgParaCard(){

@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useRef } from "react";
 import PageTitle from "../../../layouts/PageTitle";
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../../constant/theme";
+import { IMAGES } from "../../../constant/Theme";
 import { useState } from "react";
 
 const categorytabledta = [

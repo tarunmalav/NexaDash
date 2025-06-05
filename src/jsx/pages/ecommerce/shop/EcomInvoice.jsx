@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import PageTitle from "../../../layouts/PageTitle";
-import { IMAGES } from "../../../constant/theme";
+import { IMAGES } from "../../../constant/Theme";
 
 function Invoice() {
     return (

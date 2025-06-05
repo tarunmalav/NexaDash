@@ -1,7 +1,7 @@
 import { useReducer, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
-import { IMAGES } from '../../constant/theme';
+import { IMAGES } from '../../constant/Theme';
 import Select from 'react-select';
 import { foodOptions, screenOption } from '../../constant/alldata';
 import CKediterCard from '../../element/Ckeditercard';

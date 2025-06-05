@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import MainContent from '../../components/aikit/MainContent';
 import TopMenus from '../../components/aikit/TopMenus';
-import { IMAGES, SVGICON } from '../../constant/theme';
+import { IMAGES, SVGICON } from '../../constant/Theme';
 import Nouislider from "nouislider-react"; 
 import { TagInput   } from 'rsuite';
 import PageTitle from '../../layouts/PageTitle';

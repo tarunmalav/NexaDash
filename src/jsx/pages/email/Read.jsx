@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import { Nav, Tab } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import { IMAGES } from "../../constant/theme"
+import { IMAGES } from "../../constant/Theme"
 import { useState } from "react"
 import PageTitle from "../../layouts/PageTitle"
 import InboxSidebar from "../../element/InboxSidebar"

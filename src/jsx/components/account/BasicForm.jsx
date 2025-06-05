@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import { useNavigate } from "react-router-dom";
 
 function BasicForm() {

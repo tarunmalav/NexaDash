@@ -1,4 +1,4 @@
-import { IMAGES } from "../../constant/theme"
+import { IMAGES } from "../../constant/Theme"
 
 // import { contactdataa } from "../constant/alldata"  
 export const contactdataa = [

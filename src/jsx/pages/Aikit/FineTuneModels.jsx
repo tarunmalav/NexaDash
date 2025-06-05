@@ -4,7 +4,7 @@ import MainContent from '../../components/aikit/MainContent';
 import TopMenus from '../../components/aikit/TopMenus';
 import FineTuneJob from '../../components/aikit/FineTuneJob';
 import Prompts from '../../components/aikit/Prompts';
-import { SVGICON } from '../../constant/theme';
+import { SVGICON } from '../../constant/Theme';
 import { schedulerTable } from '../../constant/alldata';
 import PageTitle from '../../layouts/PageTitle';
 import { useEffect, useRef, useState } from 'react';

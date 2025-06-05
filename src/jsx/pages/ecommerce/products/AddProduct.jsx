@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { IMAGES } from "../../../constant/theme";
+import { IMAGES } from "../../../constant/Theme";
 import { Nav, Tab } from "react-bootstrap";
 import CKediterCard from "../../../element/Ckeditercard";
 import CustomClearIndicator from "../../plugins/Select2/MultiSelect";

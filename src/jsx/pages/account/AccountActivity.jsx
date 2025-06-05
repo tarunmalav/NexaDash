@@ -5,7 +5,7 @@ import AccountDefaultCard from "../../components/account/AccountDefaultCard";
 import ActivityBlog from "../../components/profile/ActivityBlog";
 import DraggableBlog from "../../components/profile/DragabbleBlog";
 import TabActivityData from "../../components/profile/TabActivityData";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import PageTitle from "../../layouts/PageTitle";
 
 function AccountActivity() {

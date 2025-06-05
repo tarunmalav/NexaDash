@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Accordion, Form } from 'react-bootstrap';
 import Select from 'react-select';
-import { IMAGES } from '../../constant/theme.jsx';
+import { IMAGES } from '../../constant/Theme.jsx';
 import MainContent from '../../components/aikit/MainContent.jsx';
 import TopMenus from '../../components/aikit/TopMenus.jsx';
 import PageTitle from '../../layouts/PageTitle.jsx';

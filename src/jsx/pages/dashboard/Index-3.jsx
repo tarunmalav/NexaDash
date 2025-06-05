@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { Modal } from "react-bootstrap"
-import { IMAGES, SVGICON } from "../../constant/theme"
+import { IMAGES, SVGICON } from "../../constant/Theme"
 import IncomeStatisticsChart from "../../components/dashboard/IncomeStatisticsChart"
 import PieChart1 from "../../components/dashboard/PieChart1"
 import EarningChart from "../../components/dashboard/EarningChart"

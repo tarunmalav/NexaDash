@@ -1,6 +1,6 @@
 import { useState } from 'react';   
 import Select from 'react-select';
-import { IMAGES } from '../../constant/theme.jsx';
+import { IMAGES } from '../../constant/Theme.jsx';
 import MainContent from '../../components/aikit/MainContent.jsx';
 import TopMenus from '../../components/aikit/TopMenus.jsx';
 import Nouislider from "nouislider-react";

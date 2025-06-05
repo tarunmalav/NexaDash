@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AccountDefaultCard from "../../components/account/AccountDefaultCard";
 import BasicForm from "../../components/account/BasicForm";
 import AccountConnected from "../../components/account/AcccountConnected";
-import { SVGICON } from "../../constant/theme";
+import { SVGICON } from "../../constant/Theme";
 import { notificationBlog } from "../../constant/alldata";
 import PageTitle from "../../layouts/PageTitle";
 

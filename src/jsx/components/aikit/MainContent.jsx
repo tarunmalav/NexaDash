@@ -1,4 +1,4 @@
-import { SVGICON } from '../../constant/theme';
+import { SVGICON } from '../../constant/Theme';
 import { useState } from 'react';
 
 const MainContent = (props) => {

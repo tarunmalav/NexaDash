@@ -1,6 +1,5 @@
 import { Fragment, useState } from "react";
-import { IMAGES } from "../../../constant/theme";
-// import PageTitle from "../../../layouts/PageTitle";
+import { IMAGES } from "../../../constant/Theme";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Thumbs } from 'swiper/modules';
 import { Link } from "react-router-dom";

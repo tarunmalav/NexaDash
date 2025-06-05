@@ -2,7 +2,7 @@ import { Fragment, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import TopMenus from '../../components/aikit/TopMenus';
 import MainContent from '../../components/aikit/MainContent';
-import { SVGICON } from '../../constant/theme';
+import { SVGICON } from '../../constant/Theme';
 import { schedulerTable } from '../../constant/alldata';
 import PageTitle from '../../layouts/PageTitle';
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Select from "react-select";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 
 const options1 = [
     { icon: IMAGES.svgdashsvg, value: 1, label: "Dash Coin" },

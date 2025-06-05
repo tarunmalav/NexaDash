@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 
 export const cryptolist = [
     { svg: IMAGES.btcsvg, coin1: "Bitcoin", coin2: "BTC/USDT", price1: "$2092.56", price2: "+2.97%", class: "text-success", },

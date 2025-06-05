@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { IMAGES, SVGICON } from "../../constant/theme";
+import { IMAGES, SVGICON } from "../../constant/Theme";
 import WeeklySalesBarChart from "../../components/dashboard/WeeklySalesBarChart";
 import HandleOrderChart from "../../components/dashboard/handleordrchar";
 import HandleMarketShare from "../../components/dashboard/handlemarketshare";

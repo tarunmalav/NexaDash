@@ -2,7 +2,7 @@ import LightGallery from 'lightgallery/react';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import PageTitle from '../../../layouts/PageTitle';
-import { IMAGES } from '../../../constant/theme';
+import { IMAGES } from '../../../constant/Theme';
 
 const lightGallery = [
 	{ large: IMAGES.big1, thumb: IMAGES.big1, },

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
-import { IMAGES, SVGICON } from '../../constant/theme';
+import { IMAGES, SVGICON } from '../../constant/Theme';
 import MainContent from '../../components/aikit/MainContent';
 import TopMenus from '../../components/aikit/TopMenus';
 import Prompts from '../../components/aikit/Prompts';

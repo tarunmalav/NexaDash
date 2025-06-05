@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IMAGES, SVGICON } from "../constant/theme";
+import { IMAGES, SVGICON } from "../constant/Theme";
 import { Dropdown, Nav, Tab } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const transactions = [

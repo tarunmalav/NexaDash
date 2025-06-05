@@ -1,5 +1,5 @@
 import { Nav, Tab } from "react-bootstrap"
-import { SVGICON } from "../../constant/theme"
+import { SVGICON } from "../../constant/Theme"
 import { Link } from "react-router-dom"
 import { useContext, useEffect } from "react";
 import ProductOverviewChart from "../../components/dashboard/ProductOverviewChart";

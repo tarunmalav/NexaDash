@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 
 const socialBlog = [
     {image: IMAGES.google, title:'Piper Aerostar', subtitle:'piper-aircraft-class.jsp', number:'0'},

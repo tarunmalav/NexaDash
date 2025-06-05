@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IMAGES, SVGICON } from '../../constant/theme';
+import { IMAGES, SVGICON } from '../../constant/Theme';
 import { Dropdown } from 'react-bootstrap';
 import Dropdowndata2 from './DropdownData2';
 

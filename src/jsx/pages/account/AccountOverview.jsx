@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import AccountDefaultCard from "../../components/account/AccountDefaultCard";
-import { IMAGES, SVGICON } from "../../constant/theme";
+import { IMAGES, SVGICON } from "../../constant/Theme";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Contributions from "../../components/profile/Contributions";

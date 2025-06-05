@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { IMAGES } from "../../../constant/theme";
+import { IMAGES } from "../../../constant/Theme";
 import CKediterCard from "../../../element/Ckeditercard";
 import Select from "react-select";
 import PageTitle from "../../../layouts/PageTitle";

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { SVGICON } from "../../constant/theme";
+import { SVGICON } from "../../constant/Theme";
 import { Nav, Tab } from "react-bootstrap";
 import ProfileOverviewCard from "../../components/profile/ProfileOverviewCard";
 import { fileExtension } from "../../constant/alldata";

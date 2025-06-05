@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 
 const fileData = [
     { logo : IMAGES.pdffile, deadline:'2 days ago', name:'Rober Doe', title:'Project tech requirements' },

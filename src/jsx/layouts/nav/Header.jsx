@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
-import { IMAGES, SVGICON } from "../../constant/theme";
+import { IMAGES, SVGICON } from "../../constant/Theme";
 import fscreen from "fscreen";
 import FrontMenu from "../FrontMenu";
 import SidebarToggle from "../SidebrToggle";

@@ -1,5 +1,5 @@
 import { Dropdown } from "react-bootstrap";
-import { SVGICON } from "../../constant/theme"
+import { SVGICON } from "../../constant/Theme"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 export const hometabledata = [

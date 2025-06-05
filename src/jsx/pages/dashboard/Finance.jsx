@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import RevenueBarChart from "../../components/dashboard/RevenueBarChart"
-import { IMAGES, SVGICON } from "../../constant/theme"
+import { IMAGES, SVGICON } from "../../constant/Theme"
 import ExpensesChart from "../../components/dashboard/ExpensesChart"
 import DepositlineChart from "../../components/dashboard/DepositlineChart"
 import ProgressBarChart from "../../components/dashboard/ProcessBarChart"

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { SVGICON } from "../../constant/theme";
+import { SVGICON } from "../../constant/Theme";
 import { Link } from "react-router-dom";
 import ProfileOverviewCard from "../../components/profile/ProfileOverviewCard";
 import { adsCradBlog } from "../../constant/alldata";

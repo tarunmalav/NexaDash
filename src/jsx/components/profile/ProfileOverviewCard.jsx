@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IMAGES, SVGICON } from "../../constant/theme";
+import { IMAGES, SVGICON } from "../../constant/Theme";
 import { Link } from "react-router-dom";
 import ProfileProgress from "./ProfileProgress";
 

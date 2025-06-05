@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import { Dropdown } from "react-bootstrap";
 import ProfileOverviewCard from "../../components/profile/ProfileOverviewCard";
 import CardOne from "../../components/profile/CardOne";

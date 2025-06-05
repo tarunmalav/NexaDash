@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
-import { SVGICON } from "../../constant/theme";
+import { SVGICON } from "../../constant/Theme";
 
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);

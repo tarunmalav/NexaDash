@@ -1,6 +1,6 @@
 import   {useState, useRef, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import { IMAGES } from '../../constant/theme';
+import { IMAGES } from '../../constant/Theme';
 
 
 const tableData = [

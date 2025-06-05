@@ -3,7 +3,7 @@ import { Accordion, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import MainContent from '../../components/aikit/MainContent';
 import TopMenus from '../../components/aikit/TopMenus';
-import { SVGICON } from '../../constant/theme';
+import { SVGICON } from '../../constant/Theme';
 import Nouislider from 'nouislider-react';
 import PageTitle from '../../layouts/PageTitle';
 

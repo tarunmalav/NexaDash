@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 
 const ParticipantsData = [
     { image: <img src={IMAGES.avatar5} alt="logo" className="rounded-circle avatar avatar-sm" />, name: 'Karina Clark', number: '8' },

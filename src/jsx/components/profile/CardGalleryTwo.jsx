@@ -3,7 +3,7 @@ import LightGallery from 'lightgallery/react';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import CardFooterContent from "./CardFooterContent";
 
 function CardGalleryTwo(){

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import SliderBlog from "../../components/account/SliderBlog";
 import SliderBlog2 from "../../components/account/SliderBlog2";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import { Link } from "react-router-dom"; 
 import AccountDefaultCard from "../../components/account/AccountDefaultCard";
 import LicenseTable from "../../components/account/LicenseTable";

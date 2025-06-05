@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import { Link } from "react-router-dom";
 
 function AccountConnected() {

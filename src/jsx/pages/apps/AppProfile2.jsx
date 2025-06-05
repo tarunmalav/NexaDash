@@ -7,7 +7,7 @@ import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-import { IMAGES, SVGICON } from '../../constant/theme';
+import { IMAGES, SVGICON } from '../../constant/Theme';
 import PageTitle from '../../layouts/PageTitle';
 
 const aboutme = [

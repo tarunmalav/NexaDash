@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react"
-import { IMAGES, SVGICON } from "../../constant/theme";
+import { IMAGES, SVGICON } from "../../constant/Theme";
 import DraggableBlog from "../../components/dashboard/DraggableBlog";
 import { Link } from "react-router-dom";
 import ProgressBarChart from "../../components/dashboard/ProcessBarChart";

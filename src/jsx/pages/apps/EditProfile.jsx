@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import Select from 'react-select';
-import { IMAGES } from '../../constant/theme';
+import { IMAGES } from '../../constant/Theme';
 import PageTitle from '../../layouts/PageTitle';
 
 const inputBlog = [

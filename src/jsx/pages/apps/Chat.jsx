@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import { useEffect, useState } from "react";
 import PageTitle from "../../layouts/PageTitle";
 import { chatmediadata, chatmediadata2, chatpagedata } from "../../constant/alldata";

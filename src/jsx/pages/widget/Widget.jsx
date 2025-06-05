@@ -26,7 +26,7 @@ import WeeklySales2 from "../../components/WidgetBasic/WeeklySales2";
 import Widget1 from "../../components/WidgetBasic/Widget1";
 import Widget2 from "../../components/WidgetBasic/Widget2";
 import PageTitle from "../../layouts/PageTitle";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import DonutChart from "../../components/WidgetBasic/DonutChart";
 
 function Widget() {

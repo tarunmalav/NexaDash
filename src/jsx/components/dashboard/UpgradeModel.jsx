@@ -1,5 +1,5 @@
 import { Modal, Nav, Tab } from "react-bootstrap"
-import { SVGICON } from "../../constant/theme"
+import { SVGICON } from "../../constant/Theme"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { pricedata, pricedata2 } from "../../constant/alldata";

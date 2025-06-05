@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
 import { Nav, Tab } from "react-bootstrap";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 import DraggableBlog from "../../components/profile/DragabbleBlog";
 import TabActivityData from "../../components/profile/TabActivityData";
 import ActivityBlog from "../../components/profile/ActivityBlog";

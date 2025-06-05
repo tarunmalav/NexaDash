@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import { IMAGES } from "../../constant/theme"
+import { IMAGES } from "../../constant/Theme"
 import ScoreActivityChart from "../../components/dashboard/ScoreActivityChart"
 import LearningActivityChart from "../../components/dashboard/LearningActivityChart"
 import ProjectStatusBlogDonutChart from "../../components/dashboard/ProjectStatusBlogDonutChart" 
