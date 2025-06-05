@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import { Collapse } from 'react-bootstrap';
 import NoImage from '../../../assets/images/no-img-avatar.png';
-import CkEditorBlog from '../../element/Ckeditercard';
+import CkEditorBlog from '../../element/CkEditerCard';
 
 const options = [
     { value: '2', label: 'admin@gmail.com' },

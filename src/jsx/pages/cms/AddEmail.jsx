@@ -1,8 +1,9 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Collapse } from 'react-bootstrap';
-import CKediterCard from "../../element/Ckeditercard";
+import { Collapse } from 'react-bootstrap'; 
+import CkEditorBlog from '../../element/CkEditerCard';
+
 
 function AddEmail() {
     const [collapseBtn, setCollapseBtn] = useState(true);
@@ -101,7 +102,7 @@ function AddEmail() {
                                             <div className="mb-3">
                                                 <label className="form-label">Email Template</label>
                                                 <div className="custom-ekeditor ct-ticket mb-3">
-                                                   <CKediterCard />
+                                                   <CkEditorBlog />
                                                 </div>
                                                 <div className="form-text mb-3">This design will show in recieved email and place holders will replace with dynamic content.</div>
                                             </div>

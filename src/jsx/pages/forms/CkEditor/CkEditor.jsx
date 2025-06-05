@@ -1,4 +1,4 @@
-import CkEditorBlog from '../../../element/Ckeditercard';
+import CkEditorBlog from '../../../element/CkEditerCard';
 import PageTitle from '../../../layouts/PageTitle';
 
 function CkEditor() {
