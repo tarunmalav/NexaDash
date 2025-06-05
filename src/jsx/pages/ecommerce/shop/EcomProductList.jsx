@@ -1,9 +1,8 @@
-import { Fragment } from "react";
-// import PageTitle from "../../../layouts/PageTitle";
-import ShopSidebar from "../../../element/ShopSidebar"; 
+import { Fragment } from "react"; 
 import { Link } from "react-router-dom";
 import { productlistdata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
+import ShopSidebar from "../../../element/ShopSidebar";
 
 function ProductList() {
     return (
