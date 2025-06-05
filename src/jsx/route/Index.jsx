@@ -100,7 +100,7 @@ import Error503 from "../pages/error/Error503";
 import Registration from "../pages/authentication/Registration";
 import Login from "../pages/authentication/Login";
 import ForgotPassword from "../pages/authentication/ForgotPassword";
-import UiBreadCrumb from "../components/bootstrap/Breadcrumb";
+import UiBreadCrumb from "../components/bootstrap/BreadCrumb";
 import UiMediaObject from "../components/bootstrap/MediaObject";
 import UiPlaceHolder from "../components/bootstrap/PlaceHolder";
 import UiSpinner from "../components/bootstrap/Spinner";
