@@ -1,15 +1,15 @@
 import { Row, Col, Card } from "react-bootstrap"; 
 import PageTitle from "../../../layouts/PageTitle";
-import BarChart1 from '../../../components/charts/Chartjs/Bar1';
-import BarChart5 from "../../../components/charts/Chartjs/Bar5";
-import BarChart6 from "../../../components/charts/Chartjs/Bar6";
-import LineChart1 from "../../../components/charts/Chartjs/Line1";
-import DualLine from "../../../components/charts/Chartjs/DualLine";
-import BasicArea from "../../../components/charts/Chartjs/BasicArea";
-import GradientArea from "../../../components/charts/Chartjs/GradinetArea";
-import DualArea from "../../../components/charts/Chartjs/DualArea"; 
-import PolarChart from "../../../components/charts/Chartjs/Polar"; 
-import ChartPie from "../../../components/charts/Chartjs/Pie";
+import BarChart1 from "./Bar1";
+import BarChart5 from "./Bar5";
+import BarChart6 from "./Bar6";
+import LineChart1 from "./Line1";
+import DualLine from "./DualLine";
+import BasicArea from "./BasicArea";
+import GradientArea from "./GradinetArea";
+import DualArea from "./DualArea";
+import ChartPie from "./Pie";
+import PolarChart from "./Polar";
 
 function ChartChartjs() {
   return (
