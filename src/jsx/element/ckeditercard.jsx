@@ -5,7 +5,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 const CkEditorBlog = () => {
     return (
         <>
-            <CKEditor 
+            {/* <CKEditor 
                 editor={ClassicEditor}
                 onReady={editor => {
                     // console.log( 'Editor is ready to use!', editor );
@@ -20,7 +20,8 @@ const CkEditorBlog = () => {
                 onFocus={(event, editor) => {
                     // console.log('Focus.', editor);
                 }}
-            />
+            /> */}
+            <h3>hello</h3>
         </>
     );
 };
