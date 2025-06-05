@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"; 
-import { swipershirtdata } from "../../constant/alldata";
+import { swipershirtdata } from "../../constant/Alldata";
 function SwiperHome2() {
     return (
         <Swiper className="swiper mySwiper swiper-lr"

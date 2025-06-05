@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import { Collapse } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { tableData4 } from '../../constant/alldata';
+import { tableData4 } from '../../constant/Alldata';
 
 const initialState = true;
 const reducer = (state, action) => {

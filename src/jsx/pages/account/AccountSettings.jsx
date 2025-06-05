@@ -4,7 +4,7 @@ import AccountDefaultCard from "../../components/account/AccountDefaultCard";
 import BasicForm from "../../components/account/BasicForm";
 import AccountConnected from "../../components/account/AcccountConnected";
 import { SVGICON } from "../../constant/Theme";
-import { notificationBlog } from "../../constant/alldata";
+import { notificationBlog } from "../../constant/Alldata";
 import PageTitle from "../../layouts/PageTitle";
 
 function AccountSettings() {

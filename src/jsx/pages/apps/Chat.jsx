@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IMAGES } from "../../constant/Theme";
 import { useEffect, useState } from "react";
 import PageTitle from "../../layouts/PageTitle";
-import { chatmediadata, chatmediadata2, chatpagedata } from "../../constant/alldata";
+import { chatmediadata, chatmediadata2, chatpagedata } from "../../constant/Alldata";
 import { tr } from "date-fns/locale";
 
 function Chat() {

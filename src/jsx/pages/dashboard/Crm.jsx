@@ -7,7 +7,7 @@ import ActiveProjects from "../../components/dashboard/ActiveProjects"
 import { SVGICON } from "../../constant/Theme"
 import { useContext, useEffect } from "react"
 import ProjectStatusBlogDonutChart from "../../components/dashboard/ProjectStatusBlogDonutChart" 
-import { mediaBlog2 } from "../../constant/alldata"
+import { mediaBlog2 } from "../../constant/Alldata"
 import Dropdowndata from "../../components/dashboard/DropdownData"
 import { ThemeContext } from "../../../context/ThemeContext"
 

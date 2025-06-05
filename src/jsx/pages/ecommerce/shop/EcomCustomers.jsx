@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import PageTitle from "../../../layouts/PageTitle";
 import { Link } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
-import { customerstabledata } from "../../../constant/alldata";
+import { customerstabledata } from "../../../constant/Alldata";
 
 function Customers() {
     const chackboxFun = (type) => {

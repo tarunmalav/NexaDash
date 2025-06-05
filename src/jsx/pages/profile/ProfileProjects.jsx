@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { IMAGES } from "../../constant/Theme";
 import ProfileOverviewCard from "../../components/profile/ProfileOverviewCard";
-import { profileProjectCard } from "../../constant/alldata";
+import { profileProjectCard } from "../../constant/Alldata";
 import PageTitle from "../../layouts/PageTitle";
 
 function ProfileProjects() {

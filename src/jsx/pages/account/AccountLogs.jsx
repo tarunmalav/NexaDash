@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import AccountDefaultCard from "../../components/account/AccountDefaultCard";
 import LogsTable from "../../components/account/LogsTable";
-import { logsTable } from "../../constant/alldata";
+import { logsTable } from "../../constant/Alldata";
 import PageTitle from "../../layouts/PageTitle";
 
 function AccountLogs() {

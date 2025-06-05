@@ -2,7 +2,7 @@ import { Modal, Nav, Tab } from "react-bootstrap"
 import { SVGICON } from "../../constant/Theme"
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { pricedata, pricedata2 } from "../../constant/alldata";
+import { pricedata, pricedata2 } from "../../constant/Alldata";
 
 const Rightsvg = <svg className="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="24" height="24" rx="12" fill="#F0F5FF" />

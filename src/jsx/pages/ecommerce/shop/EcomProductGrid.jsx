@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import ShopSidebar from "../../../element/shopsidebar"; 
-import { productgriddata } from "../../../constant/alldata";
+import { productgriddata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
 
 function ProductGrid() {

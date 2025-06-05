@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import ReferralsTable from "../../components/account/ReferralsTable";
 import { Link } from "react-router-dom";
 import AccountDefaultCard from "../../components/account/AccountDefaultCard";
-import { balanceSheet } from "../../constant/alldata";  
+import { balanceSheet } from "../../constant/Alldata";  
 import PageTitle from "../../layouts/PageTitle";
 
 function AccountReferrals(){

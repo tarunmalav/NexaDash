@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import AccountDefaultCard from "../../components/account/AccountDefaultCard";
-import { TableDataEntries } from "../../constant/alldata";
+import { TableDataEntries } from "../../constant/Alldata";
 import PageTitle from "../../layouts/PageTitle";
 
 function AccountApiKeys(){

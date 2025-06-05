@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import TransactionsDetails from "../../components/dashboard/TransactionDetails"; 
 import DraggableBlog from "../../components/dashboard/DraggableBlog"; 
 import ProjectStatusBlogDonutChart from "../../components/dashboard/ProjectStatusBlogDonutChart";
-import { mediaBlog3 } from "../../constant/alldata";
+import { mediaBlog3 } from "../../constant/Alldata";
 import SwiperHome2 from "../../components/dashboard/SwiperHome2";
 import Dropdowndata from "../../components/dashboard/DropdownData";
 import { ThemeContext } from "../../../context/ThemeContext";

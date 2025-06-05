@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import TopMenus from '../../components/aikit/TopMenus';
 import MainContent from '../../components/aikit/MainContent';
 import { SVGICON } from '../../constant/Theme';
-import { schedulerTable } from '../../constant/alldata';
+import { schedulerTable } from '../../constant/Alldata';
 import PageTitle from '../../layouts/PageTitle';
 
 const numb = [5, 9, 14];

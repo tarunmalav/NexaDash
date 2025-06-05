@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Collapse from 'react-bootstrap/Collapse'; 
-import { tableData } from '../../constant/alldata'; 
+import { tableData } from '../../constant/Alldata'; 
 import DatePicker from 'react-datepicker';
 import Select from 'react-select'; 
 

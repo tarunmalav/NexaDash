@@ -3,7 +3,7 @@ import { SVGICON } from "../../constant/Theme";
 import { Link } from "react-router-dom";
 import { Nav, Tab } from "react-bootstrap";
 import AccountDefaultCard from "../../components/account/AccountDefaultCard";
-import { paymentBlog, addressBlog } from "../../constant/alldata";
+import { paymentBlog, addressBlog } from "../../constant/Alldata";
 import PageTitle from "../../layouts/PageTitle";
 
 function AccountBilling() {

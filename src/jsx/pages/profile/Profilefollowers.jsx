@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import ProfileOverviewCard from "../../components/profile/ProfileOverviewCard";
-import { artCardData } from "../../constant/alldata";
+import { artCardData } from "../../constant/Alldata";
 import PageTitle from "../../layouts/PageTitle";
 
 function ProfileFollowers() {

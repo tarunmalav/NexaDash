@@ -5,7 +5,7 @@ import { FreeMode, Thumbs } from 'swiper/modules';
 import { Link } from "react-router-dom";
 import { Modal, Nav, Tab } from "react-bootstrap";
 import Countdown from 'react-countdown';
-import { productgriddata } from "../../../constant/alldata";
+import { productgriddata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
 
 function ProductDetail() {

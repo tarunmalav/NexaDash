@@ -4,7 +4,7 @@ import Marqueedata from "../../components/dashboard/Marquee";
 import RevenueUpdatechart from "../../components/dashboard/RevenueUpdatechart";
 import SelectImg from "../../components/dashboard/SelectImg";
 import SwiperHome from "../../components/dashboard/SwiperHome";
-import { homecard, sellordertable } from "../../constant/alldata";
+import { homecard, sellordertable } from "../../constant/Alldata";
 import Eventsidebar from "../../layouts/EventSidebar";
 import { Dropdown } from "react-bootstrap";
 import { useContext, useEffect, useState } from "react";

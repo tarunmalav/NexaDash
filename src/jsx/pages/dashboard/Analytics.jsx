@@ -6,7 +6,7 @@ import ProductOverviewChart from "../../components/dashboard/ProductOverviewChar
 import VisiterChart from "../../components/dashboard/VisiterChart";
 import UpdatesChart from "../../components/dashboard/UpdatesChart";
 import AnalyticsData from "../../components/dashboard/AnalyticsData";
-import { productoverviewchartcard, supportcard } from "../../constant/alldata";
+import { productoverviewchartcard, supportcard } from "../../constant/Alldata";
 import Eventsidebar2 from "../../layouts/EventSidebar2";
 import { ThemeContext } from "../../../context/ThemeContext";
 

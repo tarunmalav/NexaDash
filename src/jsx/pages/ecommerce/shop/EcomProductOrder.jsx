@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import PageTitle from "../../../layouts/PageTitle";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { productordertabeldata } from "../../../constant/alldata";
+import { productordertabeldata } from "../../../constant/Alldata";
 
 function ProductOrder() {
     const chackboxFun = (type) => {

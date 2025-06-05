@@ -6,7 +6,7 @@ import ProgressBarChart from "../../components/dashboard/ProcessBarChart";
 import ProductOverviewChart2 from "../../components/dashboard/ProductOverviewChart2";
 import ProjectOverviewChart2 from "../../components/dashboard/ProjectOverviewChart2";
 import { ThemeContext } from "../../../context/ThemeContext";
-import { medicalcarddata, productoverviewchartcard2 } from "../../constant/alldata";
+import { medicalcarddata, productoverviewchartcard2 } from "../../constant/Alldata";
 
 function Medical() {
     const { changeBackground,

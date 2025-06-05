@@ -4,7 +4,7 @@ import ScoreActivityChart from "../../components/dashboard/ScoreActivityChart"
 import LearningActivityChart from "../../components/dashboard/LearningActivityChart"
 import ProjectStatusBlogDonutChart from "../../components/dashboard/ProjectStatusBlogDonutChart" 
 import DatePicker from "react-datepicker";
-import { coursecarddata, mediaBlog } from "../../constant/alldata"
+import { coursecarddata, mediaBlog } from "../../constant/Alldata"
 import Dropdowndata from "../../components/dashboard/DropdownData"
 import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines';
 import { ThemeContext } from "../../../context/ThemeContext"

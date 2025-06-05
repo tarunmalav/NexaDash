@@ -5,7 +5,7 @@ import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Contributions from "../../components/profile/Contributions";
 import SellingCategories from "../../components/profile/SellingCategories";
-import { basicDetail, tableData5 } from "../../constant/alldata";
+import { basicDetail, tableData5 } from "../../constant/Alldata";
 import PageTitle from "../../layouts/PageTitle";
 
 function AccountOverview(){    

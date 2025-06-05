@@ -3,7 +3,7 @@ import { Dropdown } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { useState } from "react" 
 import PageTitle from "../../layouts/PageTitle"
-import { inboxdata } from "../../constant/alldata"
+import { inboxdata } from "../../constant/Alldata"
 import InboxSidebar from "../../element/InboxSidebar"
 function Inbox() {
     useEffect(() => {

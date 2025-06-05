@@ -2,7 +2,7 @@ import { Fragment } from "react";
 // import PageTitle from "../../../layouts/PageTitle";
 import ShopSidebar from "../../../element/shopsidebar"; 
 import { Link } from "react-router-dom";
-import { productlistdata } from "../../../constant/alldata";
+import { productlistdata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
 
 function ProductList() {
