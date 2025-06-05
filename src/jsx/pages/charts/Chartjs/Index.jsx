@@ -1,4 +1,3 @@
-import React from "react"; 
 import { Row, Col, Card } from "react-bootstrap"; 
 import PageTitle from "../../../layouts/PageTitle";
 import BarChart1 from '../../../components/charts/Chartjs/Bar1';
