@@ -1,4 +1,4 @@
-import { IMAGES, SVGICON,  } from "./theme";
+import { IMAGES, SVGICON,  } from "./Theme";
 // dashboar home
 export const homecard = [
     { title: "Total Earning", price: "$10,270", precent: "10.55%", },
