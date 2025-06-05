@@ -45,7 +45,7 @@ import PostDetails from "../pages/apps/PostDetails";
 import Compose from "../pages/email/Compose";
 import Inbox from "../pages/email/Inbox";
 import Read from "../pages/email/Read";
-import Calendar from "../pages/apps/calender";
+import Calendar from "../pages/apps/Calender";
 import CategoryTable from "../pages/ecommerce/categories/CategoryTable";
 import AddCategory from "../pages/ecommerce/categories/AddCategary";
 import EditCategory from "../pages/ecommerce/categories/EditCategary";
@@ -105,17 +105,17 @@ import UiMediaObject from "../components/bootstrap/MediaObject";
 import UiPlaceHolder from "../components/bootstrap/PlaceHolder";
 import UiSpinner from "../components/bootstrap/Spinner";
 import UiRangeSlider from "../components/bootstrap/RangeSlider";
-import Menu from "../pages/cms/menu";
-import Blog from "../pages/cms/blog";
-import Scheduled from "../pages/Aikit/scheduled";
-import Repurpose from "../pages/Aikit/repurpose";
-import RSS from "../pages/Aikit/rss";
-import Chatbot from "../pages/Aikit/chatbot";
-import Prompt from "../pages/Aikit/prompt";
-import Setting from "../pages/Aikit/setting";
-import Import from "../pages/Aikit/import";
-import ApexChart from "../pages/charts/apexcharts";
-import ChartChartjs from "../pages/charts/Chartjs";
+import Menu from "../pages/cms/Menu";
+import Blog from "../pages/cms/Blog";
+import Scheduled from "../pages/Aikit/Scheduled";
+import Repurpose from "../pages/Aikit/Repurpose";
+import RSS from "../pages/Aikit/Rss";
+import Chatbot from "../pages/Aikit/Chatbot";
+import Prompt from "../pages/Aikit/Prompt";
+import Setting from "../pages/Aikit/Setting";
+import Import from "../pages/Aikit/Import";
+import ApexChart from "../pages/charts/apexcharts/Index";
+import ChartChartjs from "../pages/charts/Chartjs/Index";
 
 
 const Markup = () => {
