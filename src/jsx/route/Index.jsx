@@ -13,6 +13,7 @@ import Sales from "../pages/dashboard/Index-3";
 import Ecommerce from "../pages/dashboard/Ecommerce";
 import Course from "../pages/dashboard/Course";
 import Medical from "../pages/dashboard/Medical";
+// Profile 
 import ProfileOverview from "../pages/profile/ProfileOverview";
 import ProfileProjects from "../pages/profile/ProfileProjects";
 import ProfileProjectsDetails from "../pages/profile/ProfileProjectsDetails";
@@ -20,6 +21,7 @@ import ProfileCampaigns from "../pages/profile/ProfileCampaigns";
 import ProfileDocuments from "../pages/profile/ProfileDocuments";
 import ProfileFollowers from "../pages/profile/Profilefollowers";
 import ProfileActivity from "../pages/profile/ProfileActivity";
+// account 
 import AccountOverview from "../pages/account/AccountOverview";
 import AccountSettings from "../pages/account/AccountSettings";
 import AccountSecurity from "../pages/account/AccountSecurity";
@@ -29,37 +31,52 @@ import AccountStatements from "../pages/account/AccountStatements";
 import AccountReferrals from "../pages/account/AccountReferrals";
 import AccountLogs from "../pages/account/AccountLogs";
 import AccountApiKeys from "../pages/account/AcountApikeys"; 
+// cms 
 import Content from "../pages/cms/Content";
 import ContentAdd from "../pages/cms/ContentAdd"; 
 import EmailTemplate from "../pages/cms/EmailTemplate";
 import AddEmail from "../pages/cms/AddEmail"; 
 import AddBlog from "../pages/cms/AddBlog";
 import BlogCategory from "../pages/cms/BlogCategory";
+import Menu from "../pages/cms/Menu";
+import Blog from "../pages/cms/Blog";
+// aikit 
 import AutoWrite from "../pages/Aikit/AutoWrite"; 
 import FineTuneModels from "../pages/Aikit/FineTuneModels"; 
+import Scheduled from "../pages/Aikit/Scheduled";
+import Repurpose from "../pages/Aikit/Repurpose";
+import RSS from "../pages/Aikit/Rss";
+import Chatbot from "../pages/Aikit/Chatbot";
+import Prompt from "../pages/Aikit/Prompt";
+import Setting from "../pages/Aikit/Setting";
+import Import from "../pages/Aikit/Import";  
+// apps 
 import Chat from "../pages/apps/Chat";
 import AppProfile from "../pages/apps/AppProfile";
 import AppProfile2 from "../pages/apps/AppProfile2";
 import EditProfile from "../pages/apps/EditProfile";
 import PostDetails from "../pages/apps/PostDetails";
+import Calendar from "../pages/apps/Calender";
+// email 
 import Compose from "../pages/email/Compose";
 import Inbox from "../pages/email/Inbox";
 import Read from "../pages/email/Read";
-import Calendar from "../pages/apps/Calender";
+// category 
 import CategoryTable from "../pages/ecommerce/categories/CategoryTable";
 import AddCategory from "../pages/ecommerce/categories/AddCategary";
 import EditCategory from "../pages/ecommerce/categories/EditCategary";
+// product 
 import ProductTable from "../pages/ecommerce/products/ProductTable";
 import EditProduct from "../pages/ecommerce/products/EditProduct";
 import AddProduct from "../pages/ecommerce/products/AddProduct";
+// shop 
 import ProductGrid from "../pages/ecommerce/shop/EcomProductGrid";
 import ProductList from "../pages/ecommerce/shop/EcomProductList";
 import ProductDetail from "../pages/ecommerce/shop/EcomProduct-detail";
 import ProductOrder from "../pages/ecommerce/shop/EcomProductOrder";
 import Checkout from "../pages/ecommerce/shop/EcomCheckout";
 import Invoice from "../pages/ecommerce/shop/EcomInvoice";
-import Customers from "../pages/ecommerce/shop/EcomCustomers";
-
+import Customers from "../pages/ecommerce/shop/EcomCustomers"; 
 //Bootstrap 
 import UiAccordion from "../components/bootstrap/Accordion";
 import UiAlert from "../components/bootstrap/Alert";
@@ -81,21 +98,18 @@ import UiBreadCrumb from "../components/bootstrap/BreadCrumb";
 import UiMediaObject from "../components/bootstrap/MediaObject";
 import UiPlaceHolder from "../components/bootstrap/PlaceHolder";
 import UiSpinner from "../components/bootstrap/Spinner";
-import UiRangeSlider from "../components/bootstrap/RangeSlider";
-
+import UiRangeSlider from "../components/bootstrap/RangeSlider"; 
 //Plugins
 import Select2 from "../pages/plugins/Select2/Select2";
 import MainSweetAlert from "../pages/plugins/SweetAlert/SweetAlert";
 import Toastr from "../pages/plugins/Toastr/Toastr";
 import MainNouiSlider from "../pages/plugins/NouiSlider/MainNouiSlider";
-import Lightgallery from "../pages/plugins/Lightgallery/Lightgallery";
-
-
+import Lightgallery from "../pages/plugins/Lightgallery/Lightgallery"; 
+// chart 
 import ApexChart from "../pages/charts/apexcharts/Index";
 import ChartChartjs from "../pages/charts/Chartjs/Index";
 import RechartJs from "../pages/charts/rechart/Index";
-import ChartSparkline from "../pages/charts/Sparkline/Index"; 
-
+import ChartSparkline from "../pages/charts/Sparkline/Index";   
 //widgets
 import Widget from "../pages/widget/Widget";
 //Forms
@@ -103,32 +117,22 @@ import Element from "../pages/forms/Element/Element";
 import Wizard from "../pages/forms/Wizard/Wizard";
 import CkEditor from "../pages/forms/CkEditor/CkEditor";
 import Pickers from "../pages/forms/Pickers/Pickers";
-
 import FormValidation from "../pages/forms/FormValidation/FormValidation";
+// table 
 import BootstrapTable from "../pages/table/BootstrapTable";
 import DataTable from "../pages/table/DataTable";
-import LockScreen from "../pages/error/LockScreen";
-import EmptyPage from "../pages/error/EmptyPage";
+// error pages 
 import Error400 from "../pages/error/Error400";
 import Error403 from "../pages/error/Error403";
 import Error404 from "../pages/error/Error404";
 import Error500 from "../pages/error/Error500";
 import Error503 from "../pages/error/Error503";
+import LockScreen from "../pages/error/LockScreen";
+import EmptyPage from "../pages/error/EmptyPage";
+// authentication 
 import Registration from "../pages/authentication/Registration";
 import Login from "../pages/authentication/Login";
-import ForgotPassword from "../pages/authentication/ForgotPassword";
-
-import Menu from "../pages/cms/Menu";
-import Blog from "../pages/cms/Blog";
-import Scheduled from "../pages/Aikit/Scheduled";
-import Repurpose from "../pages/Aikit/Repurpose";
-import RSS from "../pages/Aikit/Rss";
-import Chatbot from "../pages/Aikit/Chatbot";
-import Prompt from "../pages/Aikit/Prompt";
-import Setting from "../pages/Aikit/Setting";
-import Import from "../pages/Aikit/Import";
-
-
+import ForgotPassword from "../pages/authentication/ForgotPassword"; 
 
 const Markup = () => {
     return (
@@ -142,15 +146,10 @@ const Markup = () => {
                 <Route path='page-error-503' element={<Error503 />} />
                 <Route path='page-login' element={<Login />} />
                 <Route path='page-register' element={<Registration />} />
-                <Route path='page-forgot-password' element={<ForgotPassword />} />
-
+                <Route path='page-forgot-password' element={<ForgotPassword />} /> 
                 <Route element={<MainLayout />}>
-                    <Route path='' element={<Home />} />
-                    <Route path='dashboard' element={<Home />} />
-                    <Route path='crypto' element={<Home />} />
                     <Route path='crm' element={<Crm />} />
                     <Route path='finance' element={<Finance />} />
-                    <Route path='analytics' element={<Analytics />} />
                     <Route path='index-3' element={<Sales />} />
                     <Route path='ecommerce' element={<Ecommerce />} />
                     <Route path='course' element={<Course />} />
@@ -165,9 +164,7 @@ const Markup = () => {
                     <Route path='blog-category' element={<BlogCategory />} /> 
                     <Route path='empty-page' element={<EmptyPage />} />
                     <Route path='ui-breadcrumb' element={<UiBreadCrumb />} />
-                    <Route path='ui-media-object' element={<UiMediaObject />} />
-
-                    
+                    <Route path='ui-media-object' element={<UiMediaObject />} />  
                 </Route>
                 <Route element={<MainLayout2 />}>
                     <Route path='profile-overview' element={<ProfileOverview />} />
@@ -252,8 +249,12 @@ const Markup = () => {
                     <Route path='table-datatable-basic' element={<DataTable />} />
                     <Route path='ui-placeholder' element={<UiPlaceHolder />} />
                     <Route path='ui-spinners' element={<UiSpinner />} />
-                    <Route path='ui-range-slider' element={<UiRangeSlider />} />
-
+                    <Route path='ui-range-slider' element={<UiRangeSlider />} /> 
+                </Route>
+                <Route element={<MainLayout3 />}>
+                    <Route path='' element={<Home />} />
+                    <Route path='dashboard' element={<Home />} />
+                    <Route path='analytics' element={<Analytics />} /> 
                 </Route>
             </Routes>
 
@@ -265,7 +266,7 @@ function MainLayout() {
     const { menuToggle, sidebariconHover } = useContext(ThemeContext);
     return (
         <>
-            <div id="main-wrapper" className={`wallet-open show active ${sidebariconHover ? "iconhover-toggle" : ""} ${menuToggle ? "menu-toggle" : ""}`}>
+            <div id="main-wrapper" className={`wallet-open show ${sidebariconHover ? "iconhover-toggle" : ""} ${menuToggle ? "menu-toggle" : ""}`}>
                 <Nav />
                 <div className="content-body">
                     <div className="container">
@@ -287,6 +288,24 @@ function MainLayout2() {
                 <Nav />
                 <div className="content-body">
                     <Outlet />
+                </div>
+                <Footer />
+            </div>
+            <Setting2 />
+        </>
+    );
+}
+
+function MainLayout3() {
+    const { menuToggle, sidebariconHover } = useContext(ThemeContext);
+    return (
+        <>
+           <div id="main-wrapper" className={`wallet-open show active ${sidebariconHover ? "iconhover-toggle" : ""} ${menuToggle ? "menu-toggle" : ""}`}>
+                <Nav />
+                <div className="content-body">
+                    <div className="container">
+                        <Outlet />
+                    </div>
                 </div>
                 <Footer />
             </div>

@@ -2,7 +2,7 @@ import { useLocation, Link } from 'react-router-dom';
 
 const SidebarToggle = ({ toggleClass }) => {
   const location = useLocation();
-  const showOnRoutes = ['/dashboard', '/finance'];
+  const showOnRoutes = ['/dashboard', '/analytics', '/'];
 
   const shouldShow = showOnRoutes.includes(location.pathname);
 

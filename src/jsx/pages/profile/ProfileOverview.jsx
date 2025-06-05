@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../constant/Theme";
-import { Dropdown } from "react-bootstrap";
+import { IMAGES } from "../../constant/Theme"; 
 import ProfileOverviewCard from "../../components/profile/ProfileOverviewCard";
 import CardOne from "../../components/profile/CardOne";
 import CardGalleryOne from "../../components/profile/CardGalleryOne";

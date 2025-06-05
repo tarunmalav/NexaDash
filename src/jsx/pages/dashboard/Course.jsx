@@ -21,13 +21,13 @@ function Course({ data = [4,7,4,9,5,6,8,3,1,3,5,6] }) {
     useEffect(() => {
         const element = document.querySelector('.content-body')
         element.classList.add('finance-bg')
-               changeBackground({ value: "light", label: "Light" });        
+        changeBackground({ value: "light", label: "Light" });        
         changeSideBarStyle({ value: "mini", label: "mini" });        
         changeNavigationHader("color_5")        
         chnageHaderColor("color_4")
         changeSideBarLayout({ value: "vertical", label: "vertical"})
         chnageSidebarColor("color_5"); 
-          changePrimaryColor("color_10");
+        changePrimaryColor("color_10");
     },[])
     const [startDate, setStartDate] = useState(new Date());
 

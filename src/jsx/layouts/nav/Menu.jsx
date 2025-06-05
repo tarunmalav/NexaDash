@@ -4,7 +4,7 @@ export const MenuList = [
     {
         title: 'Dashboard', classsChange: 'mm-collapse', iconStyle: SVGICON.Dashboard,
         content: [
-            { title: 'Crypto', to: 'crypto' },
+            { title: 'Crypto', to: 'dashboard' },
             { title: 'CRM', to: 'crm' },
             { title: 'Finance', to: 'finance' },
             { title: 'Analytics', to: 'analytics' },
