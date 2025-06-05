@@ -139,7 +139,7 @@ const ContentAdd = () => {
                                     </form>
                                     <label className="form-label">Description</label>
                                     <div className="custom-ekeditor cms-radius add-content-ckeditor mb-3">
-                                        <CkEditorBlog />
+                                        {/* <CkEditorBlog /> */}
                                     </div>
                                 </div>
                             </div>
