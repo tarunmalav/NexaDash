@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { productgriddata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
-import ShopSidebar from "../../../element/ShopSidebar";
+// import ShopSidebar from "../../../element/ShopSidebar";
 
 function ProductGrid() {
     return (
@@ -10,7 +10,7 @@ function ProductGrid() {
             <PageTitle activeMenu="Ecommerce" motherMenu="Shop" pageContent="Product Grid"/>
             <div className="container">
             <div className="row">
-                <ShopSidebar className="col-xl-3 col-xxl-3 col-md-4" />
+                {/* <ShopSidebar className="col-xl-3 col-xxl-3 col-md-4" /> */}
                 <div className="col-xl-9 col-xxl-9 col-md-8 mt-4 mt-md-0">
                     <div className="row">
                         {productgriddata.map((item, index) => (

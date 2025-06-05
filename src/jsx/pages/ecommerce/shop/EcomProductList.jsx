@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { productlistdata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
-import ShopSidebar from "../../../element/ShopSidebar";
+// import ShopSidebar from "../../../element/ShopSidebar";
 
 function ProductList() {
     return (
@@ -10,7 +10,7 @@ function ProductList() {
             <PageTitle activeMenu="Ecommerce" motherMenu="Shop" pageContent="Product List"/>
             <div className="container-fluid">
             <div className="row">
-                <ShopSidebar className="col-xl-2 col-xxl-3 col-md-4"/>
+                {/* <ShopSidebar className="col-xl-2 col-xxl-3 col-md-4"/> */}
                 <div className="col-xl-10 col-xxl-9 col-md-8">
                     <div className="row">
                         {productlistdata.map((item, index) => (
