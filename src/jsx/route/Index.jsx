@@ -115,7 +115,7 @@ import Prompt from "../pages/Aikit/Prompt";
 import Setting from "../pages/Aikit/Setting";
 import Import from "../pages/Aikit/Import";
 import ApexChart from "../pages/charts/apexcharts/Index";
-import ChartChartjs from "../pages/charts/Chartjs/Index";
+// import ChartChartjs from "../pages/charts/Chartjs/Index";
 
 
 const Markup = () => {
@@ -229,7 +229,7 @@ const Markup = () => {
                     <Route path='chart-rechart' element={<RechartJs />} />
                     <Route path='chart-sparkline' element={<ChartSparkline />} />
                     <Route path='chart-apexchart' element={<ApexChart />} />
-                    <Route path='chart-chartjs' element={<ChartChartjs />} />
+                    {/* <Route path='chart-chartjs' element={<ChartChartjs />} /> */}
                     <Route path='widget-basic' element={<Widget />} />
                     <Route path='form-element' element={<Element />} />
                     <Route path='form-wizard' element={<Wizard />} />

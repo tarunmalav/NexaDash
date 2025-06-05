@@ -1,8 +1,8 @@
 import React from "react"; 
 import { Row, Col, Card } from "react-bootstrap"; 
 import PageTitle from "../../../layouts/PageTitle";
-// import BarChart1 from '../../../components/charts/Chartjs/Bar1';
-import BarChart5 from "../../../components/charts/Chartjs/Bar5.jsx";
+import BarChart1 from '../../../components/charts/Chartjs/Bar1';
+import BarChart5 from "../../../components/charts/Chartjs/Bar5";
 import BarChart6 from "../../../components/charts/Chartjs/Bar6";
 import LineChart1 from "../../../components/charts/Chartjs/Line1";
 import DualLine from "../../../components/charts/Chartjs/DualLine";
@@ -24,7 +24,7 @@ function ChartChartjs() {
                 <h4 className="card-title">Bar chart</h4>
               </Card.Header>
               <Card.Body>
-                {/* <BarChart1 /> */}
+                <BarChart1 />
               </Card.Body>
             </Card>
           </Col>
