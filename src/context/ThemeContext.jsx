@@ -1,6 +1,6 @@
 import  { createContext, useEffect,  useReducer } from "react";
 import {dezThemeSet} from './ThemeDemo';
-import { SVGICON } from "../jsx/constant/Theme";
+import { SVGICON } from "../jsx/constant/Theme.jsx";
 
 export const ThemeContext = createContext();
 const reducer = (previousState, updatedState) => ({
