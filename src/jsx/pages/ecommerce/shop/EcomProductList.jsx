@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { productlistdata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
 import ShopSidebar from "./ShopSidebar";
-// import ShopSidebar from "../../../element/ShopSidebar";
 
 function ProductList() {
     return (
