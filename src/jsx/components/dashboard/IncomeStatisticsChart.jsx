@@ -22,8 +22,9 @@ const IncomeStatisticsChart = () => {
             bar: {
                 horizontal: false,
                 columnWidth: '80%',
-                endingShape: 'rounded',
+                // endingShape: 'rounded',
                 borderRadius: 8,
+                borderRadiusApplication: 'end'
             },
         },
         colors: ['#01BD9B', '#E6F9F5'],
@@ -38,8 +39,9 @@ const IncomeStatisticsChart = () => {
             },
         },
         stroke: {
+
             show: false,
-            width: 0,
+            width: 4,
         },
         grid: {
             show: true,
