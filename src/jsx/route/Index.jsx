@@ -92,7 +92,7 @@ import Lightgallery from "../pages/plugins/Lightgallery/Lightgallery";
 
 
 import ApexChart from "../pages/charts/apexcharts/Index";
-// import ChartChartjs from "../pages/charts/Chartjs/Index";
+import ChartChartjs from "../pages/charts/Chartjs/Index";
 import RechartJs from "../pages/charts/rechart/Index";
 import ChartSparkline from "../pages/charts/Sparkline/Index"; 
 
@@ -241,7 +241,7 @@ const Markup = () => {
                     <Route path='chart-rechart' element={<RechartJs />} />
                     <Route path='chart-sparkline' element={<ChartSparkline />} />
                     <Route path='chart-apexchart' element={<ApexChart />} />
-                    {/* <Route path='chart-chartjs' element={<ChartChartjs />} /> */}
+                    <Route path='chart-chartjs' element={<ChartChartjs />} />
                     <Route path='widget-basic' element={<Widget />} />
                     <Route path='form-element' element={<Element />} />
                     <Route path='form-wizard' element={<Wizard />} />
