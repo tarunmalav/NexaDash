@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { IMAGES } from "../../../constant/Theme";
 import { Nav, Tab } from "react-bootstrap";
-import CKediterCard from "../../../element/CkEditerCard";
+import CKediterCard from "../../../element/CkEditorBlog";
 import CustomClearIndicator from "../../plugins/Select2/MultiSelect";
 import { useDropzone } from 'react-dropzone';
 import Select from "react-select";

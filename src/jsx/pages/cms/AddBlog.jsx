@@ -4,7 +4,7 @@ import { Collapse } from 'react-bootstrap';
 import { IMAGES } from '../../constant/Theme';
 import Select from 'react-select';
 import { foodOptions, screenOption } from '../../constant/Alldata';
-import CKediterCard from '../../element/CkEditerCard';
+import CKediterCard from '../../element/CkEditorBlog';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 const options = [
