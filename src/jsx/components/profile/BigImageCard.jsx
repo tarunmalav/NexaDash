@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import CardFooterContent from "./CardFooterContent";
-import { IMAGES } from "../../constant/theme";
+import { IMAGES } from "../../constant/Theme";
 
 function BigImageCard(){
     return(

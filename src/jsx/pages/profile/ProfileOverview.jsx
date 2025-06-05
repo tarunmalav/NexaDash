@@ -21,8 +21,7 @@ import ProjectStatusChart from "../../components/profile/ProjectStatusChart";
 import PageTitle from "../../layouts/PageTitle";
 import Dropdowndata from "../../components/dashboard/DropdownData";
 
-function ProfileOverview() {
-    const [control, setControl] = useState('Today');
+function ProfileOverview() {    
     return (
         < >
         <PageTitle activeMenu="Overview" motherMenu="Home" pageContent={"Overview"}/>

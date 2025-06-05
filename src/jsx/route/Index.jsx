@@ -59,6 +59,8 @@ import ProductOrder from "../pages/ecommerce/shop/EcomProductOrder";
 import Checkout from "../pages/ecommerce/shop/EcomCheckout";
 import Invoice from "../pages/ecommerce/shop/EcomInvoice";
 import Customers from "../pages/ecommerce/shop/EcomCustomers";
+
+//Bootstrap 
 import UiAccordion from "../components/bootstrap/Accordion";
 import UiAlert from "../components/bootstrap/Alert";
 import UiBadge from "../components/bootstrap/Badge";
@@ -75,18 +77,33 @@ import UiTab from "../components/bootstrap/Tab";
 import UiTypography from "../components/bootstrap/Typography";
 import UiPagination from "../components/bootstrap/Pagination";
 import UiGrid from "../components/bootstrap/Grid";
+import UiBreadCrumb from "../components/bootstrap/BreadCrumb";
+import UiMediaObject from "../components/bootstrap/MediaObject";
+import UiPlaceHolder from "../components/bootstrap/PlaceHolder";
+import UiSpinner from "../components/bootstrap/Spinner";
+import UiRangeSlider from "../components/bootstrap/RangeSlider";
+
+//Plugins
 import Select2 from "../pages/plugins/Select2/Select2";
 import MainSweetAlert from "../pages/plugins/SweetAlert/SweetAlert";
 import Toastr from "../pages/plugins/Toastr/Toastr";
 import MainNouiSlider from "../pages/plugins/NouiSlider/MainNouiSlider";
 import Lightgallery from "../pages/plugins/Lightgallery/Lightgallery";
+
+
+import ApexChart from "../pages/charts/apexcharts/Index";
+// import ChartChartjs from "../pages/charts/Chartjs/Index";
 import RechartJs from "../pages/charts/rechart/Index";
 import ChartSparkline from "../pages/charts/Sparkline/Index"; 
+
+//widgets
 import Widget from "../pages/widget/Widget";
+//Forms
 import Element from "../pages/forms/Element/Element";
 import Wizard from "../pages/forms/Wizard/Wizard";
 import CkEditor from "../pages/forms/CkEditor/CkEditor";
 import Pickers from "../pages/forms/Pickers/Pickers";
+
 import FormValidation from "../pages/forms/FormValidation/FormValidation";
 import BootstrapTable from "../pages/table/BootstrapTable";
 import DataTable from "../pages/table/DataTable";
@@ -100,11 +117,7 @@ import Error503 from "../pages/error/Error503";
 import Registration from "../pages/authentication/Registration";
 import Login from "../pages/authentication/Login";
 import ForgotPassword from "../pages/authentication/ForgotPassword";
-import UiBreadCrumb from "../components/bootstrap/BreadCrumb";
-import UiMediaObject from "../components/bootstrap/MediaObject";
-import UiPlaceHolder from "../components/bootstrap/PlaceHolder";
-import UiSpinner from "../components/bootstrap/Spinner";
-import UiRangeSlider from "../components/bootstrap/RangeSlider";
+
 import Menu from "../pages/cms/Menu";
 import Blog from "../pages/cms/Blog";
 import Scheduled from "../pages/Aikit/Scheduled";
@@ -114,8 +127,7 @@ import Chatbot from "../pages/Aikit/Chatbot";
 import Prompt from "../pages/Aikit/Prompt";
 import Setting from "../pages/Aikit/Setting";
 import Import from "../pages/Aikit/Import";
-import ApexChart from "../pages/charts/apexcharts/Index";
-// import ChartChartjs from "../pages/charts/Chartjs/Index";
+
 
 
 const Markup = () => {
