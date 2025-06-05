@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import { Collapse } from 'react-bootstrap';
 import NoImage from '../../../assets/images/no-img-avatar.png';
-// import CkEditorBlog from '../../element/CkEditerCard';
+import CkEditorBlog from '../../element/CkEditorBlog';
 
 const options = [
     { value: '2', label: 'admin@gmail.com' },
@@ -139,7 +139,7 @@ const ContentAdd = () => {
                                     </form>
                                     <label className="form-label">Description</label>
                                     <div className="custom-ekeditor cms-radius add-content-ckeditor mb-3">
-                                        {/* <CkEditorBlog /> */}
+                                        <CkEditorBlog />
                                     </div>
                                 </div>
                             </div>
