@@ -29,7 +29,7 @@ import AccountStatements from "../pages/account/AccountStatements";
 import AccountReferrals from "../pages/account/AccountReferrals";
 import AccountLogs from "../pages/account/AccountLogs";
 import AccountApiKeys from "../pages/account/AcountApikeys"; 
-import Content from "../pages/cms/content";
+import Content from "../pages/cms/Content";
 import ContentAdd from "../pages/cms/ContentAdd"; 
 import EmailTemplate from "../pages/cms/EmailTemplate";
 import AddEmail from "../pages/cms/AddEmail"; 
