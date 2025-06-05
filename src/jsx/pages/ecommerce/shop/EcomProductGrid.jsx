@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-import ShopSidebar from "../../../element/shopsidebar"; 
+import ShopSidebar from "../../../element/Shopsidebar"; 
 import { productgriddata } from "../../../constant/Alldata";
 import PageTitle from "../../../layouts/PageTitle";
 
