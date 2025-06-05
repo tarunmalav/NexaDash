@@ -253,7 +253,7 @@ function MainLayout() {
     const { menuToggle, sidebariconHover } = useContext(ThemeContext);
     return (
         <>
-            <div id="main-wrapper" className={`wallet-open show  ${sidebariconHover ? "iconhover-toggle" : ""} ${menuToggle ? "menu-toggle" : ""}`}>
+            <div id="main-wrapper" className={`wallet-open show active ${sidebariconHover ? "iconhover-toggle" : ""} ${menuToggle ? "menu-toggle" : ""}`}>
                 <Nav />
                 <div className="content-body">
                     <div className="container">

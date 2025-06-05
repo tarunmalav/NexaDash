@@ -1,6 +1,6 @@
 import  { createContext, useEffect,  useReducer } from "react";
 import {dezThemeSet} from './ThemeDemo';
-import { SVGICON } from "../jsx/constant/theme";
+import { SVGICON } from "../jsx/constant/Theme";
 
 export const ThemeContext = createContext();
 const reducer = (previousState, updatedState) => ({
@@ -56,7 +56,7 @@ const {
     { value: "horizontal", label: "Horizontal" },
   ];
   
-    const sideBarOption = [
+  const sideBarOption = [
   { svg: SVGICON.sidebarfull, label: "Full", value: "full", },
   { svg: SVGICON.sidebarmini, label: "Mini", value: "mini", },
   { svg: SVGICON.Sidebarcompact, label: "Compact", value: "compact", },
