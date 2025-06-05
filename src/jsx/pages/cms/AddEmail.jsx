@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap'; 
-// import CkEditorBlog from '../../element/CkEditerCard';
+import CkEditorBlog from '../../element/CkEditerCard';
 
 
 function AddEmail() {
@@ -102,7 +102,7 @@ function AddEmail() {
                                             <div className="mb-3">
                                                 <label className="form-label">Email Template</label>
                                                 <div className="custom-ekeditor ct-ticket mb-3">
-                                                   {/* <CkEditorBlog /> */}
+                                                   <CkEditorBlog />
                                                 </div>
                                                 <div className="form-text mb-3">This design will show in recieved email and place holders will replace with dynamic content.</div>
                                             </div>
