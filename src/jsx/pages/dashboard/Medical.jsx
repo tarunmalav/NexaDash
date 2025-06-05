@@ -14,7 +14,8 @@ function Medical() {
         changeSideBarStyle,
         chnageSidebarColor,
         changeSideBarLayout,
-        chnageHaderColor
+        chnageHaderColor,
+        changePrimaryColor
     } = useContext(ThemeContext);
     useEffect(() => {
         const element = document.querySelector(".content-body");
@@ -25,6 +26,7 @@ function Medical() {
         chnageHaderColor("color_1")
         changeSideBarLayout({ value: "vertical", label: "vertical"})
         chnageSidebarColor("color_3");
+        changePrimaryColor("color_1");
     }, [ ])
  
     return (
