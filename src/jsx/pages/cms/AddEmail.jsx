@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap'; 
-import CkEditorBlog from '../../element/CkEditerCard';
+import CkEditorBlog from '../../element/CkEditorBlog';
 
 
 function AddEmail() {
