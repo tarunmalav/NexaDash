@@ -22,7 +22,7 @@ function Finance() {
         const element = document.querySelector(".content-body");
         element.classList.add("finance-bg");
         changeBackground({ value: "light", label: "Light" });
-        changeSideBarStyle({ value: "full", label: "Full" });
+        // changeSideBarStyle({ value: "full", label: "Full" });
         changeNavigationHader("color_4")
         chnageHaderColor("color_4")
         changeSideBarLayout({ value: "vertical", label: "vertical" })

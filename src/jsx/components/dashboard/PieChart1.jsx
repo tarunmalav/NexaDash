@@ -18,26 +18,38 @@ const PieChart1 = () => {
             position: 'bottom',
             show: false
         },
-        responsive: [{
-            breakpoint: 1400,
-            options: {
-                chart: {
-                    height: 150
-                },
+        responsive: [
+            {
+                breakpoint: 1400,
+                options: {
+                    chart: {
+                        height: 150
+                    }
+                }
+            },
+            {
+                breakpoint: 575,
+                options: {
+                    chart: {
+                        height: 132,
+                        width: 300
+                    }
+                }
             }
-        }]
+        ]
     }
+
     return (
         <>
             <ReactApexChart
                 options={options}
                 series={series}
                 type="donut"
-                height={150}
+                height={150}  // This gets overridden by responsive rules
                 width={239}
             />
         </>
-    )
+    );
 }
 
-export default PieChart1
+export default PieChart1;

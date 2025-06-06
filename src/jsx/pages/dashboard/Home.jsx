@@ -20,7 +20,7 @@ function Home() {
     } = useContext(ThemeContext);
     useEffect(() => {        
         changeBackground({ value: "light", label: "Light" });        
-        changeSideBarStyle({ value: "full", label: "Full" });        
+        // changeSideBarStyle({ value: "full", label: "Full" });        
         changeNavigationHader("color_2")        
         chnageSidebarColor("color_2");
         changePrimaryColor("color_2");

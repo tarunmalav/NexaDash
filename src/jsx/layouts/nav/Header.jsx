@@ -44,12 +44,10 @@ function Header({ onNote }) {
 								</form>
 								<FrontMenu />
 							</div>
-							<div className="select-country d-flex align-items-center gap-3">
+							<div className="select-country">
 								{SVGICON.selectcountry}
 								<Dropdown className="c-pointer">
-									<Dropdown.Toggle as="div" className="nav-link text-black">
-										{selectedOption}
-									</Dropdown.Toggle>
+									<Dropdown.Toggle as="div" className="nav-link"> {selectedOption} </Dropdown.Toggle>
 									<Dropdown.Menu className="dropdown-menu dropdown-menu-end" align="end">
 										<Dropdown.Item onClick={() => setSelectedOption("English")}>English</Dropdown.Item>
 										<Dropdown.Item onClick={() => setSelectedOption("Finland")}>Finland</Dropdown.Item>

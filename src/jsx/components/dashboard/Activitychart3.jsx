@@ -116,7 +116,7 @@ const ActivityChart3 = () => {
  
 
     return (
-        <div style={{ height: "270px" }}>
+        <div style={{ height: "236px" }}>
             <Line ref={chartRef} data={data} options={options} />
         </div>
         

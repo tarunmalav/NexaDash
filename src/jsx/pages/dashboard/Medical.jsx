@@ -21,7 +21,7 @@ function Medical() {
         const element = document.querySelector(".content-body");
         element.classList.add("bg-medical");
          changeBackground({ value: "light", label: "Light" });        
-        changeSideBarStyle({ value: "mini", label: "mini" });        
+        // changeSideBarStyle({ value: "mini", label: "mini" });        
         changeNavigationHader("color_3")        
         chnageHaderColor("color_1")
         changeSideBarLayout({ value: "vertical", label: "vertical"})

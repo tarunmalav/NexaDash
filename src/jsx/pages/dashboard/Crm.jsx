@@ -23,7 +23,7 @@ function Crm() {
         const element = document.querySelector(".content-body");
         element.classList.add("crm-main");
         changeBackground({ value: "light", label: "Light" });        
-        changeSideBarStyle({ value: "full", label: "Full" });        
+        // changeSideBarStyle({ value: "full", label: "Full" });        
         changeNavigationHader("color_4")        
         chnageHaderColor("color_4")
         changeSideBarLayout({ value: "horizontal", label: "horizontal"})

@@ -31,7 +31,7 @@ function Sales() {
     } = useContext(ThemeContext);
     useEffect(() => {
         changeBackground({ value: "light", label: "Light" });
-        changeSideBarStyle({ value: "full", label: "Full" });
+        // changeSideBarStyle({ value: "full", label: "Full" }); 
         changeNavigationHader("color_1")
         chnageHaderColor("color_1")
         changeSideBarLayout({ value: "vertical", label: "vertical" })

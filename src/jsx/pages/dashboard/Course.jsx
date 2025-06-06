@@ -22,7 +22,7 @@ function Course({ data = [4,7,4,9,5,6,8,3,1,3,5,6] }) {
         const element = document.querySelector('.content-body')
         element.classList.add('finance-bg')
         changeBackground({ value: "light", label: "Light" });        
-        changeSideBarStyle({ value: "mini", label: "mini" });        
+        // changeSideBarStyle({ value: "mini", label: "mini" });        
         changeNavigationHader("color_5")        
         chnageHaderColor("color_4")
         changeSideBarLayout({ value: "vertical", label: "vertical"})

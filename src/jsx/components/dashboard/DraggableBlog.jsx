@@ -11,11 +11,11 @@ const reorder = (list, startIndex, endIndex) => {
 
 const DraggableBlog = () => {
     const [items, setItems] = useState([
-        { id: "input1", title: 'Complete this project Monday', styleChange: 'text-warning', icon: SVGICON.Stopboard },
-        { id: "input2", title: 'Complete this project Sunday', styleChange: 'text-success', icon: SVGICON.RightClick },
-        { id: "input3", title: 'Complete this project Tuesday', styleChange: 'text-warning', icon: SVGICON.Stopboard },
-        { id: "input4", title: 'Complete this project Monday', styleChange: 'text-success', icon: SVGICON.RightClick },
-        { id: "input5", title: 'Complete this project Friday', styleChange: 'text-warning', icon: SVGICON.Stopboard }
+        { id: "input1", title: 'Complete this project', styleChange: 'text-warning', icon: SVGICON.Stopboard },
+        { id: "input2", title: 'Complete this project', styleChange: 'text-success', icon: SVGICON.RightClick },
+        { id: "input3", title: 'Complete this project', styleChange: 'text-warning', icon: SVGICON.Stopboard },
+        { id: "input4", title: 'Complete this project', styleChange: 'text-success', icon: SVGICON.RightClick },
+        { id: "input5", title: 'Complete this project', styleChange: 'text-warning', icon: SVGICON.Stopboard }
     ]);
 
     const onDragEnd = (result) => {

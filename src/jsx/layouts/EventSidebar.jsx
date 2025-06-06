@@ -22,7 +22,7 @@ function Eventsidebar() {
 				<div className="card-header border-0 pt-4">
 					<div>
 						<h4 className="card-title">Latest Transactions</h4>
-						<span>Last activity at 08 August 2024</span>
+						<span>Last activity at 08 August 2025</span>
 					</div>
 					<div>
 						<Dropdown>

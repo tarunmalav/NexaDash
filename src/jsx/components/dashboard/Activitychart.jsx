@@ -109,7 +109,7 @@ const ActivityChart = () => {
         }
     };
     return (
-        <Line ref={chartRef} data={data} options={options} height={270} />
+        <Line ref={chartRef} data={data} options={options} height={236} />
 
     );
 };

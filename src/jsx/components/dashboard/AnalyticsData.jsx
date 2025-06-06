@@ -3,20 +3,20 @@ import { SVGICON } from "../../constant/Theme"
 import { useState } from "react";
 import { Link } from "react-router-dom"; 
 const analyticscard = [
-    { title: "Sales", price: "$420", paragraph: "Total Sales", },
-    { title: "Invoice", price: "$1200", paragraph: "Send Invoices Total", },
-    { title: "Quotes", price: "20", paragraph: "Quotes Send", },
-    { title: "Contacts", price: "40k", paragraph: "Total Contacts", },
-    { title: "New Lead", price: "1.2k", paragraph: "Total New Lead", },
-    { title: "New Clients", price: "227", paragraph: "Total New Clients", },
-    { title: "Repeat Clients", price: "750", paragraph: "Total Repeat Clients", },
-    { title: "Order", price: "$420", paragraph: "Total Order", },
+    { class:"4", title: "Sales", price: "$420", paragraph: "Total Sales", },
+    { class:"4", title: "Invoice", price: "$1200", paragraph: "Send Invoices Total", },
+    { class:"4", title: "Quotes", price: "20", paragraph: "Quotes Send", },
+    { class:"4", title: "Contacts", price: "40k", paragraph: "Total Contacts", },
+    { class:"4", title: "New Lead", price: "1.2k", paragraph: "Total New Lead", },
+    { class:"4", title: "New Clients", price: "227", paragraph: "Total New Clients", },
+    { class:"6", title: "Repeat Clients", price: "750", paragraph: "Total Repeat Clients", },
+    { class:"6", title: "Order", price: "$420", paragraph: "Total Order", },
 ]
 const  AnalyticsDropdown = () => {
      const [selectedOption, setSelectedOption] = useState("30 Days");
     return(
         <>
-        <Dropdown className="c-pointer default-select style-2 fs-13 font-w500">
+        <Dropdown className="c-pointer default-select style-2 fs-13 font-w500 d-sm-block d-none">
             <Dropdown.Toggle as="div" className="nav-linkn text-primary">
                 {selectedOption}
             </Dropdown.Toggle>
@@ -35,7 +35,7 @@ function AnalyticsData() {
     return (
         <>
             {analyticscard.map((item, i) => (
-                <div className="col-lg-3 col-sm-4 col-6" key={i}>
+                <div className={`col-lg-3  col-6 col-sm-${item.class}`} key={i}>
                     <div className="card">
                         <div className="card-body">
                             <div className="d-flex align-items-center justify-content-between">

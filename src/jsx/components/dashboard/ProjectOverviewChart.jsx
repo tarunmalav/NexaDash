@@ -45,7 +45,7 @@ const ProjectOverviewChart = () => {
             labels: { colors:'#888888' }
         },
         plotOptions: {
-            bar: {
+            bar: {  
                 columnWidth: '18%',
                 borderRadius:6,
             }
