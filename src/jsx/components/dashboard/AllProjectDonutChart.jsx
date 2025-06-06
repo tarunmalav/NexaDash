@@ -70,6 +70,7 @@ class AllProjectDonutChart extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="donut"
+          height={103}
           width={150}
         />
       </div>

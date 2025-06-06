@@ -92,12 +92,12 @@ const InvoiceList = () => {
                                                 <label className="form-check-label" htmlFor="checkAll"></label>
                                             </div>
                                         </th>
-                                        <th>INVOICE ID</th>
-                                        <th>CLIENT</th>
-                                        <th>CONTACT</th>
-                                        <th>DATE</th>
-                                        <th>STATUS</th>
-                                        <th>ACTION</th>
+                                        <th className='c-pointer'>INVOICE ID</th>
+                                        <th className='c-pointer'>CLIENT</th>
+                                        <th className='c-pointer'>CONTACT</th>
+                                        <th className='c-pointer'>DATE</th>
+                                        <th className='c-pointer'>STATUS</th>
+                                        <th className='c-pointer'>ACTION</th>
                                     </tr>
                                 </thead>
                                 <tbody>

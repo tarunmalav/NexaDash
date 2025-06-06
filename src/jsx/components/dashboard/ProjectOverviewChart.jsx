@@ -88,6 +88,7 @@ const ProjectOverviewChart = () => {
         },
         yaxis: {
             min: 0,
+            max : 100,
             tickAmount: 4,
             labels: {
                 style: {

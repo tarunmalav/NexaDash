@@ -4,7 +4,7 @@ const FrontMenu = () => {
   const location = useLocation();
 
   // Routes where this menu should be hidden
-  const hideOnRoutes = ['/dashboard', '/crm', '/finance', '/ecommerce', '/course', '/medical']; // Add as needed
+  const hideOnRoutes = ['/dashboard', '/','/crm', '/finance', '/ecommerce', '/course', '/medical']; // Add as needed
 
   const shouldHide = hideOnRoutes.some(route => location.pathname.startsWith(route));
 

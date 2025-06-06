@@ -17,7 +17,7 @@ const  AnalyticsDropdown = () => {
     return(
         <>
         <Dropdown className="c-pointer default-select style-2 fs-13 font-w500">
-            <Dropdown.Toggle as="div" className="nav-link">
+            <Dropdown.Toggle as="div" className="nav-linkn text-primary">
                 {selectedOption}
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu dropdown-menu-end" align="end">
