@@ -235,6 +235,7 @@ const ThemeContextProvider = (props) => {
 
   };
   const locat = useLocation().pathname;
+  
   useEffect(() => {
     const body = document.querySelector("body");
     body.setAttribute("data-typography", "inter");
@@ -268,10 +269,28 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "full")
             }
           }
+            changeNavigationHader("color_2")
+            chnageSidebarColor("color_2");
+            changePrimaryColor("color_2");
+          break;
+        case '/dashboard':
+          if (window.matchMedia("(max-width:767px)").matches) {
+            body.setAttribute("data-sidebar-style", "overlay")
+          } else {
+            if (window.matchMedia("(max-width:1024px)").matches) {
+              body.setAttribute("data-sidebar-style", "mini")
+            }
+            else {
+              body.setAttribute("data-sidebar-style", "full")
+            }
+          }
+            changeNavigationHader("color_2")
+            chnageSidebarColor("color_2");
+            changePrimaryColor("color_2");
           break;
         case '/crm':
           if (window.matchMedia("(max-width:767px)").matches) {
-            body.setAttribute("data-sidebar-style", "overlay", )
+            body.setAttribute("data-sidebar-style", "overlay",)
           } else {
             if (window.matchMedia("(max-width:1024px)").matches) {
               body.setAttribute("data-sidebar-style", "mini")

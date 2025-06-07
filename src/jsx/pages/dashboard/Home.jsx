@@ -13,17 +13,17 @@ import { ThemeContext } from "../../../context/ThemeContext";
 function Home() {
     const { 
         changeBackground,
+        // changeSideBarStyle,
         changeNavigationHader,        
-        changeSideBarStyle,
         chnageSidebarColor,
         changePrimaryColor
     } = useContext(ThemeContext);
     useEffect(() => {        
-        changeBackground({ value: "light", label: "Light" });        
+        // changeBackground({ value: "light", label: "Light" });        
         // changeSideBarStyle({ value: "full", label: "Full" });        
-        changeNavigationHader("color_2")        
-        chnageSidebarColor("color_2");
-        changePrimaryColor("color_2");
+        // changeNavigationHader("color_2")        
+        // chnageSidebarColor("color_2");   
+        // changePrimaryColor("color_2");
     }, []);
     const [selectedOption, setSelectedOption] = useState("English");
     
