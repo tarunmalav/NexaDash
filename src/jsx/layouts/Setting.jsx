@@ -11,6 +11,7 @@ import demo7 from '../../assets/images/demo/pic7.jpg';
 import demo8 from '../../assets/images/demo/pic8.jpg';
 
 const Setting2 = () => {
+    const [selectedSidebar, setSelectedSidebar] = useState('full');
     const [settingToggle, setSettingToggle] = useState(false);
     const [demoToggle, setDemoToggle] = useState(false);
     const {
@@ -59,7 +60,11 @@ const Setting2 = () => {
             changeSideBarLayout({ value: "vertical", label: "vertical" })
         }
     }
-
+    const handleSidebarChange = (data) => {
+        setSelectedSidebar(data.value); // update local state
+        changeSideBarLayout({ value: data.value, label: data.label }); // call context method
+        document.body.setAttribute("data-sidebar-style", data.value); // apply actual effect
+    };
 
     return (
         <>
@@ -146,14 +151,21 @@ const Setting2 = () => {
                                     <p>Sidebar Style</p>
                                     <div className="btn-group" aria-label="Basic radio toggle button group" id="sidebar_style" role="group">
                                         <div className="row">
-                                            {sideBarOption.map((data, i) => ( 
+                                            {sideBarOption.map((data, i) => (
                                                 <div className="col-md-6 col-xl-4 p-0" key={i}>
-                                                    <input className="btn-check" id="btnradio1" type="radio" name="btnradio" defaultValue={data} autoComplete="off"
-                                                        onClick={()=> changeSideBarLayout(sideBarStyle)}
+                                                    <input
+                                                        className="btn-check"
+                                                        id={`btnradio-${i}`}
+                                                        type="radio"
+                                                        name="btnradio"
+                                                        value={data.value}
+                                                        autoComplete="off"
+                                                        checked={selectedSidebar === data.value}
+                                                        onChange={() => handleSidebarChange(data)}
                                                     />
-                                                    <label htmlFor="btnradio1" className="btn btn-outline-primary">
+                                                    <label htmlFor={`btnradio-${i}`} className="btn btn-outline-primary w-100">
                                                         {data.svg} <span>{data.label}</span>
-                                                    </label >
+                                                    </label>
                                                 </div>
                                             ))}
                                         </div>
