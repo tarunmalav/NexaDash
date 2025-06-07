@@ -7,26 +7,11 @@ import SwiperHome from "../../components/dashboard/SwiperHome";
 import { homecard, sellordertable } from "../../constant/Alldata";
 import Eventsidebar from "../../layouts/EventSidebar";
 import { Dropdown } from "react-bootstrap";
-import { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { useState } from "react";
+ 
 
-function Home() {
-    const { 
-        changeBackground,
-        // changeSideBarStyle,
-        changeNavigationHader,        
-        chnageSidebarColor,
-        changePrimaryColor
-    } = useContext(ThemeContext);
-    useEffect(() => {        
-        // changeBackground({ value: "light", label: "Light" });        
-        // changeSideBarStyle({ value: "full", label: "Full" });        
-        // changeNavigationHader("color_2")        
-        // chnageSidebarColor("color_2");   
-        // changePrimaryColor("color_2");
-    }, []);
-    const [selectedOption, setSelectedOption] = useState("English");
-    
+function Home() {  
+    const [selectedOption, setSelectedOption] = useState("English"); 
     return (
         <>
             <div className="row">

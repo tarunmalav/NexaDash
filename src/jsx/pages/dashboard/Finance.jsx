@@ -7,26 +7,12 @@ import ProgressBarChart from "../../components/dashboard/ProcessBarChart"
 import ProjectOverviewChart from "../../components/dashboard/ProjectOverviewChart"
 import DraggableBlog from "../../components/dashboard/DraggableBlog"
 import ActiveProjects from "../../components/dashboard/ActiveProjects"
-import { useContext, useEffect } from "react"
-import { ThemeContext } from "../../../context/ThemeContext"
+import { useEffect } from "react" 
 
-function Finance() {
-    const { changeBackground,
-        changeNavigationHader,
-        changeSideBarStyle,
-        chnageSidebarColor,
-        changeSideBarLayout,
-        chnageHaderColor
-    } = useContext(ThemeContext);
+function Finance() { 
     useEffect(() => {
         const element = document.querySelector(".content-body");
-        element.classList.add("finance-bg");
-        changeBackground({ value: "light", label: "Light" });
-        // changeSideBarStyle({ value: "full", label: "Full" });
-        changeNavigationHader("color_4")
-        chnageHaderColor("color_4")
-        changeSideBarLayout({ value: "vertical", label: "vertical" })
-        chnageSidebarColor("color_1");
+        element.classList.add("finance-bg"); 
     }, [])
     return (
         <>

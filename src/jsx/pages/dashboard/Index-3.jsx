@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Modal } from "react-bootstrap"
 import { IMAGES, SVGICON } from "../../constant/Theme"
@@ -11,32 +11,10 @@ import NewCustomers from "../../components/dashboard/NewCustomers"
 import InvoiceList from "../../components/dashboard/InvoiceList"
 import Dropdowndata2 from "../../components/dashboard/DropdownData2"
 import UpgradeModel from "../../components/dashboard/UpgradeModel"
-import DonutChart from "../../components/WidgetBasic/DonutChart"
-import { ThemeContext } from "../../../context/ThemeContext"
+import DonutChart from "../../components/WidgetBasic/DonutChart" 
 
-const chartData = [
-    { title: "By Email", color: "#7BDFFF", },
-    { title: "By Phone", color: "#FFFFFF", },
-    { title: "On Site", color: "#B4EDFF", },
-    { title: "By Agent", color: "#018DB9", },
-]
 function Sales() {
     const [modalShow, setModalShow] = useState(false);
-    const { changeBackground,
-        changeNavigationHader,
-        changeSideBarStyle,
-        chnageSidebarColor,
-        changeSideBarLayout,
-        chnageHaderColor
-    } = useContext(ThemeContext);
-    useEffect(() => {
-        changeBackground({ value: "light", label: "Light" });
-        // changeSideBarStyle({ value: "full", label: "Full" }); 
-        changeNavigationHader("color_1")
-        chnageHaderColor("color_1")
-        changeSideBarLayout({ value: "vertical", label: "vertical" })
-        chnageSidebarColor("color_1");
-    }, [])
     return (
         <>
             <div className="row">

@@ -262,7 +262,7 @@ const Setting2 = () => {
                                 <div className="dz-demo-bx overlay-bx">
                                     <div className="overlay-wrapper"><img src={demo2} alt="" className="w-100" /></div>
                                     <div className="overlay-layer">
-                                        <Link to={"/dashboard"} onClick={() => setDemoTheme(2, 'ltr')} data-theme="2" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 2</Link>
+                                        <Link to={"/crm"} onClick={() => setDemoTheme(2, 'ltr')} data-theme="2" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 2</Link>
                                     </div>
                                 </div>
                                 <h5 className="text-white mb-3">Demo 2</h5>
@@ -271,7 +271,7 @@ const Setting2 = () => {
                                 <div className="dz-demo-bx overlay-bx">
                                     <div className="overlay-wrapper"><img src={demo3} alt="" className="w-100" /></div>
                                     <div className="overlay-layer">
-                                        <Link to={"/dashboard"} onClick={() => setDemoTheme(3, 'ltr')} data-theme="3" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 3</Link>
+                                        <Link to={"/finance"} onClick={() => setDemoTheme(3, 'ltr')} data-theme="3" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 3</Link>
                                     </div>
                                 </div>
                                 <h5 className="text-white mb-3">Demo 3</h5>
@@ -280,7 +280,7 @@ const Setting2 = () => {
                                 <div className="dz-demo-bx overlay-bx">
                                     <div className="overlay-wrapper"><img src={demo4} alt="" className="w-100" /></div>
                                     <div className="overlay-layer">
-                                        <Link to={"/dashboard"} onClick={() => setDemoTheme(4, 'ltr')} data-theme="4" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 4</Link>
+                                        <Link to={"/analytics"} onClick={() => setDemoTheme(4, 'ltr')} data-theme="4" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 4</Link>
                                     </div>
                                 </div>
                                 <h5 className="text-white mb-3">Demo 4</h5>
@@ -289,7 +289,7 @@ const Setting2 = () => {
                                 <div className="dz-demo-bx overlay-bx">
                                     <div className="overlay-wrapper"><img src={demo5} alt="" className="w-100" /></div>
                                     <div className="overlay-layer">
-                                        <Link to={"/dashboard"} onClick={() => setDemoTheme(5, 'ltr')} data-theme="5" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 5</Link>
+                                        <Link to={"/index-3"} onClick={() => setDemoTheme(5, 'ltr')} data-theme="5" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 5</Link>
                                     </div>
                                 </div>
                                 <h5 className="text-white mb-3">Demo 5</h5>
@@ -298,7 +298,7 @@ const Setting2 = () => {
                                 <div className="dz-demo-bx overlay-bx">
                                     <div className="overlay-wrapper"><img src={demo6} alt="" className="w-100" /></div>
                                     <div className="overlay-layer">
-                                        <Link to={"/dashboard"} onClick={() => setDemoTheme(6, 'ltr')} data-theme="6" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 6</Link>
+                                        <Link to={"/ecommerce"} onClick={() => setDemoTheme(6, 'ltr')} data-theme="6" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 6</Link>
                                     </div>
                                 </div>
                                 <h5 className="text-white mb-3">Demo 6</h5>
@@ -307,7 +307,7 @@ const Setting2 = () => {
                                 <div className="dz-demo-bx overlay-bx">
                                     <div className="overlay-wrapper"><img src={demo7} alt="" className="w-100" /></div>
                                     <div className="overlay-layer">
-                                        <Link to={"/dashboard"} onClick={() => setDemoTheme(7, 'ltr')} data-theme="6" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 7</Link>
+                                        <Link to={"/course"} onClick={() => setDemoTheme(7, 'ltr')} data-theme="6" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 7</Link>
                                     </div>
                                 </div>
                                 <h5 className="text-white mb-3">Demo 7</h5>
@@ -316,7 +316,7 @@ const Setting2 = () => {
                                 <div className="dz-demo-bx overlay-bx">
                                     <div className="overlay-wrapper"><img src={demo8} alt="" className="w-100" /></div>
                                     <div className="overlay-layer">
-                                        <Link to={"/dashboard"} onClick={() => setDemoTheme(8, 'ltr')} data-theme="6" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 8</Link>
+                                        <Link to={"/medical"} onClick={() => setDemoTheme(8, 'ltr')} data-theme="6" className="btn btn-sm btn-secondary dz_theme_demo mr-2">Demo 8</Link>
                                     </div>
                                 </div>
                                 <h5 className="text-white mb-3">Demo 8</h5>

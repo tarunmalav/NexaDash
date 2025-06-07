@@ -11,22 +11,11 @@ import Eventsidebar2 from "../../layouts/EventSidebar2";
 import { ThemeContext } from "../../../context/ThemeContext";
 
 function Analytics() {
-    const { changeBackground,
-        changeNavigationHader,
-        changeSideBarStyle,
-        chnageSidebarColor,
-        changeSideBarLayout,
-        chnageHaderColor
-    } = useContext(ThemeContext);
+    const { changeBackground, } = useContext(ThemeContext);
     useEffect(() => {
         const element = document.querySelector(".content-body");
         element.classList.add("analytics-bg");  
-        changeBackground({ value: "light", label: "Light" });        
-        // changeSideBarStyle({ value: "full", label: "Full" });        
-        changeNavigationHader("color_4")        
-        chnageHaderColor("color_1")
-        changeSideBarLayout({ value: "vertical", label: "vertical"})
-        chnageSidebarColor("color_4");
+        changeBackground({ value: "light", label: "Light" });  
     },[])
     return (
         <>

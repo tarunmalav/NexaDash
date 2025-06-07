@@ -235,7 +235,7 @@ const ThemeContextProvider = (props) => {
 
   };
   const locat = useLocation().pathname;
-  
+
   useEffect(() => {
     const body = document.querySelector("body");
     body.setAttribute("data-typography", "inter");
@@ -269,9 +269,9 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "full")
             }
           }
-            changeNavigationHader("color_2")
-            chnageSidebarColor("color_2");
-            changePrimaryColor("color_2");
+          changeNavigationHader("color_2")
+          chnageSidebarColor("color_2");
+          changePrimaryColor("color_2");
           break;
         case '/dashboard':
           if (window.matchMedia("(max-width:767px)").matches) {
@@ -284,9 +284,9 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "full")
             }
           }
-            changeNavigationHader("color_2")
-            chnageSidebarColor("color_2");
-            changePrimaryColor("color_2");
+          changeNavigationHader("color_2")
+          chnageSidebarColor("color_2");
+          changePrimaryColor("color_2");
           break;
         case '/crm':
           if (window.matchMedia("(max-width:767px)").matches) {
@@ -298,6 +298,14 @@ const ThemeContextProvider = (props) => {
             else {
               body.setAttribute("data-sidebar-style", "full")
             }
+          }
+          changeNavigationHader("color_4");
+          chnageHaderColor("color_4");
+          chnageSidebarColor("color_3");
+          if (width > 1024) {
+            changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
+          } else {
+            changeSideBarLayout({ value: "vertical", label: "Vertical" });
           }
           break;
         case '/finance':
@@ -311,6 +319,10 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "full")
             }
           }
+          changeNavigationHader("color_4")
+          chnageHaderColor("color_4")
+          changeSideBarLayout({ value: "vertical", label: "vertical" })
+          chnageSidebarColor("color_1");
           break;
         case '/analytics':
           if (window.matchMedia("(max-width:767px)").matches) {
@@ -323,6 +335,10 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "full")
             }
           }
+          changeNavigationHader("color_4")
+          chnageHaderColor("color_1")
+          changeSideBarLayout({ value: "vertical", label: "vertical" })
+          chnageSidebarColor("color_4");
           break;
         case '/index-3':
           if (window.matchMedia("(max-width:767px)").matches) {
@@ -347,6 +363,15 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "full")
             }
           }
+          changeBackground({ value: "light", label: "Light" });
+          changeNavigationHader("color_4")
+          chnageHaderColor("color_4")
+          chnageSidebarColor("color_1");
+          if (width > 1024) {
+            changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
+          } else {
+            changeSideBarLayout({ value: "vertical", label: "Vertical" });
+          }
           break;
         case '/course':
           if (window.matchMedia("(max-width:767px)").matches) {
@@ -359,6 +384,11 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "mini")
             }
           }
+          changeNavigationHader("color_5")
+          chnageHaderColor("color_4")
+          changeSideBarLayout({ value: "vertical", label: "vertical" })
+          chnageSidebarColor("color_5");
+          changePrimaryColor("color_10");
           break;
         case '/medical':
           if (window.matchMedia("(max-width:767px)").matches) {
@@ -371,6 +401,11 @@ const ThemeContextProvider = (props) => {
               body.setAttribute("data-sidebar-style", "mini")
             }
           }
+          changeNavigationHader("color_3")
+          chnageHaderColor("color_1")
+          changeSideBarLayout({ value: "vertical", label: "vertical" })
+          chnageSidebarColor("color_3");
+          changePrimaryColor("color_1");
           break;
         default:
           if (window.matchMedia("(max-width:767px)").matches) {

@@ -5,37 +5,15 @@ import ProjectOverviewChart from "../../components/dashboard/ProjectOverviewChar
 import DraggableBlog from "../../components/dashboard/DraggableBlog"
 import ActiveProjects from "../../components/dashboard/ActiveProjects" 
 import { SVGICON } from "../../constant/Theme"
-import { useContext, useEffect } from "react"
+import { useEffect } from "react"
 import ProjectStatusBlogDonutChart from "../../components/dashboard/ProjectStatusBlogDonutChart" 
 import { mediaBlog2 } from "../../constant/Alldata"
-import Dropdowndata from "../../components/dashboard/DropdownData"
-import { ThemeContext } from "../../../context/ThemeContext"
+import Dropdowndata from "../../components/dashboard/DropdownData" 
 
-function Crm() {
-    const {
-        changeBackground,
-        changeNavigationHader,
-        changeSideBarStyle,
-        chnageSidebarColor,
-        changeSideBarLayout,
-        chnageHaderColor
-    } = useContext(ThemeContext); 
+function Crm() { 
     useEffect(() => {
         const element = document.querySelector(".content-body");
-        element.classList.add("crm-main");  
-        changeBackground({ value: "light", label: "Light" });
-        changeNavigationHader("color_4");
-        chnageHaderColor("color_4");
-        chnageSidebarColor("color_3");
-
-         
-        const width = window.innerWidth;
-        if (width > 1024) {
-            changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
-        } else {
-            changeSideBarLayout({ value: "vertical", label: "Vertical" });
-        }
-
+        element.classList.add("crm-main");   
     }, []);
     return (
         <>

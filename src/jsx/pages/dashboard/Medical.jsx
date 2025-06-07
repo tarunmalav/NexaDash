@@ -9,24 +9,11 @@ import { ThemeContext } from "../../../context/ThemeContext";
 import { medicalcarddata, productoverviewchartcard2 } from "../../constant/Alldata";
 
 function Medical() {
-    const { changeBackground,
-        changeNavigationHader,
-        changeSideBarStyle,
-        chnageSidebarColor,
-        changeSideBarLayout,
-        chnageHaderColor,
-        changePrimaryColor
-    } = useContext(ThemeContext);
+    const { changeBackground } = useContext(ThemeContext);
     useEffect(() => {
         const element = document.querySelector(".content-body");
         element.classList.add("bg-medical");
-         changeBackground({ value: "light", label: "Light" });        
-        // changeSideBarStyle({ value: "mini", label: "mini" });        
-        changeNavigationHader("color_3")        
-        chnageHaderColor("color_1")
-        changeSideBarLayout({ value: "vertical", label: "vertical"})
-        chnageSidebarColor("color_3");
-        changePrimaryColor("color_1");
+         changeBackground({ value: "light", label: "Light" }); 
     }, [ ])
  
     return (

@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { IMAGES, SVGICON } from "../../constant/Theme";
 import WeeklySalesBarChart from "../../components/dashboard/WeeklySalesBarChart";
 import HandleOrderChart from "../../components/dashboard/handleordrchar";
@@ -12,30 +12,13 @@ import DraggableBlog from "../../components/dashboard/DraggableBlog";
 import ProjectStatusBlogDonutChart from "../../components/dashboard/ProjectStatusBlogDonutChart";
 import { mediaBlog3 } from "../../constant/Alldata";
 import SwiperHome2 from "../../components/dashboard/SwiperHome2";
-import Dropdowndata from "../../components/dashboard/DropdownData";
-import { ThemeContext } from "../../../context/ThemeContext";
+import Dropdowndata from "../../components/dashboard/DropdownData"; 
 
 function Ecommerce() { 
-    const { changeBackground,
-        changeNavigationHader, 
-        chnageSidebarColor,
-        changeSideBarLayout,
-        chnageHaderColor
-    } = useContext(ThemeContext);
+     
     useEffect(() => {
         const element = document.querySelector(".content-body");
-        element.classList.add("crm-main", "style-1");
-        changeBackground({ value: "light", label: "Light" });            
-        changeNavigationHader("color_4")        
-        chnageHaderColor("color_4")
-        chnageSidebarColor("color_1");
-
-        const width = window.innerWidth;
-        if (width > 1024) {
-            changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
-        } else {
-            changeSideBarLayout({ value: "vertical", label: "Vertical" });
-        }
+        element.classList.add("crm-main", "style-1"); 
     }, [])
     return (
         <>
