@@ -271,7 +271,7 @@ const ThemeContextProvider = (props) => {
           break;
         case '/crm':
           if (window.matchMedia("(max-width:767px)").matches) {
-            body.setAttribute("data-sidebar-style", "overlay")
+            body.setAttribute("data-sidebar-style", "overlay", )
           } else {
             if (window.matchMedia("(max-width:1024px)").matches) {
               body.setAttribute("data-sidebar-style", "mini")

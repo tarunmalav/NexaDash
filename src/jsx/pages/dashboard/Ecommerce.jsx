@@ -17,8 +17,7 @@ import { ThemeContext } from "../../../context/ThemeContext";
 
 function Ecommerce() { 
     const { changeBackground,
-        changeNavigationHader,
-        changeSideBarStyle,
+        changeNavigationHader, 
         chnageSidebarColor,
         changeSideBarLayout,
         chnageHaderColor
@@ -26,12 +25,17 @@ function Ecommerce() {
     useEffect(() => {
         const element = document.querySelector(".content-body");
         element.classList.add("crm-main", "style-1");
-        changeBackground({ value: "light", label: "Light" });        
-        // changeSideBarStyle({ value: "full", label: "Full" });        
+        changeBackground({ value: "light", label: "Light" });            
         changeNavigationHader("color_4")        
         chnageHaderColor("color_4")
-        changeSideBarLayout({ value: "horizontal", label: "horizontal"})
         chnageSidebarColor("color_1");
+
+        const width = window.innerWidth;
+        if (width > 1024) {
+            changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
+        } else {
+            changeSideBarLayout({ value: "vertical", label: "Vertical" });
+        }
     }, [])
     return (
         <>

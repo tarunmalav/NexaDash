@@ -12,23 +12,31 @@ import Dropdowndata from "../../components/dashboard/DropdownData"
 import { ThemeContext } from "../../../context/ThemeContext"
 
 function Crm() {
-    const { changeBackground,
+    const {
+        changeBackground,
         changeNavigationHader,
         changeSideBarStyle,
         chnageSidebarColor,
         changeSideBarLayout,
         chnageHaderColor
-    } = useContext(ThemeContext);
+    } = useContext(ThemeContext); 
     useEffect(() => {
         const element = document.querySelector(".content-body");
-        element.classList.add("crm-main");
-        changeBackground({ value: "light", label: "Light" });        
-        // changeSideBarStyle({ value: "full", label: "Full" });        
-        changeNavigationHader("color_4")        
-        chnageHaderColor("color_4")
-        changeSideBarLayout({ value: "horizontal", label: "horizontal"})
+        element.classList.add("crm-main");  
+        changeBackground({ value: "light", label: "Light" });
+        changeNavigationHader("color_4");
+        chnageHaderColor("color_4");
         chnageSidebarColor("color_3");
-    }, [])
+
+         
+        const width = window.innerWidth;
+        if (width > 1024) {
+            changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
+        } else {
+            changeSideBarLayout({ value: "vertical", label: "Vertical" });
+        }
+
+    }, []);
     return (
         <>
             <div className="row">
