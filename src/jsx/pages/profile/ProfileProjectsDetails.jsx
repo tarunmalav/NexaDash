@@ -94,7 +94,7 @@ function ProfileProjectsDetails(){
                                                 </svg>
                                                 <input className="d-none" type="checkbox" id="checkSeriesIncomplete" name="chart-series" value="Incomplete" 
                                                     onClick={() => handleSeries('Incomplete')}
-                                                />
+                                                /> {" "}
                                                 <label className="mb-0" htmlFor="checkSeriesIncomplete"> Incomplete </label>												
                                             </div>
                                             <div className="chart-series" id="seriesComple">
@@ -103,7 +103,7 @@ function ProfileProjectsDetails(){
                                                 </svg>
                                                 <input className="d-none" type="checkbox" id="checkSeriesComple" name="chart-series" value="Complete" 
                                                     onClick={() => handleSeries('Complete')}
-                                                />
+                                                />{" "}
                                                 <label className="mb-0" htmlFor="checkSeriesComple"> Complete </label>
                                             </div>
                                         </div>

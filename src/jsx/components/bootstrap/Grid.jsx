@@ -129,106 +129,106 @@ const UiGrid = () => {
                 </p>
                 <Row>
                   <Col lg={12}>
-                    <div className="grid-col mb-4">.Col-lg-12</div>
+                    <div className="grid-col mb-4">.col-lg-12</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={11}>
-                    <div className="grid-col mb-4">.Col-lg-11</div>
+                    <div className="grid-col mb-4">.col-lg-11</div>
                   </Col>
                   <Col xl={1}>
-                    <div className="grid-col mb-4">.Col-lg-01</div>
+                    <div className="grid-col mb-4">.col-lg-01</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={10}>
-                    <div className="grid-col mb-4">.Col-lg-10</div>
+                    <div className="grid-col mb-4">.col-lg-10</div>
                   </Col>
                   <Col xl={2}>
-                    <div className="grid-col mb-4">.Col-lg-02</div>
+                    <div className="grid-col mb-4">.col-lg-02</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={9}>
-                    <div className="grid-col mb-4">.Col-lg-09</div>
+                    <div className="grid-col mb-4">.col-lg-09</div>
                   </Col>
                   <Col xl={3}>
-                    <div className="grid-col mb-4">.Col-lg-03</div>
+                    <div className="grid-col mb-4">.col-lg-03</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={8}>
-                    <div className="grid-col mb-4">.Col-lg-08</div>
+                    <div className="grid-col mb-4">.col-lg-08</div>
                   </Col>
                   <Col xl={4}>
-                    <div className="grid-col mb-4">.Col-lg-04</div>
+                    <div className="grid-col mb-4">.col-lg-04</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={7}>
-                    <div className="grid-col mb-4">.Col-lg-07</div>
+                    <div className="grid-col mb-4">.col-lg-07</div>
                   </Col>
                   <Col xl={5}>
-                    <div className="grid-col mb-4">.Col-lg-05</div>
+                    <div className="grid-col mb-4">.col-lg-05</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={6}>
-                    <div className="grid-col mb-4">.Col-lg-06</div>
+                    <div className="grid-col mb-4">.col-lg-06</div>
                   </Col>
                   <Col xl={6}>
-                    <div className="grid-col mb-4">.Col-lg-06</div>
+                    <div className="grid-col mb-4">.col-lg-06</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={5}>
-                    <div className="grid-col mb-4">.Col-lg-05</div>
+                    <div className="grid-col mb-4">.col-lg-05</div>
                   </Col>
                   <Col xl={7}>
-                    <div className="grid-col mb-4">.Col-lg-07</div>
+                    <div className="grid-col mb-4">.col-lg-07</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={4}>
-                    <div className="grid-col mb-4">.Col-lg-04</div>
+                    <div className="grid-col mb-4">.col-lg-04</div>
                   </Col>
                   <Col xl={8}>
-                    <div className="grid-col mb-4">.Col-lg-08</div>
+                    <div className="grid-col mb-4">.col-lg-08</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={3}>
-                    <div className="grid-col mb-4">.Col-lg-03</div>
+                    <div className="grid-col mb-4">.col-lg-03</div>
                   </Col>
                   <Col xl={9}>
-                    <div className="grid-col mb-4">.Col-lg-09</div>
+                    <div className="grid-col mb-4">.col-lg-09</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={2}>
-                    <div className="grid-col mb-4">.Col-lg-02</div>
+                    <div className="grid-col mb-4">.col-lg-02</div>
                   </Col>
                   <Col xl={10}>
-                    <div className="grid-col mb-4">.Col-lg-10</div>
+                    <div className="grid-col mb-4">.col-lg-10</div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col xl={1}>
-                    <div className="grid-col mb-4">.Col-lg-01</div>
+                    <div className="grid-col mb-4">.col-lg-01</div>
                   </Col>
                   <Col xl={11}>
-                    <div className="grid-col mb-4">.Col-lg-11</div>
+                    <div className="grid-col mb-4">.col-lg-11</div>
                   </Col>
                 </Row>
               </Card.Body>

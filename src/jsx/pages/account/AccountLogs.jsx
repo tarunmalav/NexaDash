@@ -23,7 +23,7 @@ function AccountLogs() {
                                     <h4 className="heading mb-0">Logs</h4>
                                     <div className="d-flex align-items-center">
                                         <Dropdown>
-                                            <Dropdown.Toggle as="button" className="btn-light p-2 d-flex align-items-center  i-false" >
+                                            <Dropdown.Toggle as="button" className="btn-light p-2 d-flex align-items-center  i-false normal-select" >
                                                 {selectValue}
                                                 <i className="fas fa-angle-down text-primary ms-1" />
                                             </Dropdown.Toggle>

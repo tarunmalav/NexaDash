@@ -16,7 +16,7 @@ const  AnalyticsDropdown = () => {
      const [selectedOption, setSelectedOption] = useState("30 Days");
     return(
         <>
-        <Dropdown className="c-pointer default-select style-2 fs-13 font-w500 d-sm-block d-none">
+        <Dropdown className="c-pointer default-select style-2 fs-13 font-w500 d-sm-block d-none z-1" style={{width:"125px"}}>
             <Dropdown.Toggle as="div" className="nav-linkn text-primary">
                 {selectedOption}
             </Dropdown.Toggle>

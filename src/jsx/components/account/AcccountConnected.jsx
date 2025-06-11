@@ -12,7 +12,7 @@ function AccountConnected() {
                     </div>
                 </div>
                 <div className="card-body">
-                    <div className="alert alert-primary border-primary outline-dashed py-3 px-3 mt-1 mb-3 mb-0 text-dark d-flex">
+                    <div className="alert alert-primary border-primary outline-dashed py-3 px-3 mt-1 mb-3 mb-0 text-black d-flex">
                         <div className="clearfix">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.3" fillRule="evenodd" clipRule="evenodd" d="M27.75 12C29.8211 12 31.5 10.3211 31.5 8.25C31.5 6.17893 29.8211 4.5 27.75 4.5C25.6789 4.5 24 6.17893 24 8.25C24 10.3211 25.6789 12 27.75 12ZM27.75 31.5C29.8211 31.5 31.5 29.8211 31.5 27.75C31.5 25.6789 29.8211 24 27.75 24C25.6789 24 24 25.6789 24 27.75C24 29.8211 25.6789 31.5 27.75 31.5ZM12 27.75C12 29.8211 10.3211 31.5 8.25 31.5C6.17893 31.5 4.5 29.8211 4.5 27.75C4.5 25.6789 6.17893 24 8.25 24C10.3211 24 12 25.6789 12 27.75Z" fill="var(--primary)" />
@@ -67,8 +67,8 @@ function AccountConnected() {
                     </div>                            
                 </div>
                 <div className="card-footer text-end">
-                    <Link to={"#"} className="btn btn-white">Discard</Link>
-                    <Link to={"#"} className="btn btn-primary ms-2 mb-2">Save Changes</Link>
+                    <Link to={"#"} className="btn btn-light">Discard</Link>
+                    <Link to={"#"} className="btn btn-primary ms-2">Save Changes</Link>
                 </div>                       
             </div>  
         </Fragment >

@@ -5,8 +5,6 @@ import Highlight from 'react-highlight';
 /// Bootstrap
 import { Col, Badge, Card, Row, Tab, Nav } from "react-bootstrap";
 import PageTitle from "../../layouts/PageTitle";
-
-// import PageTitle from "../../layouts/PageTitle";
 const sidebarLink = [
   { to: 'badges-size', title: 'Badges Size' },
   { to: 'badges-light', title: 'Badges Light' },
@@ -44,9 +42,9 @@ const UiBadge = () => {
               <div className="demo-right-tabs" >
                 <ul className="navbar-nav" id="menu-bar">
                   {sidebarLink.map((item, ind) => (
-                    <li key={ind}>
+                    <li key={ind} className={ind === activeLink ? 'active' : ''}>
                       <Link to={item.to}
-                        className={`scroll c-pointer ${ind === activeLink ? 'active' : ''} `}
+                        className={`scroll c-pointer`}
                         activeclassName="active"
                         spy={true}
                         smooth={true}
@@ -67,7 +65,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="badges-size" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Badges Size</Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -85,7 +83,7 @@ const UiBadge = () => {
                       </Card.Header>
                       <Tab.Content>
                         <Tab.Pane eventKey="Preview">
-                          <Card.Body>
+                          <Card.Body className="pt-0">
                             <div className="bootstrap-badge">
                               <Badge bg="" className='badge-primary light badge-xs'>Primary</Badge>
                               <Badge bg="" className='badge-primary light badge-sm'>Primary</Badge>
@@ -119,7 +117,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="badges-light" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Badges Light</Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -197,7 +195,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="badges" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Badges </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -223,7 +221,7 @@ const UiBadge = () => {
                               <Badge bg="danger">Danger</Badge>
                               <Badge bg="warning">Warning</Badge>
                               <Badge bg="info">Info</Badge>
-                              <Badge bg="light">Light</Badge>
+                              <Badge bg="light" className="badge-light">Light</Badge>
                               <Badge bg="dark">Dark</Badge>
                             </div>
                           </Card.Body>
@@ -255,7 +253,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="pill-badge" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Pill Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -281,7 +279,7 @@ const UiBadge = () => {
                               <Badge pill bg="danger">Pill badge</Badge>
                               <Badge pill bg="warning">Pill badge</Badge>
                               <Badge pill bg="info">Pill badge</Badge>
-                              <Badge pill bg="light">Pill badge</Badge>
+                              <Badge pill bg="light" className="badge-light">Pill badge</Badge>
                               <Badge pill bg="dark">Pill badge</Badge>
                             </div>
                           </Card.Body>
@@ -314,7 +312,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="link-badge" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Link Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -340,7 +338,7 @@ const UiBadge = () => {
                               <Badge as="a" href="" bg="danger">Links</Badge>
                               <Badge as="a" href="" bg="warning">Links</Badge>
                               <Badge as="a" href="" bg="info">Links</Badge>
-                              <Badge as="a" href="" bg="light">Links</Badge>
+                              <Badge as="a" href="" bg="light" className="badge-light">Links</Badge>
                               <Badge as="a" href="" bg="dark">Links</Badge>
                             </div>
                           </Card.Body>
@@ -373,7 +371,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="rounded-badge" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Rounded Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -417,7 +415,7 @@ const UiBadge = () => {
                                 Rounded
                               </Badge>
 
-                              <Badge as="a" href="" bg="light badge-rounded">
+                              <Badge as="a" href="" bg="light badge-rounded" className="badge-light">
                                 Rounded
                               </Badge>
 
@@ -478,7 +476,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="rounded-outline" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Rounded Outline Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -584,7 +582,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="outline-circle" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Outline Circle Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -628,7 +626,7 @@ const UiBadge = () => {
                                 6
                               </Badge>
 
-                              <Badge as="a" href="" bg=" badge-circle" className='badge-outline-light'>
+                              <Badge as="a" href="" bg=" badge-circle" className='badge-outline-light badge-light'>
                                 7
                               </Badge>
 
@@ -689,7 +687,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="circle-badge" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Circle Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -733,7 +731,7 @@ const UiBadge = () => {
                                 6
                               </Badge>
 
-                              <Badge as="a" href="" bg="light badge-circle">
+                              <Badge as="a" href="" bg="light badge-circle" className="badge-light">
                                 7
                               </Badge>
 
@@ -794,7 +792,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="circle-badge-default" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Outline Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -838,7 +836,7 @@ const UiBadge = () => {
                                 6
                               </Badge>
 
-                              <Badge as="a" href="" bg="" className='badge-outline-light'>
+                              <Badge as="a" href="" bg="" className='badge-outline-light badge-light'>
                                 7
                               </Badge>
 
@@ -900,7 +898,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="number-badge" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Number Badge </Card.Title>
                           <Card.Text className="mb-0 subtitle">
@@ -944,7 +942,7 @@ const UiBadge = () => {
                                 6
                               </Badge>
 
-                              <Badge as="a" href="" bg="light">
+                              <Badge as="a" href="" bg="light" className="badge-light">
                                 7
                               </Badge>
 
@@ -1005,7 +1003,7 @@ const UiBadge = () => {
                 <Col lg="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="badge-sizes" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Badge Sizes </Card.Title>
                           <Card.Text className="mb-0 subtitle">

@@ -1,4 +1,4 @@
-import React, { Fragment, useReducer } from "react";
+import { Fragment, useReducer } from "react";
 import { Link } from 'react-router-dom';
 import Highlight from 'react-highlight';
 import { Row, Card, Col, Alert, Button, Tab, Nav } from "react-bootstrap"; 
@@ -114,8 +114,7 @@ const emojis = {
   ),
 }
 
-const initial = true;
-
+const initial = true;  
 
 const UiAlert = () => {
 
@@ -142,7 +141,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="basic-alerts" className="dz-card">
-                      <Card.Header className=" d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Basic Alerts</Card.Title>
                           <Card.Text className="subtitle mb-0">
@@ -261,7 +260,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="color-alerts" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Solid color alerts</Card.Title>
                           <Card.Text className="subtitle mb-0">
@@ -374,7 +373,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="square-alerts" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Square alerts</Card.Title>
                           <p className="mb-0 subtitle">
@@ -463,7 +462,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="rounded-alerts" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Rounded alerts</Card.Title>
                           <p className="mb-0 subtitle">
@@ -553,7 +552,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="dismissable-alerts" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
 
                           <Card.Title>Dismissable Alerts</Card.Title>
@@ -672,7 +671,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="alerts-alt" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Alerts alt</Card.Title>
                           <p className="mb-0 subtitle">
@@ -791,7 +790,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="solid-alt" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Solid Alt</Card.Title>
                           <p className="mb-0 subtitle">
@@ -910,7 +909,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="dismissable-solid" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Dismissable with solid</Card.Title>
                           <p className="mb-0 subtitle">
@@ -1028,7 +1027,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="alert-link-with" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Alert with Link</Card.Title>
                           <p className="mb-0 subtitle">Bootstrap default style</p>
@@ -1130,7 +1129,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="alert-link-color" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Alert with Link and solid color</Card.Title>
                           <p className="mb-0 subtitle">
@@ -1249,7 +1248,7 @@ const UiAlert = () => {
                 <Col lg={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="notifications" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
 
                           <Card.Title>Inline Notifications</Card.Title>
@@ -1579,7 +1578,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="alert-icon-left" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Alert Icon Left</Card.Title>
                           <p className="mb-0 subtitle">
@@ -1697,7 +1696,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="alert-outline" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Alert outline</Card.Title>
                           <p className="mb-0 subtitle">
@@ -1800,7 +1799,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="alert-social" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Alert Social</Card.Title>
                           <p className="mb-0 subtitle">
@@ -1998,7 +1997,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="message-alert" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Message Alert</Card.Title>
                           <Card.Text className="subtitle mb-0">
@@ -2297,7 +2296,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="message-alert-color" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
 
                           <Card.Title>Message Alert with Solid color</Card.Title>
@@ -2596,7 +2595,7 @@ const UiAlert = () => {
                 <Col xl={12}>
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="alert-icon-big" className="dz-card">
-                      <Card.Header className="d-flex justify-content-between flex-wrap">
+                      <Card.Header className="card-header flex-wrap d-flex justify-content-between border-0 ">
                         <div>
                           <Card.Title>Alert left icon big </Card.Title>
                           <p className="mb-0 subtitle">

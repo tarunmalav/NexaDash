@@ -44,9 +44,9 @@ const UiCards = () => {
               <div className="demo-right-tabs" id="right-sidebar">
                 <ul className="navbar-nav" id="menu-bar">
                   {sidebarLink.map((item, ind) => (
-                    <li key={ind}>
+                    <li key={ind} className={ind === activeLink ? 'active' : ''}>
                       <Link to={item.to} smooth={true}
-                        className={`scroll  c-pointer ${ind === activeLink ? 'active' : ''} `}
+                        className={`scroll  c-pointer`}
                         activeclassName="active"
                         spy={true}
                         onClick={() => setActiveLink(ind)}
@@ -65,7 +65,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="card-title-1" className="dz-card">
-                      <Card.Header className=" border-0 pb-0">
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Card title</Card.Title>
                         </div>
@@ -114,7 +114,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="card-title-2" className="dz-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Card title</Card.Title>
                         </div>
@@ -180,7 +180,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-center dz-card" name="card-title-3" >
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Card Title</Card.Title>
                         </div>
@@ -241,7 +241,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-center dz-card" name="special-title">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Special title treatment</Card.Title>
                         </div>
@@ -325,7 +325,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-white dz-card" name="primary-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Primary card title</Card.Title>
                         </div>
@@ -392,7 +392,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-white dz-card" name="secondary-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>
                             Secondary card title
@@ -461,7 +461,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-white dz-card" name="success-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Success card title</Card.Title>
                         </div>
@@ -529,7 +529,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-white dz-card" name="danger-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Danger card title</Card.Title>
                         </div>
@@ -597,7 +597,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-white dz-card" name="warning-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Warning card title</Card.Title>
                         </div>
@@ -665,7 +665,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-white dz-card" name="info-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title >Info card title</Card.Title>
                         </div>
@@ -732,7 +732,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="dz-card" name="light-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Light card title</Card.Title>
                         </div>
@@ -752,7 +752,7 @@ const UiCards = () => {
                               Some quick example text to build on the card title and make up
                               the bulk of the card's content.
                             </Card.Text>
-                            <Button as="a" variant="" href="#" className="btn-card btn-light text-white mt-3">
+                            <Button as="a" variant="" href="#" className="btn btn-light btn-card">
                               Go somewhere
                             </Button>
                           </Card.Body>
@@ -789,7 +789,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card className="text-white dz-card" name="dark-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Dark card title</Card.Title>
                         </div>
@@ -862,7 +862,7 @@ const UiCards = () => {
                         src={img1}
                         alt="Card cap"
                       />
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Card title</Card.Title>
                         </div>
@@ -920,7 +920,7 @@ const UiCards = () => {
                         src={img2}
                         alt="Card cap"
                       />
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Card title</Card.Title>
                         </div>
@@ -978,7 +978,7 @@ const UiCards = () => {
                 <Col xl="12">
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="card-title-6" className="dz-card">
-                      <Card.Header>
+                      <Card.Header className="card-header flex-wrap border-0">
                         <div>
                           <Card.Title>Card title</Card.Title>
                         </div>

@@ -117,7 +117,7 @@ const handleRadioClick = (value) => {
                                                                                 value="manual" 
                                                                                 name="flexRadioDefault" 
                                                                                 id="flexRadioDefault1"
-                                                                                checked 
+                                                                               checked={selectedRadio === 'manual'}
                                                                                 onChange={() => handleRadioClick('manual')}
                                                                             />
                                                                             <label className={`form-check-label ${selectedRadio === 'manual'}`} htmlFor="flexRadioDefault1">
@@ -138,7 +138,7 @@ const handleRadioClick = (value) => {
                                                                                 value="auto" 
                                                                                 name="flexRadioDefault" 
                                                                                 id="flexRadioDefault2"
-                                                                                checked 
+                                                                                checked={selectedRadio === 'auto'}
                                                                                 onChange={() => handleRadioClick('auto')}
                                                                             />
                                                                             <label className={`form-check-label ${selectedRadio === 'auto'}`} htmlFor="flexRadioDefault2">

@@ -30,9 +30,9 @@ const AlertList = () =>{
 
                 <ul className="navbar-nav" id="menu-bar">
                     {alertSidebar.map((item, ind)=>(
-                        <li key={ind} > <Link to={item.to} smooth={true}
-                        className={`scroll c-pointer ${ind === activeLink ? 'active' :  ''} `}
-                        activeclassName="active"
+                        <li key={ind} className={ind === activeLink ? 'active' : ''}> <Link to={item.to} smooth={true}
+                        className="scroll c-pointer"
+                        activeclass="active"
                         spy={true}
                         onClick={()=>setActiveLink(ind)}
                         >{item.title}</Link></li> 

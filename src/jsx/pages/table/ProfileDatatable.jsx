@@ -40,7 +40,7 @@ const ProfileDatatable = () => {
                 <tr key={i}>
                   {d.map((da, i) => (
                     <Fragment key={i}>
-                      <td>
+                      <td className="text-nowrap">
                         {i === 0 ? (
                           <img
                             className="rounded-circle"
@@ -55,13 +55,13 @@ const ProfileDatatable = () => {
                               <div className="d-flex">
                                 <Link
                                   to="#"
-                                  className="btn btn-primary shadow btn-xs sharp me-1"
+                                  className="btn btn-primary shadow btn-xs sharp me-1 lh-1"
                                 >
                                   <i className="fas fa-pencil-alt" />
                                 </Link>
                                 <Link
                                   to="#"
-                                  className="btn btn-danger shadow btn-xs sharp"
+                                  className="btn btn-danger shadow btn-xs sharp lh-1"
                                 >
                                   <i className="fa fa-trash" />
                                 </Link>

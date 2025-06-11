@@ -57,13 +57,13 @@ function Customers() {
                                         <tbody id="customers">
                                             {customerstabledata.map((data, i) => (
                                                 <tr className="btn-reveal-trigger" key={i}>
-                                                    <td className="py-2">
+                                                    <td className={`py-2 ${data.class}`}>
                                                         <div className="form-check custom-checkbox mx-2">
                                                             <input type="checkbox" onClick={() => chackboxFun()} className="form-check-input product_order" id="checkbox" />
                                                             <label className="form-check-label" htmlFor="checkbox" />
                                                         </div>
                                                     </td>
-                                                    <td className="py-3">
+                                                    <td className={`py-3 ${data.class}`}>
                                                         <Link to="/ecom-customers">
                                                             <div className="media d-flex align-items-center">
                                                                 <div className="avatar  me-2">
@@ -77,21 +77,23 @@ function Customers() {
                                                             </div>
                                                         </Link>
                                                     </td>
-                                                    <td className="py-2"> <Link to="mailto:ricky@example.com">info@example.com</Link></td>
-                                                    <td className="py-2"> <Link to="tel:2012001851">{data.phone}</Link></td>
-                                                    <td className="py-2 ps-5">{data.address}</td>
-                                                    <td className="py-2">{data.joined}</td>
-                                                    <td className="py-2 text-right">
+                                                    <td className={`py-2 ${data.class}`}> <Link to="mailto:ricky@example.com">info@example.com</Link></td>
+                                                    <td className={`py-2 ${data.class}`}> <Link to="tel:2012001851">{data.phone}</Link></td>
+                                                    <td className={`py-2 ps-5 ${data.class}`}>{data.address}</td>
+                                                    <td className={`py-2 ${data.class}`}>{data.joined}</td>
+                                                    <td className={`py-2 text-end ${data.class}`}>
                                                         <Dropdown>
-                                                            <Dropdown.Toggle variant="" className="btn btn-primary tp-btn-light sharp i-false">
-                                                                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                                                                        <rect x="0" y="0" width="24" height="24"></rect>
-                                                                        <circle fill="#000000" cx="5" cy="12" r="2"></circle>
-                                                                        <circle fill="#000000" cx="12" cy="12" r="2"></circle>
-                                                                        <circle fill="#000000" cx="19" cy="12" r="2"></circle>
-                                                                    </g>
-                                                                </svg>
+                                                            <Dropdown.Toggle variant="" className="btn btn-primary i-false tp-btn-light sharp lh-1">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
+                                                                            <rect x={0} y={0} width={24} height={24} />
+                                                                            <circle fill="#000000" cx={5} cy={12} r={2} />
+                                                                            <circle fill="#000000" cx={12} cy={12} r={2} />
+                                                                            <circle fill="#000000" cx={19} cy={12} r={2} />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
                                                             </Dropdown.Toggle>
                                                             <Dropdown.Menu>
                                                                 <Dropdown.Item href="#">Edit</Dropdown.Item>

@@ -109,12 +109,12 @@ function AccountOverview(){
                                             <tbody>
                                                 {tableData5.map((data, ind)=>(
                                                     <tr key={ind}>
-                                                        <td>{data.itemname}</td>
-                                                        <td>{data.productid}</td>
-                                                        <td>{data.added}</td>
-                                                        <td><span className={`badge badge-sm light border-0 badge-${data.statuscolor}`}>{data.status}</span></td>
-                                                        <td>{data.price}</td>
-                                                        <td className="text-end">{data.qty}</td>
+                                                        <td className={data.class}>{data.itemname}</td>
+                                                        <td className={data.class}>{data.productid}</td>
+                                                        <td className={data.class}>{data.added}</td>
+                                                        <td className={data.class}><span className={`badge badge-sm light border-0 badge-${data.statuscolor}`}>{data.status}</span></td>
+                                                        <td className={data.class}>{data.price}</td>
+                                                        <td className={`text-end ${data.class}`}>{data.qty}</td>
                                                     </tr>
                                                 ))}                                            
                                             </tbody>

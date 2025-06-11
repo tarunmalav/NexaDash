@@ -58,7 +58,7 @@ function Inbox() {
                                                     </div>
                                                 </div>{"  "}
                                                 <div className="btn-group mb-1">
-                                                    <button className="btn btn-primary light px-3" type="button"><i className="ti-reload" /></button>{"  "}
+                                                    <button className="btn btn-primary light px-3 lh-1-6" type="button" ><i className="ti-reload" /></button>{"  "}
                                                 </div>{"  "}
                                                 <Dropdown className="btn-group mb-1">
                                                     <Dropdown.Toggle className="btn btn-primary px-3 light dropdown-toggle ms-1" type="button">More <span className="caret"></span></Dropdown.Toggle>

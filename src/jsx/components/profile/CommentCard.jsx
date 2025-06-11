@@ -46,7 +46,7 @@ function CommentCard(){
                     </div>
                     <div className="d-flex py-2 position-relative">
                         <div className="d-inline-block position-relative">
-                            <img src={IMAGES.avatar5} alt="a5" className="rounded avatar avatar-md"/>
+                            <img src={IMAGES.avtar6} alt="a5" className="rounded avatar avatar-md"/>
                         </div>
                         <div className="clearfix ms-2">
                             <h6 className="fs-13 mb-1 fw-semibold">Mrs. Anderson <span className="fs-12 text-muted ms-1 fw-normal">3 Days ago</span></h6>

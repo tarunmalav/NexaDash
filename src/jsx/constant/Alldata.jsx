@@ -161,15 +161,15 @@ export const pricedata2 = [
 ]
 // // profile projects
 export const profileProjectCard = [
-    { id: '1', logo: IMAGES.figma, title: 'Figma Design', progress: '60%', status: 'In Progress', statuscolor: 'primary' },
-    { id: '2', logo: IMAGES.github, title: 'Github Repository', progress: '69%', status: 'Pending', statuscolor: 'danger' },
-    { id: '3', logo: IMAGES.spotify, title: 'Music App', progress: '75%', status: 'Complete', statuscolor: 'success' },
-    { id: '4', logo: IMAGES.twitch, title: 'Banking System', progress: '92%', status: 'Testing', statuscolor: 'warning' },
-    { id: '5', logo: IMAGES.dropbox, title: 'Cloud Store', progress: '68%', status: 'Pending', statuscolor: 'danger' },
-    { id: '6', logo: IMAGES.html, title: 'HTML Design', progress: '68%', status: 'Complete', statuscolor: 'success' },
-    { id: '7', logo: IMAGES.amazon, title: 'eCommerce Theme', progress: '86%', status: 'Testing', statuscolor: 'warning' },
-    { id: '8', logo: IMAGES.slack, title: 'Music App', progress: '65%', status: 'Complete', statuscolor: 'success' },
-    { id: '6', logo: IMAGES.html, title: 'Music App', progress: '68%', status: 'Complete', statuscolor: 'success' },
+    { id: '1', logo: IMAGES.figma, title: 'Figma Design', progress: '60%', status: 'In Progress', statuscolor: 'primary', dateclass:"text-purple"},
+    { id: '2', logo: IMAGES.github, title: 'Github Repository', progress: '69%', status: 'Pending', statuscolor: 'danger',dateclass:"text-danger"},
+    { id: '3', logo: IMAGES.spotify, title: 'Music App', progress: '75%', status: 'Complete', statuscolor: 'success' ,dateclass:"text-purple"},
+    { id: '4', logo: IMAGES.twitch, title: 'Banking System', progress: '92%', status: 'Testing', statuscolor: 'warning',dateclass:"text-danger" },
+    { id: '5', logo: IMAGES.dropbox, title: 'Cloud Store', progress: '68%', status: 'Pending', statuscolor: 'danger',dateclass:"text-danger" },
+    { id: '6', logo: IMAGES.html, title: 'HTML Design', progress: '68%', status: 'Complete', statuscolor: 'success',dateclass:"text-danger" },
+    { id: '7', logo: IMAGES.amazon, title: 'eCommerce Theme', progress: '86%', status: 'Testing', statuscolor: 'warning',dateclass:"text-purple" },
+    { id: '8', logo: IMAGES.slack, title: 'Music App', progress: '65%', status: 'Complete', statuscolor: 'success',dateclass:"text-danger" },
+    { id: '9', logo: IMAGES.html, title: 'Music App', progress: '68%', status: 'Complete', statuscolor: 'success',dateclass:"text-danger" },
 ];
 // profile campaigns
 export const adsCradBlog = [
@@ -224,7 +224,7 @@ export const tableData5 = [
     { itemname: 'Dell 32 UltraSharp', productid: '#SRR-678', added: 'Jul 09, 2024', status: 'Out of Stock', statuscolor: 'danger', price: '$4,720', qty: '58 PCS' },
     { itemname: 'Google Pixel 6 Pro', productid: '#XGY-356', added: 'May 14, 2024', status: 'In Stock', statuscolor: 'success', price: '$120', qty: '11 PCS' },
     { itemname: 'AudioEngine HD3', productid: '#XGY-356', added: 'Dec 30, 2024', status: 'In Stock', statuscolor: 'success', price: '$503', qty: '58 PCS' },
-    { itemname: 'Google Pixel 6 Pro', productid: '#SRR-678', added: 'Oct 25, 2024', status: 'Out of Stock', statuscolor: 'danger', price: '$102', qty: '96 PCS' },
+    { itemname: 'Google Pixel 6 Pro', productid: '#SRR-678', added: 'Oct 25, 2024', status: 'Out of Stock', statuscolor: 'danger', price: '$102', qty: '96 PCS',  class:"border-bottom-0", },
 ];
 // account settings 
 export const notificationBlog = [
@@ -533,25 +533,26 @@ export const productordertabeldata = [
         address2: 'Via Flat Rate',
         status: <span className="badge badge-primary"> Processing <span className="ms-1 fa fa-redo" /> </span>,
         amount: '$112',
+        class:"border-bottom-0",
     },
 ]
 export const customerstabledata = [
-    { image: IMAGES.avatarpng5, name: "Ricky Antony", phone: "(201) 200-1851", address: "2392 Main Avenue, Penasauka", joined: "30/03/2018" },
-    { image: IMAGES.avatarpng1, name: "Emma Watson", phone: "(212) 228-8403", address: "2289 5th Avenue, New York", joined: "11/07/2017" },
-    { image: IMAGES.avatarpng5, name: "Rowen Atkinson", phone: "(201) 200-1851", address: "112 Bostwick Avenue, Jersey City", joined: "05/04/2016" },
-    { image: IMAGES.avatarpng1, name: "Antony Hopkins", phone: "(901) 324-3127", address: "3448 Ile De France St #242", joined: "05/04/2018" },
-    { image: IMAGES.avatarpng1, name: "Jennifer Schramm", phone: "(828) 382-9631", address: "659 Hannah Street, Charlotte", joined: "17/03/2016" },
-    { image: IMAGES.avatarpng5, name: "Raymond Mims", phone: "(562) 468-5646", address: "2298 Locust Court, Artesia", joined: "12/07/2014" },
-    { image: IMAGES.avatarpng1, name: "Michael Jenkins", phone: "(302) 613-8829", address: "4678 Maud Street, Philadelphia", joined: "15/06/2014" },
+    { image: IMAGES.avatarpng5, name: "Ricky Antony", phone: "(201) 200-1851", address: "2392 Main Avenue, Penasauka", joined: "30/03/2025" },
+    { image: IMAGES.avatarpng1, name: "Emma Watson", phone: "(212) 228-8403", address: "2289 5th Avenue, New York", joined: "11/01/2025" },
+    { image: IMAGES.avatarpng5, name: "Rowen Atkinson", phone: "(201) 200-1851", address: "112 Bostwick Avenue, Jersey City", joined: "05/04/2025" },
+    { image: IMAGES.avatarpng1, name: "Antony Hopkins", phone: "(901) 324-3127", address: "3448 Ile De France St #242", joined: "05/04/2025" },
+    { image: IMAGES.avatarpng1, name: "Jennifer Schramm", phone: "(828) 382-9631", address: "659 Hannah Street, Charlotte", joined: "17/03/2025" },
+    { image: IMAGES.avatarpng5, name: "Raymond Mims", phone: "(562) 468-5646", address: "2298 Locust Court, Artesia", joined: "12/01/2025" },
+    { image: IMAGES.avatarpng1, name: "Michael Jenkins", phone: "(302) 613-8829", address: "4678 Maud Street, Philadelphia", joined: "15/06/2025" },
     { image: IMAGES.avatarpng1, name: "Kristine Cadena", phone: "(317) 273-7814", address: "3412 Crestview Manor, Indianapolis", joined: "15/04/2015" },
-    { image: IMAGES.avatarpng5, name: "Ricky Antony", phone: "(201) 200-1851", address: "2392 Main Avenue, Penasauka", joined: "30/03/2018" },
-    { image: IMAGES.avatarpng1, name: "Emma Watson", phone: "(212) 228-8403", address: "2289 5th Avenue, New York", joined: "11/07/2017" },
-    { image: IMAGES.avatarpng5, name: "Rowen Atkinson", phone: "(201) 200-1851", address: "112 Bostwick Avenue, Jersey City", joined: "05/04/2016" },
-    { image: IMAGES.avatarpng1, name: "Antony Hopkins", phone: "(901) 324-3127", address: "3448 Ile De France St #242", joined: "05/04/2018" },
-    { image: IMAGES.avatarpng1, name: "Jennifer Schramm", phone: "(828) 382-9631", address: "659 Hannah Street, Charlotte", joined: "17/03/2016" },
-    { image: IMAGES.avatarpng5, name: "Raymond Mims", phone: "(562) 468-5646", address: "2298 Locust Court, Artesia", joined: "12/07/2014" },
-    { image: IMAGES.avatarpng1, name: "Michael Jenkins", phone: "(302) 613-8829", address: "4678 Maud Street, Philadelphia", joined: "15/06/2014" },
-    { image: IMAGES.avatarpng1, name: "Kristine Cadena", phone: "(317) 273-7814", address: "3412 Crestview Manor, Indianapolis", joined: "15/04/2015" },
+    { image: IMAGES.avatarpng5, name: "Ricky Antony", phone: "(201) 200-1851", address: "2392 Main Avenue, Penasauka", joined: "30/03/2025" },
+    { image: IMAGES.avatarpng1, name: "Emma Watson", phone: "(212) 228-8403", address: "2289 5th Avenue, New York", joined: "11/01/2025" },
+    { image: IMAGES.avatarpng5, name: "Rowen Atkinson", phone: "(201) 200-1851", address: "112 Bostwick Avenue, Jersey City", joined: "05/04/2025" },
+    { image: IMAGES.avatarpng1, name: "Antony Hopkins", phone: "(901) 324-3127", address: "3448 Ile De France St #242", joined: "05/04/2025" },
+    { image: IMAGES.avatarpng1, name: "Jennifer Schramm", phone: "(828) 382-9631", address: "659 Hannah Street, Charlotte", joined: "17/03/2025" },
+    { image: IMAGES.avatarpng5, name: "Raymond Mims", phone: "(562) 468-5646", address: "2298 Locust Court, Artesia", joined: "12/01/2025" },
+    { image: IMAGES.avatarpng1, name: "Michael Jenkins", phone: "(302) 613-8829", address: "4678 Maud Street, Philadelphia", joined: "15/06/2025" },
+    { image: IMAGES.avatarpng1, name: "Kristine Cadena", phone: "(317) 273-7814", address: "3412 Crestview Manor, Indianapolis", joined: "15/04/2015",class:"border-bottom-0", },
 ];
 // apps chat 
 export const chatpagedata = [

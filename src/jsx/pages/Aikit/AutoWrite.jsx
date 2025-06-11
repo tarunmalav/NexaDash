@@ -90,13 +90,13 @@ const AutoWrite = () => {
 													</Form.Select>
 												</div>
 												<div className="row">
-													<div className="col-xl-4 col-xxl-12 col-md-6 col-sm-4">
+													<div className="col-xl-12">
 														<div className="mb-3 d-flex align-items-center">
 															<label htmlFor="exampleFormControlInput10" className="form-label me-2 mb-0">Articles:</label>
 															<input type="number" className="form-control w-50" id="exampleFormControlInput10" placeholder="10" />
 														</div>
 													</div>
-													<div className="col-xl-8 col-xxl-12 col-md-6 col-sm-8">
+													<div className="col-xl-12">
 														<div className="mb-3 d-flex align-items-center">
 															<label htmlFor="exampleFormControlInput3" className="form-label me-2 mb-0">Sections per article:</label>
 															<input type="number" className="form-control w-50" id="exampleFormControlInput3" placeholder="10" />
@@ -234,7 +234,7 @@ Title:'
 									</Accordion.Item>
 								</Accordion>
 								<div className="card h-auto">
-									<div className="card-body p-0">
+									<div className="card-body">
 										<div className="table-responsive ai-table writer-table">
 											<table className="table table-responsive-md ">
 												<thead>

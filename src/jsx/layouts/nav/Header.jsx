@@ -55,7 +55,7 @@ function Header({ onNote }) {
 									</Dropdown.Menu>
 								</Dropdown>
 							</div>
-							<ul className="navbar-nav header-right">
+							<ul className="navbar-nav header-right"> 
 								<Dropdown
 									as="li"
 									className="nav-item dropdown notification_dropdown"

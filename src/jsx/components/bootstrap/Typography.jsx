@@ -16,7 +16,7 @@ const UiTypography = () => {
                   <Col xl={4} xxl={6} className="mb-3">
                     <div className="mb-4">
                       <h4 className="card-title card-intro-title">Typography</h4>
-                      <h6>  Use tags <code>h1 to h6</code> for get desire heading. </h6>
+                      <h6>  Use tags <mark><code>h1 to h6</code></mark> for get desire heading. </h6>
                     </div>
                     <div className="card-content">
                       <h1>h1. Bootstrap heading</h1>
@@ -33,7 +33,7 @@ const UiTypography = () => {
                         Paragraph with justify
                       </h4>
                       <p>
-                        Use tags <code>text-justify</code> for get desire
+                        Use tags <mark><code>text-justify</code></mark> for get desire
                         paragraph.
                       </p>
                     </div>
@@ -55,7 +55,7 @@ const UiTypography = () => {
                         Alignment text
                       </h4>
                       <p>
-                        Use tags <code>text-start, text-center, text-end</code>{" "}
+                        Use tags <mark><code>text-start, text-center, text-end</code></mark>{" "}
                         for get desire text.
                       </p>
                     </div>
@@ -82,7 +82,7 @@ const UiTypography = () => {
                       </h4>
                       <p>
                         Use tags{" "}
-                        <code>text-sm-start, text-md-start, text-lg-start, text-xl-start</code>{" "}
+                        <mark><code>text-sm-start, text-md-start, text-lg-start, text-xl-start</code></mark>{" "}
                         for get desire text.
                       </p>
                     </div>
@@ -109,7 +109,7 @@ const UiTypography = () => {
                       </h4>
                       <p>
                         Use tags{" "}
-                        <code> fw-normal, fw-italic</code> for
+                        <mark><code> fw-normal, fw-italic</code></mark> for
                         get desire text.
                       </p>
                     </div>
@@ -159,7 +159,7 @@ const UiTypography = () => {
                     <div className="mb-4">
                       <h4 className="card-title card-intro-title">Address</h4>
                       <p>
-                        Use <code>address</code> for get desire address.
+                        Use <mark><code>address</code></mark> for get desire address.
                       </p>
                     </div>
                     <div className="card-content">
@@ -183,7 +183,7 @@ const UiTypography = () => {
                     <div className="mb-4">
                       <h4 className="card-title card-intro-title">Blockquotes</h4>
                       <p>
-                        Use <code>blockquote</code> for get desire address.
+                        Use <mark><code>blockquote</code></mark> for get desire address.
                       </p>
                     </div>
                     <blockquote>
@@ -212,7 +212,7 @@ const UiTypography = () => {
                         Ol Listing
                       </h4>
                       <p>
-                        Use tags <code>ol {">"} li</code> for get desire ol list.
+                        Use tags <mark><code>ol {">"} li</code></mark> for get desire ol list.
                       </p>
                     </div>
                     <ol className="order-list ">
@@ -227,7 +227,7 @@ const UiTypography = () => {
                         Ul Listing
                       </h4>
                       <p>
-                        Use tags <code>ul {">"} li</code> for get desire ol list.
+                        Use tags <mark><code>ul {">"} li</code></mark> for get desire ol list.
                       </p>
                     </div>
                     <ul className="unorder-list">
@@ -242,7 +242,7 @@ const UiTypography = () => {
                         Description Text
                       </h4>
                       <p>
-                        Use tags <code>dl {">"} dt</code> for get desire ol list.
+                        Use tags <mark><code>dl {">"} dt</code></mark> for get desire ol list.
                       </p>
                     </div>
                     <dl>
@@ -262,7 +262,7 @@ const UiTypography = () => {
                         Fancy Listing 1
                       </h4>
                       <p>
-                        Use class <code>list-icons</code> to ul for get desire ol
+                        Use class <mark><code>list-icons</code></mark> to ul for get desire ol
                         list.
                       </p>
                     </div>
@@ -293,7 +293,7 @@ const UiTypography = () => {
                         Fancy Listing with href
                       </h4>
                       <p>
-                        Use class <code>list-icons</code> to ul for get desire ol
+                        Use class <mark><code>list-icons</code></mark> to ul for get desire ol
                         list.
                       </p>
                     </div>
@@ -330,7 +330,7 @@ const UiTypography = () => {
                         Fancy Listing with href
                       </h4>
                       <p>
-                        Use class <code>list-icons</code> to ul for get desire ol
+                        Use class <mark><code>list-icons</code></mark> to ul for get desire ol
                         list.
                       </p>
                     </div>

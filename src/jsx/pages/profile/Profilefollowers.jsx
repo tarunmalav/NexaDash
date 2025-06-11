@@ -26,7 +26,7 @@ function ProfileFollowers() {
                         {artCardData.map((item, ind) => (
                             <div className="col-xl-4 col-sm-6" key={ind}>
                                 <div className="card">
-                                    <div className="card-body text-center p-4">
+                                    <div className="card-body text-center p-4 followdeal">
                                         <div className="mx-auto d-inline-block position-relative mb-3">
                                             {item.text ?
                                                 <div className={` avatar avatar-lg  text-${item.textbg} rounded-circle mx-auto d-flex align-items-center justify-content-center bg-${item.textbg}-light`}>{item.textalpha}</div>
@@ -42,12 +42,12 @@ function ProfileFollowers() {
                                             <p className="mb-0 fs-15">Art Director at DexignLab.</p>
                                         </div>
                                         <div className="d-flex justify-content-center px-3">
-                                            <div className="bg-light rounded px-3 py-2 text-start mx-2 flex-grow-1">
-                                                <h6 className="mb-0 text-dark">$12,500.00</h6>
+                                            <div className="bg-light rounded px-3 py-2 text-start mx-2 flex-grow-1 followdealin">
+                                                <h6 className="mb-0 text-black">$12,500.00</h6>
                                                 <span className="fs-13">Avg. Deal</span>
                                             </div>
-                                            <div className="bg-light rounded px-3 py-2 text-start mx-2 flex-grow-1">
-                                                <h6 className="mb-0 text-dark">$150,500.00</h6>
+                                            <div className="bg-light rounded px-3 py-2 text-start mx-2 flex-grow-1 followdealin">
+                                                <h6 className="mb-0 text-black">$150,500.00</h6>
                                                 <span className="fs-13">Deals</span>
                                             </div>
                                         </div>

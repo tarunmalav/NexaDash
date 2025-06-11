@@ -1306,6 +1306,16 @@ export const SVGICON = {
             </clipPath>
         </defs>
     </svg>,
+    article: <svg width="19" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.75 8H2.25" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M15.75 5H2.25" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M15.75 11H2.25" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12.75 14H2.25" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
+    youtubevideo: <svg width="19" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.9049 5.315C16.8159 4.95906 16.6344 4.63293 16.3789 4.36955C16.1235 4.10618 15.803 3.91489 15.4499 3.815C14.1599 3.5 8.99994 3.5 8.99994 3.5C8.99994 3.5 3.83994 3.5 2.54994 3.845C2.19688 3.94489 1.87642 4.13618 1.62095 4.39955C1.36548 4.66293 1.18403 4.98906 1.09494 5.345C0.858851 6.65417 0.743367 7.98223 0.74994 9.3125C0.741525 10.6528 0.857016 11.991 1.09494 13.31C1.19316 13.6549 1.37867 13.9686 1.63355 14.2209C1.88843 14.4731 2.20406 14.6554 2.54994 14.75C3.83994 15.095 8.99994 15.095 8.99994 15.095C8.99994 15.095 14.1599 15.095 15.4499 14.75C15.803 14.6501 16.1235 14.4588 16.3789 14.1954C16.6344 13.9321 16.8159 13.6059 16.9049 13.25C17.1392 11.9507 17.2547 10.6328 17.2499 9.3125C17.2584 7.97222 17.1429 6.63402 16.9049 5.315Z" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7.3125 11.7654L11.625 9.31285L7.3125 6.86035V11.7654Z" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
 }
 const appTheme = {
     IMAGES,

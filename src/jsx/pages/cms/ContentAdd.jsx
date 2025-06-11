@@ -371,7 +371,7 @@ const ContentAdd = () => {
                                                     <ul className="d-flex align-items-center mb-2 flex-wrap">
                                                         <li><Link to={"#"}><i className="fas fa-calendar-alt" /></Link></li>
                                                         <li><Link to={"#"} className="ms-2">Published</Link></li>
-                                                        <li><strong><Link to={"#"} className="mx-2">on :24-09-2022 16:22:52 </Link></strong></li>
+                                                        <li><strong><Link to={"#"} className="mx-2">on :25-09-2025 16:22:52 </Link></strong></li>
                                                         <li><Link to={"#"} className="badge badge-primary light ms-3"
                                                             onClick={() => dispatch({ type: 'collpase9' })}
                                                             id="headingthree">Edit

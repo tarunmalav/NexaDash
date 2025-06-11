@@ -101,7 +101,7 @@ const EditProfile = () => {
                                         </div>
                                         <div className="col-sm-6 m-b30">
                                             <label className="form-label">Phone</label>
-                                            <input type="text" className="form-control" defaultValue="+123456789" />
+                                            <input type="number" className="form-control" defaultValue="+123456789" />
                                         </div>
                                         <div className="col-sm-6 m-b30">
                                             <label className="form-label">Email address</label>

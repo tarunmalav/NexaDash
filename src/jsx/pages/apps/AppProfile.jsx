@@ -484,22 +484,20 @@ const AppProfile = () => { 	const onInit = () => {
 				<div className="modal-content">
 					<div className="modal-header">
 						<h5 className="modal-title">Send Message</h5>
-						<Button variant="" type="button" className="btn-close" data-dismiss="modal" onClick={() => dispatch({ type: 'sendMessage' })}>
-
-						</Button>
+						<Button variant="" type="button" className="btn-close" data-dismiss="modal" onClick={() => dispatch({ type: 'sendMessage' })}> </Button>
 					</div>
 					<div className="modal-body">
 						<form className="comment-form" onSubmit={(e) => { e.preventDefault(); dispatch({ type: 'sendMessage' }); }}>
 							<div className="row">
 								<div className="col-lg-6">
 									<div className="form-group mb-3">
-										<label htmlFor="author" className="text-black font-w600">  Name <span className="required">*</span> </label>
+										<label htmlFor="author" className="text-black font-w600">  Name <span className="required"></span> </label>
 										<input type="text" className="form-control" defaultValue="Author" name="Author" placeholder="Author" />
 									</div>
 								</div>
 								<div className="col-lg-6">
 									<div className="form-group mb-3">
-										<label htmlFor="email" className="text-black font-w600"> Email <span className="required">*</span></label>
+										<label htmlFor="email" className="text-black font-w600"> Email <span className="required"></span></label>
 										<input type="text" className="form-control" defaultValue="Email" placeholder="Email" name="Email" />
 									</div>
 								</div>
@@ -563,10 +561,10 @@ const AppProfile = () => { 	const onInit = () => {
 						</button>
 					</div>
 					<div className="modal-body">
-						<div className="input-group mb-3">
-							<span className="input-group-text">Upload</span>
+						<div className="input-group custom_file_input mb-3">
+							<span className="input-group-text border-0">Upload</span>
 							<div className="form-file">
-								<input type="file" className="form-file-input" />
+								<input type="file" className="form-file-input form-control" />
 							</div>
 						</div>
 					</div>

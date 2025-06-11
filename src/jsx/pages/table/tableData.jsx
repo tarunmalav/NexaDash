@@ -94,7 +94,7 @@ const profileTable = {
          "",
       ],
       [
-         pic1,
+         avatar1,
          "Gloria Little",
          "Systems Administrator",
          "Male",
@@ -105,7 +105,7 @@ const profileTable = {
          "",
       ],
       [
-         pic1,
+         avatar2,
          "Bradley Greer",
          "Software Engineer",
          "Male",
@@ -127,7 +127,7 @@ const profileTable = {
          "",
       ],
       [
-         pic1,
+         avatar1,
          "Jenette Caldwell",
          "Development Lead",
          "Male",
@@ -138,7 +138,7 @@ const profileTable = {
          "",
       ],
       [
-         pic1,
+         avatar2,
          "Yuri Berry",
          "Chief Marketing Officer (CMO)",
          "Male",
@@ -160,7 +160,7 @@ const profileTable = {
          "",
       ],
       [
-         pic1,
+         avatar1,
          "Doris Wilder",
          "Sales Assistant",
          "Male",
@@ -171,7 +171,7 @@ const profileTable = {
          "",
       ],
       [
-         pic1,
+         avatar2,
          "Angelica Ramos",
          "Chief Executive Officer (CEO)",
          "Male",

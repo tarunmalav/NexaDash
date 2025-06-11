@@ -919,21 +919,13 @@ function Element() {
                   <form onSubmit={(e) => e.preventDefault()}>
                     <div className="row align-items-center">
                       <div className="col-auto my-1">
-                        <div className="form-group d-flex align-items-center">
                           <label className="me-sm-2">Preference</label>
-                          <select
-                            defaultValue={"option"}
-                            className="form-control form-control-lg"
-                            id="inlineFormCustomSelect"
-                          >
-                            <option value="option" disabled>
-                              Choose...
-                            </option>
+                          <select defaultValue={"option"} className="me-sm-2 default-select form-control wide" id="inlineFormCustomSelect" >
+                            <option value="option" disabled> Choose... </option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                           </select>
-                        </div>
                       </div>
                     </div>
                   </form>

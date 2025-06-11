@@ -56,11 +56,11 @@ const UiButton = () => {
               <div className="demo-right-tabs" id="right-sidebar">
                 <ul className="navbar-nav" id="menu-bar">
                   {sidebarLink.map((item, ind) => (
-                    <li key={ind}
+                    <li key={ind} className={ind === activeLink ? 'active' : ''}
                     >
                       <Link to={item.to}
-                        className={`scroll c-pointer ${ind === activeLink ? 'active' : ''} `}
-                        activeclassName="active"
+                        className={`scroll c-pointer`}
+                        activeclass="active"
                         spy={true}
                         smooth={true}
                         onClick={() => setActiveLink(ind)}
@@ -98,7 +98,7 @@ const UiButton = () => {
                           {buttonTypes.map(({ variant, title }, idx) => (
                             <Card.Body key={idx} className="mb-4 pt-0">
                               <h4 className="card-title text-uppercase">{title}</h4>
-                              <Row className="row-cols-5 text-center">
+                              <Row className="row column-5">
                                 <Col>
                                   <label className="column-head">Filled</label>
                                   <Button variant={variant}>Button</Button>
@@ -117,7 +117,7 @@ const UiButton = () => {
                                 </Col>
                                 <Col>
                                   <label className="column-head">Link</label>
-                                  <Button variant="link" className={`text-${variant}`}>Button</Button>
+                                  <Button variant="link" className={`btn-${variant}`}>Button</Button>
                                 </Col>
                               </Row>
                             </Card.Body>
@@ -1024,13 +1024,13 @@ const UiButton = () => {
                                         fill="var(--primary)" />
                                     </svg>
                                   </Button>
-                                  <Button className="btn-square btn-outline-light">
+                                  <Button className="btn-square bg-white border-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                      height="24" viewBox="0 0 24 24" fill="none">
-                                      <path
-                                        d="M22.125 8.67447V19.875C22.1244 20.4715 21.8872 21.0435 21.4653 21.4653C21.0435 21.8871 20.4716 22.1244 19.875 22.125H16.125C15.7272 22.125 15.3456 21.9669 15.0643 21.6856C14.783 21.4043 14.625 21.0228 14.625 20.625V16.5C14.625 16.3011 14.546 16.1103 14.4053 15.9696C14.2647 15.829 14.0739 15.75 13.875 15.75H10.125C9.92609 15.75 9.73532 15.829 9.59467 15.9696C9.45402 16.1103 9.375 16.3011 9.375 16.5V20.625C9.375 21.0228 9.21696 21.4043 8.93566 21.6856C8.65436 21.9669 8.27282 22.125 7.875 22.125H4.125C3.52845 22.1244 2.9565 21.8871 2.53467 21.4653C2.11284 21.0435 1.8756 20.4715 1.875 19.875V8.67447C1.87556 8.41545 1.94287 8.16095 2.07043 7.93552C2.19799 7.71008 2.3815 7.52133 2.60325 7.38747L11.2282 2.21247C11.4614 2.07252 11.7282 1.9986 12.0002 1.9986C12.2721 1.9986 12.539 2.07252 12.7721 2.21247L21.3971 7.38747C21.6188 7.52138 21.8022 7.71015 21.9297 7.93558C22.0572 8.16101 22.1245 8.41549 22.125 8.67447Z"
-                                        fill="var(--primary)" />
-                                    </svg>
+																	height="24" viewBox="0 0 24 24" fill="white">
+																	<path
+																		d="M22.125 8.67447V19.875C22.1244 20.4715 21.8872 21.0435 21.4653 21.4653C21.0435 21.8871 20.4716 22.1244 19.875 22.125H16.125C15.7272 22.125 15.3456 21.9669 15.0643 21.6856C14.783 21.4043 14.625 21.0228 14.625 20.625V16.5C14.625 16.3011 14.546 16.1103 14.4053 15.9696C14.2647 15.829 14.0739 15.75 13.875 15.75H10.125C9.92609 15.75 9.73532 15.829 9.59467 15.9696C9.45402 16.1103 9.375 16.3011 9.375 16.5V20.625C9.375 21.0228 9.21696 21.4043 8.93566 21.6856C8.65436 21.9669 8.27282 22.125 7.875 22.125H4.125C3.52845 22.1244 2.9565 21.8871 2.53467 21.4653C2.11284 21.0435 1.8756 20.4715 1.875 19.875V8.67447C1.87556 8.41545 1.94287 8.16095 2.07043 7.93552C2.19799 7.71008 2.3815 7.52133 2.60325 7.38747L11.2282 2.21247C11.4614 2.07252 11.7282 1.9986 12.0002 1.9986C12.2721 1.9986 12.539 2.07252 12.7721 2.21247L21.3971 7.38747C21.6188 7.52138 21.8022 7.71015 21.9297 7.93558C22.0572 8.16101 22.1245 8.41549 22.125 8.67447Z"
+																		fill="var(--primary)" />
+																</svg>
                                   </Button>
                                 </div>
                               </Col>
@@ -1053,7 +1053,7 @@ const UiButton = () => {
                                         fill="var(--primary)" />
                                     </svg>
                                   </Button>
-                                  <Button className="btn-square btn-outline-light rounded-circle">
+                                  <Button className="btn-square  rounded-circle bg-white border-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                       height="24" viewBox="0 0 24 24" fill="none">
                                       <path
@@ -1082,7 +1082,7 @@ const UiButton = () => {
                                         fill="var(--primary)" />
                                     </svg>
                                   </Button>
-                                  <Button className="btn-square btn-outline-light rounded-0">
+                                  <Button className="btn-square rounded-0 bg-white border-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                       height="24" viewBox="0 0 24 24" fill="none">
                                       <path

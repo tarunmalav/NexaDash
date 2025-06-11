@@ -60,18 +60,18 @@ function Chatbot() {
 								<div className="col-xl-2">
 									<p className="mb-2">Choose content type:</p>
 									<div className="btn-group d-block" role="group">
-										<input type="radio" className="btn-check" name="btnradio" id="btnradio1" defaultChecked />
+										<input type="radio" className="btn-check" name="btnradio" id="btnradio1" checked/>
 										<label className="btn btn-outline-primary btn-sm rounded" htmlFor="btnradio1">Yes</label>
-										<input type="radio" className="btn-check" name="btnradio" id="btnradio2" />
+										<input type="radio" className="btn-check" name="btnradio" id="btnradio2" checked/>
 										<label className="btn btn-outline-primary btn-sm rounded ms-2" htmlFor="btnradio2">No</label>
 									</div>
 								</div>
 								<div className="col-xl-3">
 									<p className="mb-2">Default view:</p>
 									<div className="btn-group d-block" role="group" >
-										<input type="radio" className="btn-check" name="btnradio" id="btnradio3" defaultChecked />
+										<input type="radio" className="btn-check" name="btnradio" id="btnradio3" checked/>
 										<label className="btn btn-outline-primary btn-sm rounded" htmlFor="btnradio3">Collapsed</label>
-										<input type="radio" className="btn-check" name="btnradio" id="btnradio4" />
+										<input type="radio" className="btn-check" name="btnradio" id="btnradio4" checked/>
 										<label className="btn btn-outline-primary btn-sm rounded ms-2" htmlFor="btnradio4">Expanded</label>
 
 									</div>

@@ -122,7 +122,7 @@ class EventCalendar extends Component {
                               {this.state.events.map((event) => (
                                  <div
                                     className={`external-event light fc-event ${event.class}`}
-                                    data-className={event.dataclass}
+                                    data-class={event.dataclass}
                                     title={event.title}
                                     data={event.id}
                                     key={event.id}

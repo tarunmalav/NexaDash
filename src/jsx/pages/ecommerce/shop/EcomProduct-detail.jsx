@@ -43,6 +43,8 @@ function ProductDetail() {
             setCount(count - 1);
         }
     };
+    const [selectedSize, setSelectedSize] = useState("XS"); 
+    const sizes = ["XS", "SM", "MD", "LG", "XL"];
     return (
         <Fragment>
             <PageTitle activeMenu="Ecommerce" motherMenu="Shop" pageContent="Product Detail" />
@@ -117,23 +119,17 @@ function ProductDetail() {
                                                         <div className="col-xl-6 col-sm-6">
                                                             <div className="size-filter">
                                                                 <h5 className="m-b-15">Available size</h5>
-                                                                <div className="d-flex select-size" role="group" aria-label="Basic radio toggle button group">
-                                                                    <input type="radio" className="btn-check" name="btnradio" id="btnradio1" defaultChecked="" checked />
-                                                                    <label className="btn btn-outline-primary sharp sharp-xs me-2" htmlFor="btnradio1">XS</label>
-
-                                                                    <input type="radio" className="btn-check" name="btnradio" id="btnradio2" checked />
-                                                                    <label className="btn btn-outline-primary sharp sharp-xs me-2" htmlFor="btnradio2">SM</label>
-
-                                                                    <input type="radio" className="btn-check" name="btnradio" id="btnradio3" checked />
-                                                                    <label className="btn btn-outline-primary sharp sharp-xs me-2" htmlFor="btnradio3">MD</label>
-
-                                                                    <input type="radio" className="btn-check" name="btnradio" id="btnradio4" checked />
-                                                                    <label className="btn btn-outline-primary sharp sharp-xs me-2" htmlFor="btnradio4">LG</label>
-
-                                                                    <input type="radio" className="btn-check" name="btnradio" id="btnradio5" checked />
-                                                                    <label className="btn btn-outline-primary sharp sharp-xs" htmlFor="btnradio5">XL</label>
+                                                                <div className="d-flex select-size" role="group" aria-label="Basic radio toggle button group" >
+                                                                    {sizes.map((size, index) => {
+                                                                        const id = `btnradio${index + 1}`;
+                                                                        return (
+                                                                        <Fragment key={size}>
+                                                                            <input type="radio" className="btn-check" name="btnradio" id={id} checked={selectedSize === size} onChange={() => setSelectedSize(size)}  />
+                                                                            <label className={`btn btn-outline-primary sharp sharp-xs me-2 ${selectedSize === size ? "active" : "" }`} htmlFor={id} > {size} </label>
+                                                                        </Fragment>
+                                                                        );
+                                                                    })}
                                                                 </div>
-
                                                             </div>
                                                         </div>
                                                         <div className="col-xl-6  col-sm-6 align-self-center">
@@ -378,16 +374,19 @@ function ProductDetail() {
                                                             </div>
                                                             <div className="col-xl-6">
                                                                 <div className="d-flex align-items-strat">
-                                                                    <img src={IMAGES.userspic1} className="product-img" alt="" />
+                                                                    <img src={IMAGES.user} className="product-img" alt="" /> 
                                                                     <div>
-                                                                        <h5 className="mb-0">Monsur Rahman Lito</h5>
+                                                                        <h5 className="mb-0">Aarav Mehta</h5>
                                                                         <ul className="d-flex align-items-center">
                                                                             <li><i className="fa-solid fa-star text-warning" /></li>{" "}
                                                                             <li><i className="fa-solid fa-star text-warning" /></li>{" "}
                                                                             <li><i className="fa-solid fa-star text-warning" /></li>{" "}
                                                                             <li><i className="fa-solid fa-star text-warning" /></li>{" "}
                                                                         </ul>
-                                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quae, ipsum commodi rerum porro totam libero est.</p>
+                                                                        <p>
+                                                                            Exceptional experience! The service was quick and professional. Highly recommended
+                                                                            for anyone seeking quality and reliability.
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </div>

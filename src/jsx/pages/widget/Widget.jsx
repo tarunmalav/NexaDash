@@ -3437,7 +3437,7 @@ function Widget() {
                 <div className="row">
                   <div className="col-12">
                     <div className="d-flex justify-content-between">
-                      <h6>67%</h6>
+                      <h6>80%</h6>
                       <span>Grow</span>
                     </div>
                     <div className="progress">
@@ -3449,7 +3449,7 @@ function Widget() {
                   </div>
                   <div className="col-12 mt-4">
                     <div className="d-flex justify-content-between">
-                      <h6>67%</h6>
+                      <h6>70%</h6>
                       <span>Grow</span>
                     </div>
                     <div className="progress">
@@ -3461,7 +3461,7 @@ function Widget() {
                   </div>
                   <div className="col-12 mt-4">
                     <div className="d-flex justify-content-between">
-                      <h6>67%</h6>
+                      <h6>40%</h6>
                       <span>Grow</span>
                     </div>
                     <div className="progress">
@@ -3473,7 +3473,7 @@ function Widget() {
                   </div>
                   <div className="col-12 mt-4">
                     <div className="d-flex justify-content-between">
-                      <h6>67%</h6>
+                      <h6>80%</h6>
                       <span>Grow</span>
                     </div>
                     <div className="progress">

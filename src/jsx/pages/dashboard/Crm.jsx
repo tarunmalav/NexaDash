@@ -92,7 +92,7 @@ function Crm() {
                             <div className="progress-box mt-0">
                                 <div className="d-flex justify-content-between">
                                     <p className="mb-0">Tasks Not Finished</p>
-                                    <p className="mb-0">20/28</p>
+                                    <p className="mb-0 mt-0">20/28</p>
                                 </div>
                                 <div className="progress">
                                     <div className="progress-bar bg-primary" style={{ width: "50%", height: "10px", borderRadius: "4px" }} role="progressbar" ></div>

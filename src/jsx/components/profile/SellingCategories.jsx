@@ -41,7 +41,7 @@ function SellingCategories(){
                         </div>
                     </div>
                     <div className="alert alert-outline-light outline-dashed p-3 d-sm-flex align-items-center justify-content-between mb-0">
-                        <p className="mb-0">Category report for a company's quarterly sales performance</p>
+                        <p className="mb-0 text-black">Category report for a company's quarterly sales performance</p>
                         <div className="clearfix w-100 ms-auto text-sm-end mt-2 mt-sm-0">
                             <Link to={"#"} className="btn btn-primary">Download Report</Link>
                         </div>

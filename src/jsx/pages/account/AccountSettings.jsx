@@ -26,8 +26,8 @@ function AccountSettings() {
                                     <BasicForm />
                                 </div>
                                 <div className="card-footer text-end">
-                                    <Link to={"#"} className="btn btn-white">Discard</Link>
-                                    <Link to={"#"} className="btn btn-primary ms-2 mb-2">Save Changes</Link>
+                                    <Link to={"#"} className="btn btn-light">Discard</Link>
+                                    <Link to={"#"} className="btn btn-primary ms-2">Save Changes</Link>
                                 </div>
                             </div>
                         </div>
@@ -67,8 +67,8 @@ function AccountSettings() {
                                             </form>
                                         </div>
                                         <div className="card-footer text-end">
-                                            <Link to={"#"} className="btn btn-white">Discard</Link>
-                                            <Link to={"#"} className="btn btn-primary ms-2 mb-2">Save Changes</Link>
+                                            <Link to={"#"} className="btn btn-light">Discard</Link>
+                                            <Link to={"#"} className="btn btn-primary ms-2">Save Changes</Link>
                                         </div>
                                     </div>
                                 </div>

@@ -65,9 +65,9 @@ const UiAccordion = () => {
 
                 <ul className="navbar-nav nav" id="menu-bar">
                   {sidebarData.map((item, index) => (
-                    <li key={index}  >
+                    <li key={index}  className={index === activeLink ? 'active' : ''}>
                       <Link to={item.to} smooth={true}
-                        className={`scroll c-pointer ${index === activeLink ? 'active' : ''} `}
+                        className="scroll c-pointer"
                         activeclassName="active"
                         spy={true}
                         onClick={() => setActiveLink(index)}

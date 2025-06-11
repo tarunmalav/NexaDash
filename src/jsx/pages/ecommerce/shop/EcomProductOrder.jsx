@@ -57,29 +57,29 @@ function ProductOrder() {
                                         <tbody id="orders">
                                             {productordertabeldata.map((data, i) => (
                                                 <tr className="btn-reveal-trigger" key={i}>
-                                                    <td className="py-2">
+                                                    <td className={`py-2 ${data.class}`}>
                                                         <div className={`form-check custom-checkbox ${data.checkbox}`}>
                                                             <input type="checkbox" onClick={() => chackboxFun()} className="form-check-input product_order" id="checkbox" />
                                                             <label className="form-check-label" htmlFor="checkbox" />
                                                         </div>
                                                     </td>
-                                                    <td className="py-2">
+                                                    <td className={`py-2 ${data.class}`}>
                                                         <Link to="/ecom-product-order"> <strong>{data.order}</strong> </Link> {" "} by{" "}
                                                         <strong>{data.name}</strong>
                                                         <br />
                                                         <Link to={`mailto:${data.mail}`}>{data.mail}</Link>
                                                     </td>
-                                                    <td className="py-2">{data.date}</td>
-                                                    <td className="py-2"> {data.address}
+                                                    <td className={`py-2 ${data.class}`}>{data.date}</td>
+                                                    <td className={`py-2 ${data.class}`}> {data.address}
                                                         <p className="mb-0 text-500">{data.address2}</p>
                                                     </td>
-                                                    <td className="py-2 text-end">
+                                                    <td className={`py-2 text-end ${data.class}`}>
                                                         {data.status}
                                                     </td>
-                                                    <td className="py-2 text-end">{data.amount}</td>
-                                                    <td className="py-2 text-end">
-                                                        <Dropdown className="dropdown text-sans-serif">
-                                                            <Dropdown.Toggle variant="" className="btn btn-primary i-false tp-btn-light sharp" type="button" id="order-dropdown-0" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
+                                                    <td className={`py-2 text-end ${data.class}`}>{data.amount}</td>
+                                                    <td className={`py-2 text-end ${data.class}`}>
+                                                        <Dropdown className="dropdown text-sans-serif d-flex justify-content-end">
+                                                            <Dropdown.Toggle variant="" className="btn btn-primary i-false tp-btn-light sharp lh-1" type="button" id="order-dropdown-0" data-toggle="dropdown" data-boundary="viewport" aria-haspopup="true" aria-expanded="false">
                                                                 <span>
                                                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1">
                                                                         <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">

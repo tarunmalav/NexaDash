@@ -27,24 +27,24 @@ function AccountStatements() {
                                         <div className="card-header">
                                             <h4 className="heading mb-0">Earnings</h4>
                                         </div>
-                                        <div className="card-body">
+                                        <div className="card-body followdeal">
                                             <p className="fs-14">Last 30 day earnings calculated. Apart from arranging the order of topics.</p>
                                             <div className="row g-2 mb-3">
                                                 <div className="col-sm-4 col-6">
-                                                    <div className="bg-light rounded p-3">
-                                                        <h6 className="fs-15 mb-0">$6,840</h6>
+                                                    <div className="bg-light rounded p-3 followdealin">
+                                                        <h6 className="fs-15 mb-0 ">$6,840</h6>
                                                         <span className="fs-13">Earnings</span>
                                                     </div>
                                                 </div>
                                                 <div className="col-sm-4 col-6">
-                                                    <div className="bg-light rounded p-3">
-                                                        <h6 className="fs-15 mb-0">+17,8%</h6>
+                                                    <div className="bg-light rounded p-3 followdealin">
+                                                        <h6 className="fs-15 mb-0 text-black">+17,8%</h6>
                                                         <span className="fs-13">Change</span>
                                                     </div>
                                                 </div>
                                                 <div className="col-sm-4 col-12">
-                                                    <div className="bg-light rounded p-3">
-                                                        <h6 className="fs-15 mb-0">$1,240</h6>
+                                                    <div className="bg-light rounded p-3 followdealin">
+                                                        <h6 className="fs-15 mb-0 text-black">$1,240</h6>
                                                         <span className="fs-13">Fees</span>
                                                     </div>
                                                 </div>

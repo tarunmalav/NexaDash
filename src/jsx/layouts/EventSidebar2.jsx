@@ -37,7 +37,7 @@ function Eventsidebar2() {
                                     <div className="progress-box mt-0">
                                         <div className="d-flex justify-content-between">
                                             <p className="mb-0 c-name">{data.name}</p>
-                                            <p className="mb-0">{data.width}</p>
+                                            <p className="mb-0 mt-0">{data.width}</p>
                                         </div>
                                         <div className="progress">
                                             <div className="progress-bar bg-primary" style={{ width: data.width, height: '5px', borderRadius: '4px' }} ></div>

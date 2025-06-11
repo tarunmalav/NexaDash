@@ -71,7 +71,7 @@ function ProfileProjects() {
                                     </div>
                                     <div className="card-footer d-flex justify-content-between flex-wrap">
                                         <div className="due-progress mb-0">
-                                            <p className="mb-0 text-black"> Due <span className="text-dabger"> : 2025-10-02</span></p>
+                                            <p className="mb-0 text-black"> Due <span className={data.dateclass}> : 2025-10-02</span></p>
                                         </div>
                                         <span className={`badge badge-sm light border-0 badge-${data.statuscolor}`}>{data.status}</span>
                                     </div>

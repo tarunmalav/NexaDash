@@ -81,7 +81,7 @@ function ProfileActivity() {
                                                                             <h6 className="fs-15 mb-0">User Module Testing</h6>
                                                                         </div>
                                                                         <div className="col-xl-1 col-sm-3 col-6">
-                                                                            <span className="badge badge-sm badge-light border-0">Phase 2.6 QA</span>
+                                                                            <span className="badge badge-sm badge-light border-0">Phase 2.6 </span>
                                                                         </div>
                                                                         <div className="col-xxl-3 col-sm-3 col-6">
                                                                             <div className="avatar-list avatar-list-stacked ms-3">
@@ -292,7 +292,7 @@ function ProfileActivity() {
                                                                             <h6 className="fs-15 mb-0">User Module Testing</h6>
                                                                         </div>
                                                                         <div className="col-xl-1 col-sm-3 col-6">
-                                                                            <span className="badge badge-sm badge-light border-0">Phase 2.6 QA</span>
+                                                                            <span className="badge badge-sm badge-light border-0">Phase 2.6 </span>
                                                                         </div>
                                                                         <div className="col-xxl-3 col-sm-3 col-6">
                                                                             <div className="avatar-list avatar-list-stacked ms-3">

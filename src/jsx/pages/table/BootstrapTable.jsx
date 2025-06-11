@@ -170,7 +170,7 @@ const BootstrapTable = () => {
                                     <Dropdown>
                                       <Dropdown.Toggle
                                         variant="success"
-                                        className="light sharp i-false"
+                                        className="light sharp i-false lh-1"
                                       >
                                         {svg1}
                                       </Dropdown.Toggle>
@@ -196,7 +196,7 @@ const BootstrapTable = () => {
                                     <Dropdown>
                                       <Dropdown.Toggle
                                         variant="danger"
-                                        className="light sharp i-false"
+                                        className="light sharp i-false lh-1"
                                       >
                                         {svg1}
                                       </Dropdown.Toggle>
@@ -222,7 +222,7 @@ const BootstrapTable = () => {
                                     <Dropdown>
                                       <Dropdown.Toggle
                                         variant="warning"
-                                        className="light sharp i-false"
+                                        className="light sharp i-false lh-1"
                                       >
                                         {svg1}
                                       </Dropdown.Toggle>
@@ -457,13 +457,13 @@ const BootstrapTable = () => {
                                     <div className="d-flex">
                                       <Link
                                         href="#"
-                                        className="btn btn-primary shadow btn-xs sharp me-1"
+                                        className="btn btn-primary shadow btn-xs sharp me-1 lh-1"
                                       >
                                         <i className="fas fa-pencil-alt" />
                                       </Link>
                                       <Link
                                         href="#"
-                                        className="btn btn-danger shadow btn-xs sharp"
+                                        className="btn btn-danger shadow btn-xs sharp lh-1"
                                       >
                                         <i className="fa fa-trash" />
                                       </Link>
@@ -512,13 +512,13 @@ const BootstrapTable = () => {
                                     <div className="d-flex">
                                       <Link
                                         href="#"
-                                        className="btn btn-primary shadow btn-xs sharp me-1"
+                                        className="btn btn-primary shadow btn-xs sharp me-1 lh-1"
                                       >
                                         <i className="fas fa-pencil-alt" />
                                       </Link>
                                       <Link
                                         href="#"
-                                        className="btn btn-danger shadow btn-xs sharp"
+                                        className="btn btn-danger shadow btn-xs sharp lh-1"
                                       >
                                         <i className="fa fa-trash" />
                                       </Link>
@@ -567,13 +567,13 @@ const BootstrapTable = () => {
                                     <div className="d-flex">
                                       <Link
                                         href="#"
-                                        className="btn btn-primary shadow btn-xs sharp me-1"
+                                        className="btn btn-primary shadow btn-xs sharp me-1 lh-1"
                                       >
                                         <i className="fas fa-pencil-alt" />
                                       </Link>
                                       <Link
                                         href="#"
-                                        className="btn btn-danger shadow btn-xs sharp"
+                                        className="btn btn-danger shadow btn-xs sharp lh-1"
                                       >
                                         <i className="fa fa-trash" />
                                       </Link>
