@@ -44,7 +44,7 @@ function Header({ onNote }) {
 								</form>
 								<FrontMenu />
 							</div>
-							<div className="select-country">
+							<div className="select-country headdropdown">
 								{SVGICON.selectcountry}
 								<Dropdown className="c-pointer">
 									<Dropdown.Toggle as="div" className="nav-link"> {selectedOption} </Dropdown.Toggle>
@@ -53,7 +53,7 @@ function Header({ onNote }) {
 										<Dropdown.Item onClick={() => setSelectedOption("Finland")}>Finland</Dropdown.Item>
 										<Dropdown.Item onClick={() => setSelectedOption("France")}>France</Dropdown.Item>
 									</Dropdown.Menu>
-								</Dropdown>
+								</Dropdown> 
 							</div>
 							<ul className="navbar-nav header-right"> 
 								<Dropdown

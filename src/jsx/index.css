@@ -58,6 +58,10 @@
   background-color: #171617 !important;
 }
 
+[data-theme-version="dark"] .select2dark .css-13cymwt-control {
+  border-color: #454454 !important;
+}
+
 .promtaccordion .accordion-button:not(.collapsed),
 .promtaccordion .accordion-button {
   background-color: transparent !important;
@@ -100,6 +104,26 @@
   line-height: 1.6 !important;
 }
 
-[data-theme-version="dark"] .followdeal .followdealin{
+[data-theme-version="dark"] .followdeal .followdealin {
   background-color: rgb(61 60 61) !important;
+}
+
+[data-theme-version="dark"] .svg-details>path {
+  fill: #fff;
+}
+
+[data-theme-version="dark"] .react-time-picker__clock-button svg {
+  stroke: white !important;
+  fill: rgb(0, 0, 0) !important;
+}
+
+.orderchart .apexcharts-canvas {
+  top: 23px;
+}
+
+[data-theme-version="dark"] .clearallselect{
+  color: #fff;
+} 
+.elementmultiselect .dropdown-menu .btn-group{
+  display: none;
 }

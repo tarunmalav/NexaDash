@@ -4,11 +4,11 @@ const MsgBox = ({ avatar1, avatar2, openMsg,  offMsg }) => {
    const [toggle, setToggle] = useState(false);
    return (
       <div
-         className={`card chat dlab-chat-history-box ${openMsg ? "" : "d-none"}`}
+         className={`card chat dz-chat-history-box ${openMsg ? "" : "d-none"}`}
       >
          <div className="card-header chat-list-header text-center">
             <Link to={"#"}
-               className="dlab-chat-history-back"
+               className="dz-chat-history-back"
                onClick={() => offMsg()}
             >
                <svg
@@ -77,7 +77,7 @@ const MsgBox = ({ avatar1, avatar2, openMsg,  offMsg }) => {
                   </svg>
                </Link>
                <ul
-                  className={`dropdown-menu dropdown-menu-right ${
+                  className={`dropdown-menu dropdown-menu-end ${
                      toggle ? "show" : ""
                   }`}
                >
@@ -112,7 +112,7 @@ const MsgBox = ({ avatar1, avatar2, openMsg,  offMsg }) => {
             </div>
          </div>
          <div
-            className={`card-body msg_card_body dlab-scroll ${
+            className={`card-body msg_card_body  dz-scroll ps ps--active-y  ${
                openMsg ? "" : ""
             } `}
             id="DZ_W_Contacts_Body3"

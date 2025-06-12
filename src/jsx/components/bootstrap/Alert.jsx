@@ -1832,7 +1832,7 @@ const UiAlert = () => {
                                     </div>
                                     <div className="media-body">
                                       <h5 className="mt-1 mb-2 text-white">Facebook</h5>
-                                      <p className="mb-0">
+                                      <p className="mb-0 text-white">
                                         Cras sit amet nibh libero, in gravida nulla. tempus
                                         viverra turpis. Fusce condimentum nunc ac nisi
                                         vulputate fringilla. Donec lacinia congue felis in
@@ -1851,7 +1851,7 @@ const UiAlert = () => {
                                     </div>
                                     <div className="media-body">
                                       <h5 className="mt-1 mb-2 text-white">Twitter</h5>
-                                      <p className="mb-0">
+                                      <p className="mb-0 text-white">
                                         Cras sit amet nibh libero, in gravida nulla. tempus
                                         viverra turpis. Fusce condimentum nunc ac nisi
                                         vulputate fringilla. Donec lacinia congue felis in
@@ -1870,7 +1870,7 @@ const UiAlert = () => {
                                     </div>
                                     <div className="media-body">
                                       <h5 className="mt-1 mb-2 text-white">Linkedin</h5>
-                                      <p className="mb-0">
+                                      <p className="mb-0 text-white">
                                         Cras sit amet nibh libero, in gravida nulla. tempus
                                         viverra turpis. Fusce condimentum nunc ac nisi
                                         vulputate fringilla. Donec lacinia congue felis in
@@ -1889,7 +1889,7 @@ const UiAlert = () => {
                                     </div>
                                     <div className="media-body">
                                       <h5 className="mt-1 mb-2 text-white">Google Plus</h5>
-                                      <p className="mb-0">
+                                      <p className="mb-0 text-white">
                                         Cras sit amet nibh libero, in gravida nulla. tempus
                                         viverra turpis. Fusce condimentum nunc ac nisi
                                         vulputate fringilla. Donec lacinia congue felis in

@@ -228,7 +228,7 @@ function Chatbot() {
 								</div>
 								<div className="col-xl-2 col-sm-4">
 									<div className="example style-1">
-										<p className="mb-1">User Message Bubble Color</p> 
+										<p className="mb-1">User Bubble Color</p> 
 										<input
 											type="color"
 											className="complex-colorpicker  as_colorpicker asColorPicker-trigger rounded-2 border-0"

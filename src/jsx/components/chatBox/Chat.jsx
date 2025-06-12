@@ -18,7 +18,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
       role='tabpanel'
     >
       <div
-        className={`card mb-sm-3 mb-md-0 contacts_card dlab-chat-user-box ${openMsg ? 'd-none' : ''
+        className={`card mb-sm-3 mb-md-0 contacts_card dz-chat-user-box ${openMsg ? 'd-none' : ''
           }`}
       >
         <div className='card-header chat-list-header text-center'>
@@ -76,14 +76,14 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
           </Link>
         </div>
         <div
-          className={`card-body contacts_body p-0 dlab-scroll  ${toggleChatBox ? 'ps ps--active-y' : ''
+          className={`card-body contacts_body p-0 dz-scroll  ${toggleChatBox ? 'ps ps--active-y' : ''
             }`}
           id='DZ_W_Contacts_Body'
         >
           <ul className='contacts'>
             <li className='name-first-letter'>A</li>
             <li
-              className='active dlab-chat-user'
+              className='active dz-chat-user'
               onClick={() => setOpenMsg(true)}
             >
               <div className='d-flex bd-highlight'>
@@ -101,7 +101,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -117,7 +117,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -133,7 +133,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -150,7 +150,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
               </div>
             </li>
             <li className='name-first-letter'>B</li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -166,7 +166,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -182,7 +182,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -199,7 +199,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
               </div>
             </li>
             <li className='name-first-letter'>D</li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -215,7 +215,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -232,7 +232,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
               </div>
             </li>
             <li className='name-first-letter'>J</li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -248,7 +248,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -264,7 +264,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -280,7 +280,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -297,7 +297,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
               </div>
             </li>
             <li className='name-first-letter'>O</li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img
@@ -313,7 +313,7 @@ const Chat = ({  toggleChatBox, toggleTab }) => {
                 </div>
               </div>
             </li>
-            <li className='dlab-chat-user' onClick={() => setOpenMsg(true)}>
+            <li className='dz-chat-user' onClick={() => setOpenMsg(true)}>
               <div className='d-flex bd-highlight'>
                 <div className='img_cont'>
                   <img

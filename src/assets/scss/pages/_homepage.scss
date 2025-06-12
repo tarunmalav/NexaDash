@@ -1424,9 +1424,11 @@
 	.react-datepicker__month-container {
 		width: 100%;
 	}
+
 	.react-datepicker__month {
 		margin: 0;
 	}
+
 	.react-datepicker__current-month {
 		font-size: 1.125rem;
 		font-weight: 500;
@@ -1493,5 +1495,79 @@
 	/* Remove default focus outline */
 	.react-datepicker__day:focus {
 		outline: none;
+	}
+}
+
+// dropdown select header and home
+.headdropdown {
+	.dropdown {
+		.nav-link {
+			color: #000000;
+		}
+	}
+}
+
+[data-theme-version="dark"],
+[data-headerbg="color_4"] {
+	.headdropdown {
+		.dropdown {
+			.nav-link {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.homedropdown {
+	.nav-link {
+		padding: 10px 8px;
+		font-size: 12px;
+	}
+}
+
+[data-theme-version="dark"] .homedropdown .badge-light {
+	background: rgba(243, 245, 248, 0.1);
+	color: #1D69D6 !important;
+}
+
+[data-theme-version="dark"] .custom-react-select {
+
+	&>div:nth-child(4) {
+		&>div {
+			background-color: #272627;
+			color: #fff;
+
+			&>div {
+				background-color: #272627;
+				color: #fff;
+				cursor: pointer;
+				@include transitionMedium;
+
+				&:hover {
+					background-color: #171617;
+					color: #fff;
+				}
+			}
+		}
+	} 
+	&>div {
+		&>div {
+			&:nth-child(3) {
+				height: 2.813rem;
+				background-color: #171617;
+				border-radius: 0.5rem;
+				border-color: #e9ecef !important;
+
+			}
+		}
+	}
+}
+
+.imageselect{
+	.css-hlgwow{
+		padding-right: 0;
+	}
+	.css-1xc3v61-indicatorContainer,.css-15lsz6c-indicatorContainer{
+		padding-left: 0;
 	}
 }

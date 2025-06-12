@@ -28,7 +28,11 @@ function Eventsidebar2() {
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>
-                    <div id="world-map" className="active-map">{SVGICON.worldmap}</div>
+                    <div id="world-map" className="active-map" style={{position: "relative", overflow: "hidden", backgroundColor:"transparent"}}>
+                        {SVGICON.worldmap}
+                        <div className="jqvmap-zoomin">+</div>
+                        <div className="jqvmap-zoomout">−</div>
+                    </div>
                     <div className="active-country dz-scroll">
                         <div>
                             {countrylistprogressbar.map((data, index) => (

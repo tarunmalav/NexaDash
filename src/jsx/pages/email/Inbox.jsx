@@ -45,7 +45,7 @@ function Inbox() {
                                 <div className="row g-0">
                                     <div className="col-xl-3 col-xxl-3">
                                         <div className={`mail-left-body ${show ? 'active' : ''}`}>
-                                            <InboxSidebar />
+                                            <InboxSidebar Height="height800"/>
                                         </div>
                                     </div>
                                     <div className="col-xl-9 col-xxl-9">

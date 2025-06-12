@@ -69,7 +69,7 @@ const Alerts = ({ toggleTab,  toggleChatBox }) => {
                </Link>
             </div>
             <div
-               className={`card-body contacts_body p-0 dlab-scroll  ${
+               className={`card-body contacts_body p-0 dz-scroll  ${
                   toggleChatBox ? "" : ""
                }`}
                id="DZ_W_Contacts_Body1"

@@ -2,14 +2,11 @@ import { useLocation, Link } from 'react-router-dom';
 
 const FrontMenu = () => {
   const location = useLocation();
+  const hideOnRoutes = ['/dashboard', '/','/crm', '/finance', '/ecommerce', '/course', '/medical'];  
 
-  // Routes where this menu should be hidden
-  const hideOnRoutes = ['/dashboard', '/','/crm', '/finance', '/ecommerce', '/course', '/medical']; // Add as needed
+  const shouldHide = hideOnRoutes.includes(location.pathname);
 
-  const shouldHide = hideOnRoutes.some(route => location.pathname.startsWith(route));
-
-  if (shouldHide) return null; // ⛔ Don't render the menu on these pages
-
+  if (shouldHide) return null; 
   return (
     <div className="front-menu">
       <Link to="/chat" className={location.pathname === '/chat' ? '' : 'active'}>Apps</Link>

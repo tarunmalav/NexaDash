@@ -611,12 +611,12 @@ const tabData = [
                         <Tab.Pane eventKey="Preview">
                           <Card.Body>
                             <Tab.Container defaultActiveKey={tabData[0].name.toLowerCase()}>
-                              <Nav as="ul" className="nav-tabs">
+                              <Nav as="ul" className="nav-tabs" id="TabWithIcon">
                                 {tabData.map(
                                   (data, i) =>
                                     i !== tabData.length - 1 && (
                                       <Nav.Item as="li" key={i}>
-                                        <Nav.Link eventKey={data.name.toLowerCase()}>
+                                        <Nav.Link eventKey={data.name.toLowerCase()} >
                                           <i
                                             className={`ti-${i === 2 ? "email" : data.icon}`}
                                           />

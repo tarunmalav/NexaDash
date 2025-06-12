@@ -63,7 +63,7 @@ function AccountStatements() {
                                             <form action="#">
                                                 <div className="d-flex">
                                                     <div className="clearfix flex-grow-1">
-                                                        <Select options={options} className="custom-react-select" />
+                                                        <Select options={options} className="custom-react-select select2dark" />
                                                     </div>
                                                     <div className="clearfix ms-3">
                                                         <button type="button" className="btn btn-primary px-3"><i className="fa fa-arrow-down" /></button>

@@ -297,7 +297,7 @@ const UiAccordion = () => {
                       <Tab.Content className="tab-content" id="myTabContent">
                         <Tab.Pane eventKey="Preview">
                           <Card.Body className="card-body">
-                            <Accordion className="accordion accordion-no-gutter " defaultActiveKey="0">
+                            <Accordion className="accordion accordion-no-gutter accordion-bordered" defaultActiveKey="0">
                               {defaultAccordion.map((d, i) => (
                                 <Accordion.Item key={i} eventKey={`${i}`}>
                                   <Accordion.Header as='div'>
@@ -316,7 +316,7 @@ const UiAccordion = () => {
                             <pre className="mb-0"><code className="language-html">
                               <Highlight>
                                 {`
-      <Accordion className="accordion accordion-no-gutter " defaultActiveKey="0">
+      <Accordion className="accordion accordion-no-gutter accordion-bordered" defaultActiveKey="0">
       {defaultAccordion.map((d, i) => (
         <Accordion.Item  key={i}  eventKey={\`$\{i}\`}>
           <Accordion.Header as='div'>

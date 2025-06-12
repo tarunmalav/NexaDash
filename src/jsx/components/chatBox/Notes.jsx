@@ -71,7 +71,7 @@ const Notes = ({ toggleTab, toggleChatBox }) => {
                     </Link>
                 </div>
                 <div
-                    className={`card-body contacts_body p-0 dlab-scroll  ${toggleChatBox ? '' : ''
+                    className={`card-body contacts_body p-0 dz-scroll  ${toggleChatBox ? '' : ''
                         }`}
                     id='DZ_W_Contacts_Body2'
                 >
@@ -83,10 +83,10 @@ const Notes = ({ toggleTab, toggleChatBox }) => {
                                     <p>10 Aug 2020</p>
                                 </div>
                                 <div className='ms-auto'>
-                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1 lh-1'>
                                         <i className='fas fa-pencil-alt' />
                                     </Link>
-                                    <Link to='#' className='btn btn-danger btn-xs sharp'>
+                                    <Link to='#' className='btn btn-danger btn-xs sharp lh-1'>
                                         <i className='fa fa-trash' />
                                     </Link>
                                 </div>
@@ -99,10 +99,10 @@ const Notes = ({ toggleTab, toggleChatBox }) => {
                                     <p>10 Aug 2020</p>
                                 </div>
                                 <div className='ms-auto'>
-                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1 lh-1'>
                                         <i className='fas fa-pencil-alt' />
                                     </Link>
-                                    <Link to='#' className='btn btn-danger btn-xs sharp'>
+                                    <Link to='#' className='btn btn-danger btn-xs sharp lh-1'>
                                         <i className='fa fa-trash' />
                                     </Link>
                                 </div>
@@ -115,10 +115,10 @@ const Notes = ({ toggleTab, toggleChatBox }) => {
                                     <p>10 Aug 2020</p>
                                 </div>
                                 <div className='ms-auto'>
-                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1 lh-1'>
                                         <i className='fas fa-pencil-alt' />
                                     </Link>
-                                    <Link to='#' className='btn btn-danger btn-xs sharp'>
+                                    <Link to='#' className='btn btn-danger btn-xs sharp lh-1'>
                                         <i className='fa fa-trash' />
                                     </Link>
                                 </div>
@@ -131,10 +131,10 @@ const Notes = ({ toggleTab, toggleChatBox }) => {
                                     <p>10 Aug 2020</p>
                                 </div>
                                 <div className='ms-auto'>
-                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1'>
+                                    <Link to='#' className='btn btn-primary btn-xs sharp me-1 lh-1'>
                                         <i className='fas fa-pencil-alt' />
                                     </Link>
-                                    <Link to='#' className='btn btn-danger btn-xs sharp'>
+                                    <Link to='#' className='btn btn-danger btn-xs sharp lh-1'>
                                         <i className='fa fa-trash' />
                                     </Link>
                                 </div>

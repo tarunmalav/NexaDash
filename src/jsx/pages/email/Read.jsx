@@ -19,7 +19,7 @@ function Read() {
                                 <div className="row g-0">
                                 <div className="col-xl-3 col-xxl-3">
                                         <div className={`mail-left-body dz-resp-tab ${show ? 'active' : ''}`}>
-                                            <InboxSidebar />
+                                            <InboxSidebar Height="height700"/>
                                         </div>
                                     </div>
                                     <Tab.Container defaultActiveKey="1">

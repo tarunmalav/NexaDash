@@ -268,7 +268,7 @@ function MainLayout() {
         <>
             <div id="main-wrapper" className={`wallet-open show ${sidebariconHover ? "iconhover-toggle" : ""} ${menuToggle ? "menu-toggle" : ""}`}>
                 <Nav />
-                <div className="content-body">
+                <div className="content-body" style={{minHeight:"895px"}}>
                     <div className="container">
                         <Outlet />
                     </div>

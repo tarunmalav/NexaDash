@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-function InboxSidebar() {
+function InboxSidebar({Height}) {
     return (
         <>
 
-            <div className=" ps-4 pe-3 py-4 dz-scroll height700">
+            <div className={`ps-4 pe-3 py-4 dz-scroll ${Height}`}>
                 <div className="mb-3 mt-4 mt-sm-0 email-left-box">
                     <div className="p-0">
                         <Link to="/email-compose" className="btn btn-primary btn-block">Compose</Link>

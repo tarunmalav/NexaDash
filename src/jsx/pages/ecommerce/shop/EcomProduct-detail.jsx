@@ -19,16 +19,16 @@ function ProductDetail() {
             return (
                 <div className="countdown text-center">
                     <div className="date"><span className="time days text-primary">{days}</span>
-                        <span className="work-time">Days</span>
+                        <span className="text-black work-time">Days</span>
                     </div>
                     <div className="date"><span className="time hours text-primary">{hours}</span>
-                        <span className="work-time">Hours</span>
+                        <span className="text-black work-time">Hours</span>
                     </div>
                     <div className="date"><span className="time mins text-primary">{minutes}</span>
-                        <span className="work-time">Minutess</span>
+                        <span className="text-black work-time">Minutess</span>
                     </div>
                     <div className="date"><span className="time secs text-primary">{seconds}</span>
-                        <span className="work-time">Second</span>
+                        <span className="text-black work-time">Second</span>
                     </div>
                 </div>
             );
@@ -280,7 +280,7 @@ function ProductDetail() {
                                         <div className="mt-5">
                                             <Tab.Container defaultActiveKey="Description" className="nav nav-tabs justify-content-center">
                                                 <div className="project">
-                                                    <Nav as="ul" className="nav nav-tabs justify-content-center">
+                                                    <Nav as="ul" className="nav nav-tabs justify-content-center" id="TabWithIcon">
                                                         <Nav.Item as="li" className="nav-item">
                                                             <Nav.Link className="nav-link" to="#" eventKey="Description">Description</Nav.Link>
                                                         </Nav.Item>

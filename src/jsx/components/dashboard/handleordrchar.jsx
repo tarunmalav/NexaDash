@@ -126,6 +126,7 @@ const HandleOrderChart = () => {
       series={series}
       type="area"
       height={100}
+      className="orderchart"
     />
   );
 }

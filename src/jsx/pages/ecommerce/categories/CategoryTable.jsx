@@ -140,54 +140,53 @@ const categorytabledta = [
 ]
 
 function CategoryTable() {
-    const sort = 10;
-    const activePag = useRef(0);
-    const [test, setTest] = useState(0);
-
-    const [selectValue, setSelectValue] = useState('All Time');
-    const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
-    const [tableData, setTableData] = useState([]);
-    const handleSort = (key) => {
-        let direction = 'asc';
-        if (sortConfig.key === key && sortConfig.direction === 'asc') {
-            direction = 'desc';
-        }
-        setSortConfig({ key, direction });
-    };
-
-    const getSortedData = () => {
-        let sorted = [...categorytabledta];
-        if (sortConfig.key) {
-            sorted.sort((a, b) => {
-                const aVal = a[sortConfig.key]?.toString().toLowerCase();
-                const bVal = b[sortConfig.key]?.toString().toLowerCase();
-                if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
-                if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
-                return 0;
-            });
-        }
-        return sorted;
-    };
-
-    const updatePageData = () => {
-        const sorted = getSortedData();
-        const start = activePag.current * sort;
-        const end = start + sort;
-        setTableData(sorted.slice(start, end));
-    };
-
-    useEffect(() => {
-        updatePageData();
-    }, [sortConfig, test]);
-
-    const totalPages = Math.ceil(categorytabledta.length / sort);
-    const paggination = Array.from({ length: totalPages }, (_, i) => i + 1);
-
-    const onClick = (i) => {
-        activePag.current = i;
-        updatePageData();
-        setTest(i);
-    };
+     const sort = 10;
+        const activePag = useRef(0);
+        const [test, setTest] = useState(0);
+        const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
+        const [tableData, setTableData] = useState([]);  
+    
+        const handleSort = (key) => {
+            let direction = 'asc';
+            if (sortConfig.key === key && sortConfig.direction === 'asc') {
+                direction = 'desc';
+            }
+            setSortConfig({ key, direction });
+        };
+    
+        const getSortedData = () => {
+            let sorted = [...categorytabledta];
+            if (sortConfig.key) {
+                sorted.sort((a, b) => {
+                    const aVal = a[sortConfig.key]?.toString().toLowerCase();
+                    const bVal = b[sortConfig.key]?.toString().toLowerCase();
+                    if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
+                    if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
+                    return 0;
+                });
+            }
+            return sorted;
+        };
+    
+        const updatePageData = () => {
+            const sorted = getSortedData();
+            const start = activePag.current * sort;
+            const end = start + sort;
+            setTableData(sorted.slice(start, end));
+        };
+    
+        useEffect(() => {
+            updatePageData();
+        }, [sortConfig, test]);
+    
+        const totalPages = Math.ceil(categorytabledta.length / sort);
+        const paggination = Array.from({ length: totalPages }, (_, i) => i + 1);
+    
+        const onClick = (i) => {
+            activePag.current = i;
+            updatePageData();
+            setTest(i);
+        };
     const chackboxFun = (type) => {
         setTimeout(() => {
             const motherChackBox = document.querySelector(".product_order_single");

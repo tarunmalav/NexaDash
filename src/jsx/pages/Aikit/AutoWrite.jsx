@@ -11,7 +11,7 @@ const tableData = [
 	{ title: 'Landing Page' },
 	{ title: 'Landing Page' },
 	{ title: 'Landing Page' },
-	{ title: 'Landing Page' }
+	{ title: 'Landing Page', class: "border-bottom-0", }
 ];
 const data = [
 	{ icon: IMAGES.englandsvg, value: 1, label: 'England', },
@@ -27,7 +27,7 @@ const AutoWrite = () => {
 
 	return (
 		<>
-			<PageTitle activeMenu="Auto Write" motherMenu="Home" pageContent={"Auto Write"}/>
+			<PageTitle activeMenu="Auto Write" motherMenu="Home" pageContent={"Auto Write"} />
 			<div className="container">
 				<div className="row">
 					<div className="col-xl-12">
@@ -41,7 +41,7 @@ const AutoWrite = () => {
 									<div className="card-header border-0 pb-0">
 										<h4 className="heading mb-0">Auto Writer</h4>
 										<Select
-											className="custom-react-select img-select flagselect select2dark"
+											className="custom-react-select img-select flagselect select2dark imageselect"
 											isSearchable={false}
 											value={selectedOption}
 											options={data}
@@ -159,76 +159,76 @@ const AutoWrite = () => {
 								</div>
 							</div>
 							<div className="col-xl-8">
-								<Accordion className='writer-accordion promtaccordion'>
-									<Accordion.Item>
-										<Accordion.Header className="accordion-header prompt-header rounded-lg">
-											<span className="accordion-header-icon"></span>
+								<Accordion className='writer-accordion promtaccordion' defaultActiveKey="0">
+									<Accordion.Item className="" >
+										<Accordion.Header className="rounded prompt-header">
 											<span className="accordion-header-text fw-semibold">Prompts</span>
-											<span className="accordion-header-indicator"></span>
 										</Accordion.Header>
-										<Accordion.Collapse id="collapseOne" className="collapse">
-											<div className="accordion-body-text">
-												<div className="d-flex align-items-center mb-1">
-													<h6 className="mb-0">article-title:</h6>
-													<span className="badge badge-sm badge-danger light ms-1">description</span>
-													<span className="mx-1">,</span>
-													<span className="badge badge-sm badge-danger light">section-headlines</span>
-												</div>
-												<div className="mb-3">
-													<textarea className="form-control bg-transparent" id="exampleFormControlTextarea11" rows="3"
-														defaultValue='Generate a title for an article that discusses the following topic: 
+										<Accordion.Collapse >
+											<div className="accordion-body">
+												<div className="accordion-body-text">
+													<div className="d-flex align-items-center mb-1">
+														<h6 className="mb-0">article-title:</h6>
+														<span className="badge badge-sm badge-danger light ms-1">description</span>
+														<span className="mx-1">,</span>
+														<span className="badge badge-sm badge-danger light">section-headlines</span>
+													</div>
+													<div className="mb-3">
+														<textarea className="form-control bg-transparent" id="exampleFormControlTextarea11" rows="3"
+															defaultValue='Generate a title for an article that discusses the following topic: 
 [[description]] 
 The article will include the following sections: 
 [[section-headlines]]  
 Title:'
-													>
-													</textarea>
-												</div>
-												<div className="d-flex align-items-center mb-1">
-													<h6 className="mb-0">article-title:</h6>
-													<span className="badge badge-sm badge-danger light ms-1">description</span>
-													<span className="mx-1">,</span>
-													<span className="badge badge-sm badge-danger light">section-headlines</span>
-												</div>
-												<div className="mb-3">
-													<textarea className="form-control bg-transparent" id="exampleFormControlTextarea2" rows="3"
-														defaultValue='Generate a title for an article that discusses the following topic: 
+														>
+														</textarea>
+													</div>
+													<div className="d-flex align-items-center mb-1">
+														<h6 className="mb-0">article-title:</h6>
+														<span className="badge badge-sm badge-danger light ms-1">description</span>
+														<span className="mx-1">,</span>
+														<span className="badge badge-sm badge-danger light">section-headlines</span>
+													</div>
+													<div className="mb-3">
+														<textarea className="form-control bg-transparent" id="exampleFormControlTextarea2" rows="3"
+															defaultValue='Generate a title for an article that discusses the following topic: 
 [[description]]
 The article will include the following sections:
 [[section-headlines]] 
 Title:'
-													>
-													</textarea>
-												</div>
-												<div className="d-flex align-items-center mb-1">
-													<h6 className="mb-0">article-title:</h6>
-													<span className="badge badge-sm badge-danger light ms-1">description</span>
-													<span className="mx-1">,</span>
-													<span className="badge badge-sm badge-danger light">section-headlines</span>
-												</div>
-												<div className="mb-3">
-													<textarea className="form-control bg-transparent" id="exampleFormControlTextarea3" rows="3"
-														defaultValue='Generate a title for an article that discusses the following topic:
+														>
+														</textarea>
+													</div>
+													<div className="d-flex align-items-center mb-1">
+														<h6 className="mb-0">article-title:</h6>
+														<span className="badge badge-sm badge-danger light ms-1">description</span>
+														<span className="mx-1">,</span>
+														<span className="badge badge-sm badge-danger light">section-headlines</span>
+													</div>
+													<div className="mb-3">
+														<textarea className="form-control bg-transparent" id="exampleFormControlTextarea3" rows="3"
+															defaultValue='Generate a title for an article that discusses the following topic:
 [[description]]
 The article will include the following sections:
 [[section-headlines]] 
 Title:'
-													>
+														>
 
-													</textarea>
-												</div>
-												<div className="mb-3">
-													<textarea className="form-control bg-transparent" id="exampleFormControlTextarea12" rows="3"
-														defaultValue=' Generate a title for an article that discusses the following topic:
+														</textarea>
+													</div>
+													<div className="mb-3">
+														<textarea className="form-control bg-transparent" id="exampleFormControlTextarea12" rows="3"
+															defaultValue=' Generate a title for an article that discusses the following topic:
 [[description]]
 The article will include the following sections:
 [[section-headlines]] 
 Title:'
-													>
+														>
 
-													</textarea>
+														</textarea>
+													</div>
+
 												</div>
-
 											</div>
 										</Accordion.Collapse>
 									</Accordion.Item>
@@ -247,9 +247,9 @@ Title:'
 												<tbody>
 													{tableData.map((item, ind) => (
 														<tr key={ind}>
-															<td>{item.title}</td>
-															<td className="text-primary">This is a test title generation</td>
-															<td>July {ind + 10}, 2025</td>
+															<td className={item.class}>{item.title}</td>
+															<td className={`text-primary ${item.class}`}>This is a test title generation</td>
+															<td className={item.class}>July {ind + 10}, 2025</td>
 														</tr>
 													))}
 												</tbody>

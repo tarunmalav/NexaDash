@@ -23,8 +23,8 @@ function RevenueUpdatechart() {
                                 <Nav.Link className="nav-link" eventKey="bnb"><img src={IMAGES.bnbsmsvg} alt="" className="me-1" />BNB</Nav.Link>
                             </Nav.Item>
                         </Nav>
-                        <Dropdown className='global-drop d-sm-block d-none' align="end" >
-                            <Dropdown.Toggle as="div" className='i-false global-drop-toggle c-pointer text-primary'>
+                        <Dropdown className='global-drop d-sm-block d-none homedropdown' align="end" >
+                            <Dropdown.Toggle as="div" className='i-false global-drop-toggle c-pointer text-primary badge-light rounded nav-link'>
                                 {globalSelect}{" "}
                                 <i className="fa-solid fa-chevron-down" />
                             </Dropdown.Toggle>

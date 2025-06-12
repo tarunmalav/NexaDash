@@ -1,7 +1,6 @@
 import { Fragment } from "react"; 
 import DropdownMultiselect from "react-multiselect-dropdown-bootstrap";
-import PageTItle from "../../../layouts/PageTitle";
-import Select from "react-select";
+import PageTItle from "../../../layouts/PageTitle"; 
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -325,9 +324,8 @@ function Element() {
                         <option>4</option>
                       </select>
                     </div>
-                    <div className="form-group">
-
-                      <div id="multiselect">
+                    <div className="form-group"> 
+                      <div id="multiselect" className="elementmultiselect">
                         <DropdownMultiselect
                           options={["1", "2", "3", "4", "5", "6"]}
                         />

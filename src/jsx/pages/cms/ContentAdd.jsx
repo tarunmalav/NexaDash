@@ -236,7 +236,7 @@ const ContentAdd = () => {
                                         <div className="cm-content-body form excerpt">
                                             <div className="card-body Cms-selecter">
                                                 <label className="form-label">User</label>
-                                                <Select options={options} className="custom-react-select" />
+                                                <Select options={options} className="custom-react-select select2dark" />
                                             </div>
                                         </div>
                                     </Collapse>
@@ -307,7 +307,7 @@ const ContentAdd = () => {
                                                             <div className="accordion-body-text border p-3">
                                                                 <div className="Cms-selecter mb-2">
                                                                     <label className="form-label w-100">Content Type</label>
-                                                                    <Select options={options2} className="custom-react-select" />
+                                                                    <Select options={options2} className="custom-react-select select2dark" />
 
                                                                 </div>
                                                                 <div>
@@ -420,7 +420,7 @@ const ContentAdd = () => {
                                         <div className="cm-content-body publish-content form excerpt">
                                             <div className="card-body Cms-selecter">
                                                 <label className="form-label">Title</label>
-                                                <Select options={options2} className="custom-react-select" />
+                                                <Select options={options2} className="custom-react-select select2dark" />
                                             </div>
                                         </div>
                                     </Collapse>
@@ -440,7 +440,7 @@ const ContentAdd = () => {
                                         <div className="cm-content-body publish-content form excerpt">
                                             <div className="card-body Cms-selecter">
                                                 <label className="form-label w-100">Content Type</label>
-                                                <Select options={options3} className="custom-react-select" />
+                                                <Select options={options3} className="custom-react-select select2dark" />
                                             </div>
                                         </div>
                                     </Collapse>

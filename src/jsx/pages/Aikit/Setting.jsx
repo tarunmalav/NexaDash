@@ -6,8 +6,8 @@ import MainContent from '../../components/aikit/MainContent';
 import TopMenus from '../../components/aikit/TopMenus';
 import { IMAGES, SVGICON } from '../../constant/Theme';
 import Nouislider from "nouislider-react"; 
-import { TagInput   } from 'rsuite';
 import PageTitle from '../../layouts/PageTitle';
+import Aikittaify from '../../components/aikit/multiselect';
 
 const options1 = [
 	{ icon: IMAGES.englandsvg, value: 1, label: 'England', },
@@ -27,11 +27,6 @@ function ToolTipBlog() {
 		</>
 	)
 }
-const initialTags = [
-	"Watercolor", "Vector", "Art",
-	"Portrait", "Pencil Drawing", "Digital Painting",
-	"Abstract", "Oil Painting", "Cartoon", "Black And White"
-];
 function Setting() {
 	const [selectedOption, setSelectedOption] = useState(options1[0]);
 	const handleChange = e => {
@@ -261,10 +256,7 @@ function Setting() {
 									<div className="col-xl-6">
 										<div className="mb-3 taginput-data">
 											<label htmlFor="exampleInputEmail1" className="form-label">Image generation styles</label> 
-											<TagInput block  																								
-												defaultValue={initialTags}
-												className='taginputdark'
-											/>
+											<Aikittaify />
 											<div id="emailHelp-11" className="form-text mb-2">System message help set the
 												behaviour of the model. You can use it to ask the model to mimic a
 												certain style or take a certain perspective for all text generations.

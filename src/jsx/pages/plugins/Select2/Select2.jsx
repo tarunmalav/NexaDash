@@ -30,7 +30,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -105,7 +105,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -147,7 +147,7 @@ const Select2 = () => {
                     <label className="mb-4 select2-label" htmlFor="id_label_single">
                       Click this to highlight the single select element <br />
                       <Select
-                        className="select2dark"
+                        className="select2dark custom-react-select"
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
                         options={options}
@@ -186,7 +186,7 @@ const Select2 = () => {
 
                 <div className="mb-3">
                   <Select
-                    className="select2dark"
+                    className="select2dark custom-react-select"
                     defaultValue={selectedOption}
                     onChange={setSelectedOption}
                     options={options}
@@ -218,7 +218,7 @@ const Select2 = () => {
 
                 <div className="mb-4">
                   <Select
-                    className="select2dark"
+                    className="select2dark custom-react-select"
                     defaultValue={selectedOption}
                     onChange={setSelectedOption}
                     options={options}
@@ -250,7 +250,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   isClearable
                   // components={{ NoOptionsMessage }}
                   // styles={{ NoOptionsMessage: base => ({ ...base, ...msgStyles }) }}
@@ -274,7 +274,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -302,7 +302,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -331,7 +331,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -357,7 +357,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -408,7 +408,7 @@ const Select2 = () => {
                   </p>
                 </div>
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -456,7 +456,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -502,7 +502,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -534,7 +534,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -580,7 +580,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -606,7 +606,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -633,7 +633,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -659,7 +659,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -685,7 +685,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -723,7 +723,7 @@ const Select2 = () => {
                 </div>
 
                 <Select
-                  className="select2dark"
+                  className="select2dark custom-react-select"
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
@@ -752,7 +752,7 @@ const Select2 = () => {
 
                 <div className="mb-4">
                   <Select
-                    className="select2dark"
+                    className="select2dark custom-react-select"
                     defaultValue={selectedOption}
                     onChange={setSelectedOption}
                     options={options}
@@ -784,7 +784,7 @@ const Select2 = () => {
 
                 <div className="mb-4">
                   <Select
-                    className="select2dark"
+                    className="select2dark custom-react-select"
                     defaultValue={selectedOption}
                     onChange={setSelectedOption}
                     options={options}
@@ -816,7 +816,7 @@ const Select2 = () => {
                 <button
                   onClick={() => (
                     <Select
-                      className="select2dark"
+                      className="select2dark custom-react-select"
                       defaultValue={selectedOption}
                       onChange={setSelectedOption}
                       options={options}
@@ -840,7 +840,7 @@ const Select2 = () => {
                 </button>
                 <div className="mt-4">
                   <Select
-                    className="select2dark"
+                    className="select2dark custom-react-select"
                     defaultValue={selectedOption}
                     onChange={setSelectedOption}
                     options={options}
