@@ -37,8 +37,8 @@ function Read() {
                                                 </div>
                                                 <div className="pb-3 dz-scroll height780">
                                                     <div className="email-left-box ">
-                                                        <Nav as="ul" className="nav nav-tabs  mail-tab">
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                        <Nav as="ul" className="nav-tabs mail-tab" id="myTab">
+                                                            <Nav.Item as="li">
                                                                 <Nav.Link eventKey="1" className="nav-link mail-tab">
                                                                     <div className="inbox">
                                                                         <div>
@@ -50,7 +50,7 @@ function Read() {
                                                                     </div>
                                                                 </Nav.Link>
                                                             </Nav.Item>
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                            <Nav.Item as="li">
                                                                 <Nav.Link eventKey="2" className="nav-link">
                                                                     <div className="inbox">
                                                                         <div>
@@ -62,7 +62,7 @@ function Read() {
                                                                     </div>
                                                                 </Nav.Link>
                                                             </Nav.Item>
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                            <Nav.Item as="li">
                                                                 <Nav.Link eventKey="3" className="nav-link">
                                                                     <div className="inbox">
                                                                         <div>
@@ -74,7 +74,7 @@ function Read() {
                                                                     </div>
                                                                 </Nav.Link>
                                                             </Nav.Item>
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                            <Nav.Item as="li">
                                                                 <Nav.Link eventKey="4" className="nav-link style-2">
                                                                     <div className="inbox">
                                                                         <div>
@@ -86,7 +86,7 @@ function Read() {
                                                                     </div>
                                                                 </Nav.Link>
                                                             </Nav.Item>
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                            <Nav.Item as="li" >
                                                                 <Nav.Link eventKey="5" className="nav-link">
                                                                     <div className="inbox">
                                                                         <div>
@@ -98,7 +98,7 @@ function Read() {
                                                                     </div>
                                                                 </Nav.Link>
                                                             </Nav.Item>
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                            <Nav.Item as="li" >
                                                                 <Nav.Link eventKey="6" className="nav-link">
                                                                     <div className="inbox">
                                                                         <div>
@@ -110,7 +110,7 @@ function Read() {
                                                                     </div>
                                                                 </Nav.Link>
                                                             </Nav.Item>
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                            <Nav.Item as="li" >
                                                                 <Nav.Link eventKey="7" className="nav-link style-1">
                                                                     <div className="inbox">
                                                                         <div>
@@ -122,7 +122,7 @@ function Read() {
                                                                     </div>
                                                                 </Nav.Link>
                                                             </Nav.Item>
-                                                            <Nav.Item as="li" className="nav-item" >
+                                                            <Nav.Item as="li" >
                                                                 <Nav.Link eventKey="8" className="nav-link">
                                                                     <div className="inbox">
                                                                         <div>

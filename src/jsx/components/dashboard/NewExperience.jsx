@@ -150,7 +150,7 @@ const NewExperience = () => {
 				options={optons}
 				series={series}
 				type="area"
-				width={500}
+				// width={500}
 				height={42}
 			/>
 		</>

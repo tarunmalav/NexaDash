@@ -20,7 +20,7 @@ function ProductList() {
                                         <div className="card-body">
                                             <div className="row m-b-30">
                                                 <div className="col-xl-4 col-xxl-12">
-                                                    <div className="new-arrival-product mb-xxl-4">
+                                                    <div className="new-arrival-product mb-4 mb-xxl-4">
                                                         <div className="new-arrivals-img-contnent">
                                                             <img className="img-fluid" src={item.image} alt="" />
                                                         </div>

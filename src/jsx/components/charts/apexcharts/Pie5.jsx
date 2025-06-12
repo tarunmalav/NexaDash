@@ -11,7 +11,7 @@ class ApexRedialBar2 extends React.Component {
         chart: {
           type: "radialBar",
           //width:320,
-          // height: 370,
+          height: 370,
           offsetY: 0,
           offsetX: 0,
         },
@@ -138,7 +138,7 @@ class ApexRedialBar2 extends React.Component {
 
   render() {
     return (
-      <div id="chart" className="line-chart-style bar-chart">
+      <div id="chart" className="line-chart-style bar-chart apexchartpie">
         <ReactApexChart
           options={this.state.options}
           series={this.state.series}

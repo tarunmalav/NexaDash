@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../assets/images/logo-full.png";
 import login from "../../../assets/images/login.png";
@@ -10,14 +10,15 @@ const LockScreen = () => {
     navigate("/");
   };
   const [openEyes, setOpenEyes] = useState(true);
-  useEffect(() => {
-    document.body.classList.add('vh-100');
-  }, [])
+ useEffect(() => {
+    document.querySelector("html").setAttribute("class", "h-100");
+    document.body.classList.add("vh-100");
+  }, []);
 
   return (
     <>
-      <div className="authincation h-100">
-        <div className="container-fluid h-100">
+      <div className="authincation h-100 d-flex align-items-center justify-content-center">
+        <div className="container-fluid h-100 ">
           <div className="row h-100">
             <div className="col-lg-6 col-md-7 col-sm-12 mx-auto align-self-center">
               <div className="login-form">

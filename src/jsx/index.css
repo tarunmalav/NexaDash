@@ -35,6 +35,10 @@
   border-radius: 0 !important;
 }
 
+[data-theme-version="dark"] .leftpadaccordion .accordion-button {
+ background-color: var(--body-bg);
+}
+
 .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
   border: 0 !important;
 }
@@ -126,4 +130,7 @@
 } 
 .elementmultiselect .dropdown-menu .btn-group{
   display: none;
+}
+.apexchartpie .apexcharts-legend{
+display: none;
 }
