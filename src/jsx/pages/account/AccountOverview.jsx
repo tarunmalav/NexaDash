@@ -19,7 +19,7 @@ function AccountOverview(){
                 </div>
                 <div className="tab-content" id="tabContentMyProfileBottom">
                     <div className="row">
-                        <div className="col-xl-5 col-xxl-6">
+                        <div className="col-xl-5">
                             <div className="card">
                                 <div className="card-header py-3">
                                     <h6 className="card-title">Profile Details</h6>
@@ -48,10 +48,10 @@ function AccountOverview(){
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-xxl-6 col-lg-6">
+                        <div className="col-xl-4 col-lg-6">
                             <Contributions />
                         </div>
-                        <div className="col-xl-3 col-xxl-4 col-lg-6">
+                        <div className="col-xl-3 col-lg-6">
                             <div className="card">
                                 <div className="card-body text-center p-3 pb-1">
                                     <div className="clearfix">
@@ -65,10 +65,10 @@ function AccountOverview(){
                                 </div>
                             </div>           
                         </div>
-                        <div className="col-xl-5 col-xxl-8">
+                        <div className="col-xl-5">
                             <SellingCategories/> 
                         </div>
-                        <div className="col-xl-7 col-xxl-12">
+                        <div className="col-xl-7">
                             <div className="card">
                                 <div className="card-header border-0 pt-3 pb-0">
                                     <h4 className="heading mb-0">Stock Report</h4>

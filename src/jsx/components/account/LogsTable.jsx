@@ -104,8 +104,6 @@ function LogsTable() {
     const sort = 10;
     const activePag = useRef(0);
     const [test, setTest] = useState(0);
-
-    const [selectValue, setSelectValue] = useState('All Time');
     const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
     const [tableData, setTableData] = useState([]);
     const handleSort = (key) => {

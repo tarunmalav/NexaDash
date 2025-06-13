@@ -23,7 +23,7 @@ function Medical() {
                     <div className="row">
                         {medicalcarddata.map((data, i) => (
                             <div className="col-md-3 col-6" key={i}>
-                                <div className="dlab-cource style-1">
+                                <div className={`dlab-cource style-1 ${data.columnstand}`}>
                                     <div className="d-flex align-items-center">
                                         <span className={`course-icon ${data.class}`}>
                                             {data.svg}
@@ -95,7 +95,9 @@ function Medical() {
                     <div className="card">
                         <div className="card-body">
                             <div id="redial" className="d-flex justify-content-center">
-                                <ProgressBarChart width={241} />
+                                <ProgressBarChart
+                                //  width={241} 
+                                 />
                             </div>
                             <span className="right-sign">
                                 {SVGICON.warningRight}

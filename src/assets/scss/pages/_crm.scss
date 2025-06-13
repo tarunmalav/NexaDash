@@ -294,6 +294,9 @@
 		font-size: 0.875rem;
 		font-weight: 600;
 		color: white;
+		@include respond ('phone'){
+			font-size: 10px;
+		}
 	}
 
 	.course-icon {

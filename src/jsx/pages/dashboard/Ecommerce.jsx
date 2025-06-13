@@ -129,7 +129,9 @@ function Ecommerce() {
                             <div className="card">
                                 <div className="card-body mb-0">
                                     <div id="redial">
-                                        <ProgressBarChart width={205} />
+                                        <ProgressBarChart
+                                        //  width={205} 
+                                         />
                                     </div>
                                     <div className="redia-date text-center">
                                         <h4>My Progress</h4>

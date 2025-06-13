@@ -38,13 +38,43 @@ function Read() {
                                                 <div className="pb-3 dz-scroll height780">
                                                     <div className="email-left-box ">
                                                         <Nav as="ul" className="nav-tabs mail-tab" id="myTab">
-                                                            <Nav.Item as="li">
+                                                            <Nav.Item as="li" role="presentation">
                                                                 <Nav.Link eventKey="1" className="nav-link mail-tab">
                                                                     <div className="inbox">
                                                                         <div>
                                                                             <h6> Jack Lee </h6>
                                                                             <span>Insurance documents</span>
-                                                                            <p> Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu </p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa-regular  text-warning fa-star me-1" />Jan</span>
                                                                     </div>
@@ -56,7 +86,37 @@ function Read() {
                                                                         <div>
                                                                             <h6> Samulas Jack </h6>
                                                                             <span>Insurance documents</span>
-                                                                            <p>Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu</p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa-regular fa-star text-warning me-1" /> Feb</span>
                                                                     </div>
@@ -68,7 +128,37 @@ function Read() {
                                                                         <div>
                                                                             <h6> Nella Beck </h6>
                                                                             <span>Insurance documents</span>
-                                                                            <p>Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu</p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa fa-star text-warning me-1" aria-hidden="true" /> Apr</span>
                                                                     </div>
@@ -80,7 +170,37 @@ function Read() {
                                                                         <div>
                                                                             <h6> Jhon Beck </h6>
                                                                             <span>Insurance documents</span>
-                                                                            <p>Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu</p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa fa-star text-warning me-1" aria-hidden="true" /> Mar</span>
                                                                     </div>
@@ -92,7 +212,37 @@ function Read() {
                                                                         <div>
                                                                             <h6> Yatin </h6>
                                                                             <span>Insurance documents</span>
-                                                                            <p>Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu</p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa fa-star text-warning me-1" aria-hidden="true" /> Feb</span>
                                                                     </div>
@@ -104,7 +254,37 @@ function Read() {
                                                                         <div>
                                                                             <h6> Hanu Beck </h6>
                                                                             <span>Insurance documents</span>
-                                                                            <p>Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu</p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa-regular fa-paper-plane me-1" /><i className="fa fa-star text-warning me-1" aria-hidden="true" /> Feb</span>
                                                                     </div>
@@ -116,7 +296,37 @@ function Read() {
                                                                         <div>
                                                                             <h6> Nitesh Lewe </h6>
                                                                             <span>Apple documents</span>
-                                                                            <p>Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu</p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa fa-star text-warning me-1" aria-hidden="true" /> Dec</span>
                                                                     </div>
@@ -128,7 +338,37 @@ function Read() {
                                                                         <div>
                                                                             <h6> Liam Antony </h6>
                                                                             <span>Apple documents</span>
-                                                                            <p>Hi Brian, Aliquip ipsum sunt sit sunt velit velit pariatur. Nisi incididunt eiusmod consequat ut cillum eu</p>
+                                                                            <p> Hi Brian,
+
+																			Aliquip ipsum sunt sit sunt velit velit
+																			pariatur.
+																			Nisi incididunt eiusmod consequat ut cillum
+																			eu
+																			exercitation. Enim proident nostrud aute in.
+																			Non
+																			irure nisi duis aliquip commodo proident
+																			veniam
+																			adipisicing id velit. Enim magna Lorem
+																			fugiat
+																			tempor.
+
+																			Commodo non nulla incididunt irure
+																			voluptate. Fugiat
+																			culpa cillum aute quis. Voluptate veniam
+																			adipisicing
+																			dolor sint. Proident eiusmod quis duis ipsum
+																			sit eu.
+
+																			Deserunt reprehenderit adipisicing
+																			reprehenderit
+																			ipsum. Laborum in veniam amet occaecat
+																			tempor esse
+																			enim dolore elit sit quis adipisicing. Aute
+																			occaecat
+																			eiusmod enim cupidatat sunt.
+
+																			Best Regards,
+																			Sanders Beck... </p>
                                                                         </div>
                                                                         <span className="ms-auto d-flex align-items-center"><i className="fa-regular fa-paper-plane me-1" /> <i className="fa fa-star text-warning me-1" aria-hidden="true" /> Feb</span>
                                                                     </div>

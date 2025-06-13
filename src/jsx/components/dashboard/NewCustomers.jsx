@@ -151,7 +151,7 @@ const NewCustomers = () => {
                 options={optons}
                 series={series}
                 type="area"
-                width={142}
+                // width={142}
                 height={70}
             />
         </>

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import { IMAGES } from '../../constant/Theme';
 
 
-const tableData = [
+const CountryTable = [
     {name: "Batman", name2 :'Liam Risher',profile: IMAGES.contact1, progresStyle: "primary", progresValue: "53%", assigne: '3', status: 'Inprogress',  duedate: '01 May 2025'},
     {name: "Mivy App", name2 :'Honey Risher', profile: IMAGES.contact2, progresStyle: "primary", progresValue: "50%", assigne: '3', status: 'Inprogress',  duedate: '08 June 2025'},
     {name: "Crypto App", name2 :'Ankites Risher', profile: IMAGES.contact1, progresStyle: "danger", progresValue: "45%", assigne: '2', status: 'Pending',  duedate: '14 Sep 2025'},
@@ -24,35 +24,52 @@ const tableData = [
 ];
 
 const ActiveProjects = () => {
-    const [data, setData] = useState(
-		document.querySelectorAll("#projects-tbl_wrapper tbody tr")
-	);
-	const sort = 5;
-	const activePag = useRef(0);
-	const [test, settest] = useState(0);
-	const chageData = (frist, sec) => {
-		for (var i = 0; i < data.length; ++i) {
-			if (i >= frist && i < sec) {
-				data[i].classList.remove("d-none");
-			} else {
-				data[i].classList.add("d-none");
-			}
-		}
-	};
-   
-   useEffect(() => {
-      setData(document.querySelectorAll("#projects-tbl_wrapper tbody tr"));
-	}, [test]);
+const sort = 5;
+    const activePag = useRef(0);
+    const [test, setTest] = useState(0);
+    const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
+    const [tableData, setTableData] = useState([]);
+    const handleSort = (key) => {
+        let direction = 'asc';
+        if (sortConfig.key === key && sortConfig.direction === 'asc') {
+            direction = 'desc';
+        }
+        setSortConfig({ key, direction });
+    };
 
-   activePag.current === 0 && chageData(0, sort);
-   let paggination = Array(Math.ceil(data.length / sort))
-      .fill()
-      .map((_, i) => i + 1);
-	const onClick = (i) => {
-		activePag.current = i;
-		chageData(activePag.current * sort, (activePag.current + 1) * sort);
-		settest(i);
-	};
+    const getSortedData = () => {
+        let sorted = [...CountryTable];
+        if (sortConfig.key) {
+            sorted.sort((a, b) => {
+                const aVal = a[sortConfig.key]?.toString().toLowerCase();
+                const bVal = b[sortConfig.key]?.toString().toLowerCase();
+                if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
+                if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+        return sorted;
+    };
+
+    const updatePageData = () => {
+        const sorted = getSortedData();
+        const start = activePag.current * sort;
+        const end = start + sort;
+        setTableData(sorted.slice(start, end));
+    };
+
+    useEffect(() => {
+        updatePageData();
+    }, [sortConfig, test]);
+
+    const totalPages = Math.ceil(CountryTable.length / sort);
+    const paggination = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+    const onClick = (i) => {
+        activePag.current = i;
+        updatePageData();
+        setTest(i);
+    };
    
     const chackboxFun = (type) => {
         setTimeout(()=>{
@@ -99,12 +116,12 @@ const ActiveProjects = () => {
                                             <label className="form-check-label" htmlFor="checkAll"></label>
                                         </div>
                                     </th>
-                                    <th>Project Name</th>
-                                    <th>Project Lead</th>
-                                    <th>Progress</th>
-                                    <th>Assignee</th>
-                                    <th>Status</th>
-                                    <th>Due Date</th>
+                                    <th className="sorting c-pointer" onClick={() => handleSort('name')}>Project Name</th>
+                                    <th className="sorting c-pointer" onClick={() => handleSort('name2')}>Project Lead</th>
+                                    <th className="sorting c-pointer" onClick={() => handleSort('profile')}>Progress</th>
+                                    <th className="sorting c-pointer" onClick={() => handleSort('progresStyle')}>Assignee</th>
+                                    <th className="sorting c-pointer" onClick={() => handleSort('status')}>Status</th>
+                                    <th className="sorting c-pointer" onClick={() => handleSort('duedate')}>Due Date</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -180,54 +197,41 @@ const ActiveProjects = () => {
                             </tbody>
                             
                         </table>
+                       
                         <div className="d-sm-flex text-center justify-content-between align-items-center">
                             <div className="dataTables_info">
                                 Showing {activePag.current * sort + 1} to{" "}
-                                {data.length > (activePag.current + 1) * sort
-                                    ? (activePag.current + 1) * sort
-                                    : data.length}{" "}
-                                of {data.length} entries
+                                {Math.min((activePag.current + 1) * sort, CountryTable.length)} of {CountryTable.length} entries
                             </div>
-                            <div
-                                className="dataTables_paginate paging_simple_numbers"
-                                id="example2_paginate"
-                            >
+                            <div className="dataTables_paginate paging_simple_numbers" id="example2_paginate">
                                 <Link
-                                    className="paginate_button previous disabled"
+                                    className={`paginate_button previous ${activePag.current === 0 ? 'disabled' : ''}`}
                                     to="#"
-                                    onClick={() =>
-                                    activePag.current > 0 &&
-                                    onClick(activePag.current - 1)
-                                    }
+                                    onClick={() => activePag.current > 0 && onClick(activePag.current - 1)}
                                 >
                                     <i className="fa-solid fa-angle-left" />
                                 </Link>
                                 <span>
                                     {paggination.map((number, i) => (
-                                    <Link
-                                        key={i}
-                                        to="#"
-                                        className={`paginate_button  ${
-                                            activePag.current === i ? "current" : ""
-                                        } `}
-                                        onClick={() => onClick(i)}
-                                    >
-                                        {number}
-                                    </Link>
+                                        <Link
+                                            key={i}
+                                            to="#"
+                                            className={`paginate_button ${activePag.current === i ? "current" : ""}`}
+                                            onClick={() => onClick(i)}
+                                        >
+                                            {number}
+                                        </Link>
                                     ))}
                                 </span>
                                 <Link
-                                    className="paginate_button next"
+                                    className={`paginate_button next ${activePag.current === totalPages - 1 ? 'disabled' : ''}`}
                                     to="#"
-                                    onClick={() =>
-                                    activePag.current + 1 < paggination.length &&
-                                    onClick(activePag.current + 1)
-                                    }
+                                    onClick={() => activePag.current + 1 < totalPages && onClick(activePag.current + 1)}
                                 >
                                     <i className="fa-solid fa-angle-right" />
                                 </Link>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>

@@ -29,7 +29,7 @@ function Pickers() {
                   <div className="col-xl-4 mb-3">
                     <div className="example">
                       <label className="form-label">Date Range Pick</label>
-                      <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender z-1">
+                      <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender">
                         <DatePicker
                           selected={startDate}
                           onChange={(date) => setStartDate(date)}
@@ -43,7 +43,7 @@ function Pickers() {
                   <div className="col-xl-4 mb-3">
                     <div className="example">
                       <label className="form-label">Date Range With Time</label>
-                      <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender z-1">
+                      <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender">
                         <DatePicker
                           selected={startDate}
                           onChange={(date) => setStartDate(date)}
@@ -57,7 +57,7 @@ function Pickers() {
                   <div className="col-xl-4">
                     <div className="example">
                       <label className="form-label">Limit Selectable Dates</label>
-                      <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender z-1">
+                      <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender">
                         <DatePicker
                           selected={startDate}
                           onChange={(date) => setStartDate(date)}
@@ -102,26 +102,26 @@ function Pickers() {
                   <div className="col-md-6 col-xl-3 mb-3">
                     <label className="form-label">Default Clock Picker</label>
                     <div className="input-group clockpicker">
-                      <TimePicker onChange={onChange} value={value} clearIcon clearAriaLabel minutePlaceholder="12" hourPlaceholder="24" className="form-control  pt-2 z-1" />
+                      <TimePicker onChange={onChange} value={value} clearIcon clearAriaLabel minutePlaceholder="12" hourPlaceholder="24" className="form-control  pt-2" />
                     </div>
                   </div>
                   <div className="col-md-6 col-xl-3 mb-3">
                     <label className="form-label">Auto btn-close Clock Picker</label>
                     <div className="input-group clockpicker" data-placement="bottom" data-align="top" data-autobtn-close="true">
-                      <TimePicker onChange={onChange} value={value} clearIcon clearAriaLabel minutePlaceholder="12" hourPlaceholder="24" className="form-control pt-2 z-1" />
+                      <TimePicker onChange={onChange} value={value} clearIcon clearAriaLabel minutePlaceholder="12" hourPlaceholder="24" className="form-control pt-2" />
                     </div>
                   </div>
                   <div className="col-md-6 col-xl-3 mb-3">
                     <label className="form-label">Now time</label>
                     <div className="input-group ampmlabel">
                       <TimePicker align="left" onChange={onChange} value={value} minutePlaceholder="12" hourPlaceholder="24" className="form-control" clockIcon={null} clearIcon={null} amPmAriaLabel=""/>
-                      <button type="button" id="check-minutes" className="btn waves-effect waves-light btn-ft btn-success">Check the minutes</button>
+                      <button type="button" id="check-minutes" className="btn waves-effect waves-light btn-ft btn-success z-0">Check the minutes</button>
                     </div>
                   </div>
                   <div className="col-md-6 col-xl-3">
                     <label className="form-label">Left Placement</label>
                     <div className="input-group clockpicker" data-placement="left" data-align="top" data-autobtn-close="true">
-                      <TimePicker align="left" onChange={onChange} value={value} clearIcon clearAriaLabel minutePlaceholder="12" hourPlaceholder="24" className="form-control pt-2 z-2" />
+                      <TimePicker align="left" onChange={onChange} value={value} clearIcon clearAriaLabel minutePlaceholder="12" hourPlaceholder="24" className="form-control pt-2" />
                     </div>
                   </div>
                 </div>

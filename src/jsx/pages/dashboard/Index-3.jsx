@@ -147,22 +147,6 @@ function Sales() {
                 <div className="col-xl-3 col-sm-6">
                     <div className="card">
                         <div className="card-body">
-                            <div className="card-media d-flex">
-                                <div className="media-data">
-                                    <span>Page views</span>
-                                    <h4>37,543</h4>
-                                    <span className="text-success fs-12"> {SVGICON.Uptreding} 09.52 </span>
-                                </div>
-                                <div id="NewCustomers">
-                                    <NewCustomers />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-sm-6">
-                    <div className="card">
-                        <div className="card-body">
                             <div className="card-media d-flex align-items-center justify-content-between">
                                 <div className="media-data">
                                     <span>Clients Added</span>
@@ -201,6 +185,22 @@ function Sales() {
                                 </div>
                                 <div className="progress">
                                     <div className="progress-bar bg-success" style={{ width: "50%", height: "5px", borderRadius: "4px" }} role="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-xl-3 col-sm-6">
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="card-media d-flex">
+                                <div className="media-data">
+                                    <span>Page views</span>
+                                    <h4>37,543</h4>
+                                    <span className="text-success fs-12"> {SVGICON.Uptreding} 09.52 </span>
+                                </div>
+                                <div id="NewCustomers">
+                                    <NewCustomers />
                                 </div>
                             </div>
                         </div>

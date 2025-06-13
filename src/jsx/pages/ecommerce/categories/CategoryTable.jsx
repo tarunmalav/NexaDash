@@ -4,7 +4,7 @@ import { IMAGES } from "../../../constant/Theme";
 import { useState } from "react";
 import PageTitle from "../../../layouts/PageTitle";
 
-const categorytabledta = [
+const CountryTable = [
     {
         products: 10,
         type: <span className="badge badge-sm badge-primary light">Automated</span>,
@@ -140,53 +140,52 @@ const categorytabledta = [
 ]
 
 function CategoryTable() {
-     const sort = 10;
-        const activePag = useRef(0);
-        const [test, setTest] = useState(0);
-        const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
-        const [tableData, setTableData] = useState([]);  
-    
-        const handleSort = (key) => {
-            let direction = 'asc';
-            if (sortConfig.key === key && sortConfig.direction === 'asc') {
-                direction = 'desc';
-            }
-            setSortConfig({ key, direction });
-        };
-    
-        const getSortedData = () => {
-            let sorted = [...categorytabledta];
-            if (sortConfig.key) {
-                sorted.sort((a, b) => {
-                    const aVal = a[sortConfig.key]?.toString().toLowerCase();
-                    const bVal = b[sortConfig.key]?.toString().toLowerCase();
-                    if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
-                    if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
-                    return 0;
-                });
-            }
-            return sorted;
-        };
-    
-        const updatePageData = () => {
-            const sorted = getSortedData();
-            const start = activePag.current * sort;
-            const end = start + sort;
-            setTableData(sorted.slice(start, end));
-        };
-    
-        useEffect(() => {
-            updatePageData();
-        }, [sortConfig, test]);
-    
-        const totalPages = Math.ceil(categorytabledta.length / sort);
-        const paggination = Array.from({ length: totalPages }, (_, i) => i + 1);
-    
-        const onClick = (i) => {
-            activePag.current = i;
-            updatePageData();
-            setTest(i);
-        };
+    const sort = 10;
+    const activePag = useRef(0);
+    const [test, setTest] = useState(0);
+    const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
+    const [tableData, setTableData] = useState([]);
+    const handleSort = (key) => {
+        let direction = 'asc';
+        if (sortConfig.key === key && sortConfig.direction === 'asc') {
+            direction = 'desc';
+        }
+        setSortConfig({ key, direction });
+    };
+
+    const getSortedData = () => {
+        let sorted = [...CountryTable];
+        if (sortConfig.key) {
+            sorted.sort((a, b) => {
+                const aVal = a[sortConfig.key]?.toString().toLowerCase();
+                const bVal = b[sortConfig.key]?.toString().toLowerCase();
+                if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
+                if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+        return sorted;
+    };
+
+    const updatePageData = () => {
+        const sorted = getSortedData();
+        const start = activePag.current * sort;
+        const end = start + sort;
+        setTableData(sorted.slice(start, end));
+    };
+
+    useEffect(() => {
+        updatePageData();
+    }, [sortConfig, test]);
+
+    const totalPages = Math.ceil(CountryTable.length / sort);
+    const paggination = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+    const onClick = (i) => {
+        activePag.current = i;
+        updatePageData();
+        setTest(i);
+    };
     const chackboxFun = (type) => {
         setTimeout(() => {
             const motherChackBox = document.querySelector(".product_order_single");
@@ -233,9 +232,9 @@ function CategoryTable() {
                                                             <label className="form-check-label" htmlFor="checkAll"></label>
                                                         </div>
                                                     </th>
-                                                    <th className="sorting c-pointer" onClick={() => sortData('category')} style={{ width: "460px" }}>Category</th>
-                                                    <th className="sorting c-pointer" onClick={() => sortData('products')}>Products</th>
-                                                    <th className="sorting c-pointer" onClick={() => sortData('type')}>Category Type</th>
+                                                    <th className="sorting c-pointer" onClick={() => handleSort('products')} style={{ width: "460px" }}>Category</th>
+                                                    <th className="sorting c-pointer" onClick={() => handleSort('type')}>Products</th>
+                                                    <th className="sorting c-pointer" onClick={() => handleSort('category')}>Category Type</th>
                                                     <th className="sorting text-end c-pointer" >Action</th>
                                                 </tr>
                                             </thead>
@@ -264,7 +263,7 @@ function CategoryTable() {
                                         <div className="d-sm-flex text-center justify-content-between align-items-center">
                                             <div className="dataTables_info">
                                                 Showing {activePag.current * sort + 1} to{" "}
-                                                {Math.min((activePag.current + 1) * sort, categorytabledta.length)} of {categorytabledta.length} entries
+                                                {Math.min((activePag.current + 1) * sort, CountryTable.length)} of {CountryTable.length} entries
                                             </div>
                                             <div className="dataTables_paginate paging_simple_numbers" id="example2_paginate">
                                                 <Link

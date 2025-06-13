@@ -17,7 +17,7 @@ const LockScreen = () => {
 
   return (
     <>
-      <div className="authincation h-100 d-flex align-items-center justify-content-center">
+      <div className="authincation h-100 d-flex align-items-center justify-content-center bg-white">
         <div className="container-fluid h-100 ">
           <div className="row h-100">
             <div className="col-lg-6 col-md-7 col-sm-12 mx-auto align-self-center">

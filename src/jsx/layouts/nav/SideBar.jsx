@@ -15,8 +15,7 @@ const initialState = {
     activeSubmenu: "",
 }
 function SideBar() {
-    // const { background, changeBackground } = useContext(ThemeContext);
-    const { iconHover, sidebarposition, headerposition, sidebarLayout, ChangeIconSidebar, background, changeBackground } = useContext(ThemeContext);
+    const { iconHover, sidebarposition, headerposition, sidebarLayout, background, changeBackground } = useContext(ThemeContext);
     const handleThemeMode = () => {
         if (background.value === 'dark') {
             changeBackground({ value: "light", label: "Light" });
@@ -70,8 +69,8 @@ function SideBar() {
     return (
         <>
             <div
-                onMouseEnter={() => ChangeIconSidebar(true)}
-                onMouseLeave={() => ChangeIconSidebar(false)}
+                // onMouseEnter={() => ChangeIconSidebar(true)}
+                // onMouseLeave={() => ChangeIconSidebar(false)}
                 className={`deznav ${iconHover} ${sidebarposition.value === "fixed" &&
                     sidebarLayout.value === "horizontal" &&
                     headerposition.value === "static"
@@ -177,7 +176,7 @@ function SideBar() {
                             </svg>
                             <span className="ms-2">Dark Mode</span>
                         </div>
-                        <div className={`dz-layout ${background.value === "dark" ? "dark" : "light"}`} onClick={() => handleThemeMode()}>
+                        <div className={`dz-layout ${background.value === "dark" ? "dark" : "light"}`} onClick={handleThemeMode}>
                             <i className="fas fa-sun sun" />
                             <i className="fas fa-moon moon" />
                         </div>

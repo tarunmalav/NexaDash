@@ -19,8 +19,8 @@ export const sellordertable = [
 export const medicalcarddata = [
     { title: "Appointments", span: "350", class: "bg-warning", image: IMAGES.checkicon, svg: SVGICON.checkiconsvg, imgclass: "", },
     { title: "Patients", span: "130", class: "bg-success", image: IMAGES.bookm, svg: SVGICON.bookmsvg, imgclass: "bookmarks", },
-    { title: "Operations", span: "40", class: "bg-danger", image: IMAGES.bulf, svg: SVGICON.bulfsvg, imgclass: "bulb", },
-    { title: "Earnings", span: "$2,400", class: "bg-info", image: IMAGES.bulf2, svg: SVGICON.bulf2svg, imgclass: "bulb", },
+    { title: "Operations", span: "40", class: "bg-danger", image: IMAGES.bulf, svg: SVGICON.bulfsvg, imgclass: "bulb", columnstand:"mb-0" },
+    { title: "Earnings", span: "$2,400", class: "bg-info", image: IMAGES.bulf2, svg: SVGICON.bulf2svg, imgclass: "bulb",columnstand:"mb-0" },
 ]
 export const productoverviewchartcard2 = [
     { title: "General Physician", percent: "37%", color: "#0176D3", },

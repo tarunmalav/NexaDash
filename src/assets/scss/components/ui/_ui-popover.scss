@@ -77,6 +77,7 @@
 .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 0rem;
     border-bottom-color: $secondary;
+    // border-bottom-color: red;
 }
 
 .note-popover {

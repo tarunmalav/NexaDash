@@ -179,12 +179,12 @@
 
 .ai-header-alert {
 	border-left: 5px solid $warning;
-	background-color: $dark-bg;
+	background-color: transparent;
 	position: relative;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	padding: 0.75rem 1rem;
-	box-shadow: 0px 5px 15px 0px rgba(17, 17, 17, 0.05);
+	// box-shadow: 0px 5px 15px 0px rgba(17, 17, 17, 0.05);
 
 	&.alert {
 		@include respond ('phone-land') {

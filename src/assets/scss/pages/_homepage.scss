@@ -1473,6 +1473,24 @@
 		width: 2.8125rem;
 		font-size: 1.125rem;
 		font-weight: 500;
+
+		@include respond ('tab-land') {
+			height: 34px;
+			width: 34px;
+			font-size: 12px;
+		}
+
+		@include respond('tab-port') {
+			height: 75px;
+			width: 75px;
+			font-size: 15px;
+		}
+
+		@include respond('phone-land') {
+			height: 35px;
+			width: 35px;
+			font-size: 12px;
+		}
 	}
 
 	.react-datepicker__day:hover {
@@ -1549,7 +1567,8 @@
 				}
 			}
 		}
-	} 
+	}
+
 	&>div {
 		&>div {
 			&:nth-child(3) {
@@ -1563,11 +1582,13 @@
 	}
 }
 
-.imageselect{
-	.css-hlgwow{
+.imageselect {
+	.css-hlgwow {
 		padding-right: 0;
 	}
-	.css-1xc3v61-indicatorContainer,.css-15lsz6c-indicatorContainer{
+
+	.css-1xc3v61-indicatorContainer,
+	.css-15lsz6c-indicatorContainer {
 		padding-left: 0;
 	}
 }

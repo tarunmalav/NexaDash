@@ -144,7 +144,9 @@ function Finance() {
                             <div className="card border-0">
                                 <div className="card-body">
                                     <div id="redial">
-                                        <ProgressBarChart width={240} />
+                                        <ProgressBarChart
+                                        //  width={240} 
+                                         />
                                     </div>
                                     <span className="right-sign">
                                         {SVGICON.warningRight}

@@ -50,7 +50,13 @@ const ProgressBarChart = ({width}) => {
                 chart: {
                     height: 150
                 },
-            }
+            },
+            breakpoint: 1024,
+            options:{
+                chart: {
+                    width: 250
+                },
+            },
         }
 
         ],
@@ -87,7 +93,7 @@ const ProgressBarChart = ({width}) => {
                 series={series}
                 type="radialBar"
                 height={151}
-                width={width}
+                // width={width}
             />
         </>
     )

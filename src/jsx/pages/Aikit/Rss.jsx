@@ -34,7 +34,7 @@ function RSS() {
 									<div className="card-header border-0 pb-0">
 										<h4 className="heading mb-0">Create Repurpose Job</h4>
 										<Select
-											className="custom-react-select img-select flagselect select2dark"
+											className="custom-react-select img-select flagselect select2dark imageselect"
 											isSearchable={false}
 											value={selectedOption}
 											options={data}

@@ -4,11 +4,7 @@ const IncomeStatisticsChart = () => {
     const series = [
         {
             name: 'Actual',
-            data: [96, 90],
-        },
-        {
-            name: 'Target',
-            data: [70, 80],
+            data: [96, 70, 90, 80],
         },
     ];
 
@@ -22,12 +18,20 @@ const IncomeStatisticsChart = () => {
             bar: {
                 horizontal: false,
                 columnWidth: '80%',
-                // endingShape: 'rounded',
                 borderRadius: 8,
-                borderRadiusApplication: 'end'
+                borderRadiusApplication: 'end',
             },
         },
-        colors: ['#01BD9B', '#E6F9F5'],
+        
+        colors: [
+            function({ value, dataPointIndex }) {
+                
+                if (value === 70 || value === 80) {
+                    return '#EAFAF6'; 
+                }
+                return '#01BD9B'; 
+            }
+        ],
         dataLabels: {
             enabled: true,
             offsetY: -20,
@@ -39,7 +43,6 @@ const IncomeStatisticsChart = () => {
             },
         },
         stroke: {
-
             show: false,
             width: 4,
         },
@@ -51,14 +54,14 @@ const IncomeStatisticsChart = () => {
             yaxis: { lines: { show: true } },
         },
         xaxis: {
-            categories: ['JAN', 'FEB'],
+            categories: ['JAN-A', 'JAN-B', 'FEB-A', 'FEB-B'],
             labels: { show: false },
             axisBorder: { show: false },
             axisTicks: { show: false },
             crosshairs: { show: false },
         },
         yaxis: {
-            max: 100, 
+            max: 100,
             tickAmount: 5,
             labels: {
                 offsetX: -12,

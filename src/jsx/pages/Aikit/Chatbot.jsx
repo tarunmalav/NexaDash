@@ -42,7 +42,7 @@ function Chatbot() {
 						<div className="card-header border-0 pb-0">
 							<h4 className="heading mb-0">Auto Writer</h4>
 							<Select
-								className="custom-react-select img-select flagselect select2dark"
+								className="custom-react-select img-select flagselect select2dark imageselect"
 								isSearchable={false}
 								value={selectedOption}
 								options={data}
@@ -186,10 +186,9 @@ function Chatbot() {
 										<p className="mb-1">Main Color</p>
 										<input
 											type="color" 
-											className="complex-colorpicker  as_colorpicker asColorPicker-trigger rounded-2 border border-0"
+											className="as_colorpicker asColorPicker-trigger"
 											value={colorChange}
-											onChange={(e) => setColorChange(e.target.value)}
-
+											onChange={(e) => setColorChange(e.target.value)} 
 										/>
 									</div>
 								</div>
@@ -198,9 +197,9 @@ function Chatbot() {
 										<p className="mb-1">Title Color</p>
 										<input
 											type="color"
-											className="complex-colorpicker  as_colorpicker asColorPicker-trigger rounded-2 border-0 "
+											className="as_colorpicker asColorPicker-trigger"
 											value={colorChange2}
-											onChange={(e) => setColorChange2(e.target.value)}
+											onChange={(e) => setColorChange2(e.target.value)} 
 										/>
 									</div>
 								</div>
@@ -209,7 +208,7 @@ function Chatbot() {
 										<p className="mb-1">AI Message Bubble Color</p>  
 										<input
 											type="color"
-											className="complex-colorpicker  as_colorpicker asColorPicker-trigger rounded-2 border-0"
+											className="as_colorpicker asColorPicker-trigger"
 											value={colorChange3}
 											onChange={(e) => setColorChange3(e.target.value)}
 										/>
@@ -220,7 +219,7 @@ function Chatbot() {
 										<p className="mb-1">AI Message Text Color</p> 
 										<input
 											type="color"
-											className="complex-colorpicker  as_colorpicker asColorPicker-trigger rounded-2 border-0"
+											className="as_colorpicker asColorPicker-trigger"
 											value={colorChange4}
 											onChange={(e) => setColorChange4(e.target.value)}
 										/>
@@ -231,7 +230,7 @@ function Chatbot() {
 										<p className="mb-1">User Bubble Color</p> 
 										<input
 											type="color"
-											className="complex-colorpicker  as_colorpicker asColorPicker-trigger rounded-2 border-0"
+											className="as_colorpicker asColorPicker-trigger"
 											value={colorChange5}
 											onChange={(e) => setColorChange5(e.target.value)}
 										/>
@@ -242,7 +241,7 @@ function Chatbot() {
 										<p className="mb-1">User Message Text Color</p> 
 										<input
 											type="color"
-											className="complex-colorpicker  as_colorpicker asColorPicker-trigger rounded-2 border-0"
+											className="as_colorpicker asColorPicker-trigger"
 											value={colorChange6}
 											onChange={(e) => setColorChange6(e.target.value)}
 										/>

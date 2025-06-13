@@ -96,6 +96,11 @@
 	top: 7rem;
 	left: 6rem;
 
+	@include custommq($max: 100.000rem) {
+		top: 8rem;
+		left: 6.5rem;
+	}
+
 	@include respond ('tab-land') {
 		display: none;
 	}
@@ -237,7 +242,7 @@
 			position: absolute;
 			top: -44px;
 			right: 14px;
-			font-size: 13px ;
+			font-size: 13px;
 			color: var(--primary);
 			font-weight: 400;
 			padding: 6px 12px;
@@ -306,7 +311,8 @@
 				background-color: var(--primary);
 				color: white;
 			}
-			@include respond ('phone'){
+
+			@include respond ('phone') {
 				padding: 8px 10px;
 			}
 		}
@@ -345,6 +351,7 @@
 		padding: 12px 0;
 		display: flex;
 		border-bottom: 1px solid #E6E6E6;
+
 		.progress-box {
 			flex: 1;
 		}
@@ -355,9 +362,11 @@
 		}
 	}
 }
-.active-country{
+
+.active-country {
 	margin-top: -60px;
 }
+
 .bootstrap-select {
 	&.default-select {
 		&.style-2 {
@@ -370,14 +379,16 @@
 		}
 	}
 }
-.analytics-bg{
+
+.analytics-bg {
 	background-color: #E7EAE1;
 }
-[data-nav-headerbg="color_4"]{
-	.brand-logo{
-		.logo-abbr{
-			path{
-				fill:#FDC500!important;
+
+[data-nav-headerbg="color_4"] {
+	.brand-logo {
+		.logo-abbr {
+			path {
+				fill: #FDC500 !important;
 			}
 		}
 	}

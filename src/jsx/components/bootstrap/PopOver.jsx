@@ -42,7 +42,7 @@ function UiPopOver() {
                   Distinctio itaque, veniam dolore inventore aliquid assumenda
                   neque. Deserunt!
                 </Card.Text>
-                <div className="bootstrap-popover-wrapper">
+                <div className="bootstrap-popover-wrapper ">
                   <div className="bootstrap-popover d-inline-block">
                     {["Left", "Top", "Bottom", "Right"].map((placement, i) => (
                       <OverlayTrigger
@@ -65,7 +65,7 @@ function UiPopOver() {
                         }
                         responsive={true}
                         overlay={
-                          <Tooltip className='toltip-popover popover bs-popover-auto'
+                          <Tooltip className='toltip-popover popover bs-popover-auto popbefore'
                             id={`popover-positioned-${placement.toLowerCase()}`}
                           >
                             <h3 className='popover-header'>{`Popover on ${placement}`}</h3>
