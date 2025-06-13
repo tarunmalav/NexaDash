@@ -143,7 +143,28 @@ const NewCustomers = () => {
                     return "$" + val + " thousands"
                 }
             }
-        }
+        },
+        responsive: [{
+            breakpoint: 1050,
+            options: {
+                chart: {
+                    width: 270
+                },
+            },
+            breakpoint: 768,
+            options: {
+                chart: {
+                    width: 220
+                },
+            },
+            breakpoint: 375,
+            options: {
+                chart: {
+                    width: 180
+                },
+            },
+        }]
+       
     }
     return (
         <>
@@ -151,7 +172,7 @@ const NewCustomers = () => {
                 options={optons}
                 series={series}
                 type="area"
-                // width={142}
+                width={142}
                 height={70}
             />
         </>
