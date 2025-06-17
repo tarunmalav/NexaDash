@@ -61,28 +61,28 @@ const FineTuneJob = () => {
                         <label htmlFor="exampleFormControlInput2" className="form-label">Post type</label>
                         <div className="mb-3">
                             <Form.Select className="default-select form-control new-select">
-                                <option selected>Post</option>
+                                <option defaultValue>Post</option>
                                 <option value="1">Product</option>
                             </Form.Select>
                         </div>
                         <label className="form-label">Post type</label>
                         <div className="mb-3">
                             <Form.Select className="default-select form-control new-select">
-                                <option selected>Post</option>
+                                <option defaultValue>Post</option>
                                 <option value="1">Product</option>
                             </Form.Select>
                         </div>
                         <label className="form-label">Post category</label>
                         <div className="mb-3">
                             <Form.Select className="default-select form-control new-select">
-                                <option selected>Categorized</option>
+                                <option defaultValue>Categorized</option>
                                 <option value="1">Uncategorized</option>
                             </Form.Select>
                         </div>
                         <label className="form-label">Post status</label>
                         <div className="mb-3">
                             <Form.Select className="default-select form-control new-select">
-                                <option selected>Draft</option>
+                                <option defaultValue>Draft</option>
                                 <option value="1">Published</option>
                             </Form.Select>
                         </div>

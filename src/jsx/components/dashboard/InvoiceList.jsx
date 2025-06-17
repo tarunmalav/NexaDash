@@ -15,34 +15,34 @@ const tableData = [
 
 const InvoiceList = () => {
     const [data, setData] = useState(
-            document.querySelectorAll("#projects-tbl_wrapper tbody tr")
-        );
-        const sort = 5;
-        const activePag = useRef(0);
-        const [test, settest] = useState(0);
-        const chageData = (frist, sec) => {
-            for (var i = 0; i < data.length; ++i) {
-                if (i >= frist && i < sec) {
-                    data[i].classList.remove("d-none");
-                } else {
-                    data[i].classList.add("d-none");
-                }
+        document.querySelectorAll("#projects-tbl_wrapper tbody tr")
+    );
+    const sort = 5;
+    const activePag = useRef(0);
+    const [test, settest] = useState(0);
+    const chageData = (frist, sec) => {
+        for (var i = 0; i < data.length; ++i) {
+            if (i >= frist && i < sec) {
+                data[i].classList.remove("d-none");
+            } else {
+                data[i].classList.add("d-none");
             }
-        };
-       
-       useEffect(() => {
-          setData(document.querySelectorAll("#projects-tbl_wrapper tbody tr"));
-        }, [test]);
-    
-       activePag.current === 0 && chageData(0, sort);
-       let paggination = Array(Math.ceil(data.length / sort))
-          .fill()
-          .map((_, i) => i + 1);
-        const onClick = (i) => {
-            activePag.current = i;
-            chageData(activePag.current * sort, (activePag.current + 1) * sort);
-            settest(i);
-        };
+        }
+    };
+
+    useEffect(() => {
+        setData(document.querySelectorAll("#projects-tbl_wrapper tbody tr"));
+    }, [test]);
+
+    activePag.current === 0 && chageData(0, sort);
+    let paggination = Array(Math.ceil(data.length / sort))
+        .fill()
+        .map((_, i) => i + 1);
+    const onClick = (i) => {
+        activePag.current = i;
+        chageData(activePag.current * sort, (activePag.current + 1) * sort);
+        settest(i);
+    };
 
     const chackboxFun = (type) => {
         setTimeout(() => {
@@ -80,7 +80,7 @@ const InvoiceList = () => {
                 </div>
                 <div className="card-body py-0">
                     <div className="table-responsive invoice-list shorting">
-                        <div id="projects-tbl_wrapper" className='dataTables_wrapper no-footer'>  
+                        <div id="projects-tbl_wrapper" className='dataTables_wrapper no-footer'>
                             <table id="projects-tbl" className="table ItemsCheckboxSec dataTable no-footer mb-0 ">
                                 <thead>
                                     <tr>

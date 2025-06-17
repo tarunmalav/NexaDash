@@ -1,55 +1,14 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Bar } from "react-chartjs-2";
 
 class HeartRate extends Component {
   render() {
     const data = {
-      labels: [ 73, 53,
-        50,
-        67,
-        3,
-        56,
-        19,
-        59,
-        37,
-        32,
-        40,
-        26,
-        71,
-        19,
-        4,
-        53,
-        55,
-        31,
-        37,
-      ],
+      labels: [ 73, 53, 50, 67, 3, 56, 19, 59, 37, 32, 40, 26, 71, 19, 4, 53, 55, 31, 37, ],
       datasets: [
         {
           label: "My First dataset",
-          data: [
-            73,
-            53,
-            50,
-            67,
-            3,
-            56,
-            19,
-            59,
-            37,
-            32,
-            40,
-            26,
-            71,
-            19,
-            4,
-            53,
-            55,
-            31,
-            37,
-            67,
-            10,
-            21,
-          ],
+          data: [ 73, 53, 50, 67, 3, 56, 19, 59, 37, 32, 40, 26, 71, 19, 4, 53, 55, 31, 37, 67, 10, 21, ],
           borderColor: "rgba(13,153, 255,1)",
           borderWidth: "0",
           backgroundColor: "rgba(29,105, 214,1)",

@@ -52,7 +52,7 @@ function RSS() {
 											<div className="col-xl-12">
 												<div className="mb-3">
 													<label htmlFor="exampleFormControlInput1" className="form-label">RSS URL</label>
-													<input type="text" className="form-control" id="exampleFormControlInput1" placeholder="https://yogacare.dexignzone.com/" />
+													<input type="text" className="form-control" id="exampleFormControlInput1" placeholder="https://nexadash.dexignzone.com/" />
 												</div>
 												<div className="mb-3">
 													<label htmlFor="exampleFormControlInput2" className="form-label">Time to wait between generating articles (minutes)</label>
@@ -61,21 +61,21 @@ function RSS() {
 												<label htmlFor="exampleFormControlInput2" className="form-label d-block">Post status</label>
 												<div className="mb-3">
 													<Form.Select className="default-select form-control new-select">
-														<option selected>Post</option>
+														<option defaultValue>Post</option>
 														<option value="1">Product</option>
 													</Form.Select>
 												</div>
 												<label className="form-label">Post type</label>
 												<div className="mb-3">
 													<Form.Select className="default-select form-control new-select">
-														<option selected>Uncategorized</option>
+														<option defaultValue>Uncategorized</option>
 														<option value="1">Categorized</option>
 													</Form.Select>
 												</div>
 												<label className="form-label">Post category</label>
 												<div className="mb-3">
 													<Form.Select className="default-select form-control new-select">
-														<option selected>Draft</option>
+														<option defaultValue>Draft</option>
 														<option value="1">categorized</option>
 													</Form.Select>
 												</div>
@@ -86,7 +86,7 @@ function RSS() {
 												<label className="form-label">How often to check for new articles in RSS feed</label>
 												<div className="mb-3">
 													<Form.Select className="default-select form-control new-select">
-														<option selected>Hourly</option>
+														<option defaultValue>Hourly</option>
 														<option value="1">Weekly</option>
 													</Form.Select>
 												</div>

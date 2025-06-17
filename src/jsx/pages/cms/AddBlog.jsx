@@ -1,6 +1,6 @@
 import { useReducer, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Collapse } from 'react-bootstrap';
+import { Collapse, Form } from 'react-bootstrap';
 import { IMAGES } from '../../constant/Theme';
 import Select from 'react-select';
 import { foodOptions, screenOption } from '../../constant/Alldata';
@@ -302,14 +302,14 @@ function AddBlog() {
                                                             <div className=" border rounded p-3 mt-3">
                                                                 <div className="mb-2">
                                                                     <label className="form-label w-100">Content Type</label>
-                                                                    <select className="form-control solid default-select">
-                                                                        <option selected>Select Status</option>
-                                                                        <option value="1">Published</option>
-                                                                        <option value="2">Draft</option>
-                                                                        <option value="3">Trash</option>
-                                                                        <option value="4">Private</option>
-                                                                        <option value="5">Pending</option>
-                                                                    </select>
+                                                                    <Form.Select className='form-control solid default-select'>
+                                                                        <option>Select Status</option>
+                                                                        <option>Published</option>
+                                                                        <option>Draft</option>
+                                                                        <option>Trash</option>
+                                                                        <option>Private</option>
+                                                                        <option>Pending</option>
+                                                                    </Form.Select>
                                                                 </div>
                                                                 <div className="mt-3">
                                                                     <button className="btn btn-primary btn-sm me-2" type="button"> Ok </button>
@@ -364,16 +364,16 @@ function AddBlog() {
                                                             <Link to={"#"} className="badge badge-primary light ms-3" onClick={() => dispatch({ type: 'collpase10' })} >Edit </Link>
                                                         </div>
                                                         <Collapse in={!state.collpase10}>
-                                                            <div className="p-3 mt-3 border rounded"> 
-                                                                    <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender">
-                                                                        <DatePicker
-                                                                            selected={startDate}
-                                                                            onChange={(date) => setStartDate(date)}
-                                                                            dateFormat="2025-05-10"
-                                                                            className="border-0 pt-2 bg-transparent clearallselect"
-                                                                        />
-                                                                        <div className="icon"><i className="far fa-calendar" /></div>
-                                                                    </div>  
+                                                            <div className="p-3 mt-3 border rounded">
+                                                                <div className="input-hasicon mb-sm-0 mb-3 d-flex w-100 border form-control cmscalender">
+                                                                    <DatePicker
+                                                                        selected={startDate}
+                                                                        onChange={(date) => setStartDate(date)}
+                                                                        dateFormat="2025-05-10"
+                                                                        className="border-0 pt-2 bg-transparent clearallselect"
+                                                                    />
+                                                                    <div className="icon"><i className="far fa-calendar" /></div>
+                                                                </div>
                                                                 <div className="mt-3">
                                                                     <button className="btn btn-primary btn-sm me-2" type="button"> Ok </button>
                                                                     <button className="btn btn-danger light btn-sm" type="button"> Cancel </button>
@@ -399,7 +399,7 @@ function AddBlog() {
                                         <div className="tools">
                                             <Link to={"#"}
                                                 className={`SlideToolHeader ${state.collpase11 ? 'collapse' : 'expand'}`}
-                                                
+
                                             >
                                                 <i className="fas fa-angle-up" />
                                             </Link>
@@ -449,7 +449,7 @@ function AddBlog() {
                                         <div className="tools">
                                             <Link to={"#"}
                                                 className={`SlideToolHeader ${state.collpase12 ? 'collapse' : 'expand'}`}
-                                               
+
                                             >
                                                 <i className="fas fa-angle-up" />
                                             </Link>

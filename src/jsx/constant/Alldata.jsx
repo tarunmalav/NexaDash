@@ -53,6 +53,16 @@ export const supportcard = [
     { title: "Malaysia", number: "1800-813-018", },
     { title: "Singapore", number: "800-120-6457", },
 ]
+export const analyticscard = [
+    { class:"4", title: "Sales", price: "$420", paragraph: "Total Sales", },
+    { class:"4", title: "Invoice", price: "$1200", paragraph: "Send Invoices Total", },
+    { class:"4", title: "Quotes", price: "20", paragraph: "Quotes Send", },
+    { class:"4", title: "Contacts", price: "40k", paragraph: "Total Contacts", },
+    { class:"4", title: "New Lead", price: "1.2k", paragraph: "Total New Lead", },
+    { class:"4", title: "New Clients", price: "227", paragraph: "Total New Clients", },
+    { class:"6", title: "Repeat Clients", price: "750", paragraph: "Total Repeat Clients", },
+    { class:"6", title: "Order", price: "$420", paragraph: "Total Order", },
+]
 // dashboard course 
 export const coursecarddata = [
     { title: "All Courses", span: "1.500", class: "bg-primary", image: IMAGES.check, svg: SVGICON.checksvg, },
@@ -632,4 +642,27 @@ export const countrylistprogressbar = [
     { img: IMAGES.countrygermany, name: "Germany", width: "80%", },
     { img: IMAGES.countryuae, name: "UAE", width: "30%", },
     { img: IMAGES.countrychina, name: "China", width: "40%", },
+]
+// header 
+export const headerselect = [
+	{ icon: IMAGES.countryusa, value: 1, label: 'England', },
+	{ icon: IMAGES.countryuk, value: 2, label: 'Finland', },
+	{ icon: IMAGES.countryaus, value: 3, label: 'France' },
+]
+// eventsidebar 
+export const transactions = [
+	{ icon: IMAGES.bitcoinsvg, name: "Bitcoin", symbol: "BTC", time: "06:24:45 AM", amount: "+ $5,221", status: "Completed", statusClass: "success", },
+	{ icon: IMAGES.ethereumsvg, name: "Ethereum", symbol: "ETH", time: "06:24:45 AM", amount: "+ $6,321", status: "Cancel", statusClass: "danger", },
+	{ icon: IMAGES.bnpsvg, name: "BNB", symbol: "bnb", time: "07:25:45 AM", amount: "+ $8,221", status: "Cancel", statusClass: "danger", },
+	{ icon: IMAGES.bitcoinsvg, name: "Bitcoin", symbol: "BTC", time: "06:24:45 AM", amount: "+ $4,321", status: "Completed", statusClass: "success", },
+	{ icon: IMAGES.bitcoinsvg, name: "Bitcoin", symbol: "BTC", time: "06:24:45 AM", amount: "+ $3,123", status: "IN progress", statusClass: "warning", },
+	{ icon: IMAGES.ethereumsvg, name: "Ethereum", symbol: "ETH", time: "06:24:45 AM", amount: "+ $5,381", status: "Cancel", statusClass: "danger", },
+];
+
+export const cryptolist = [
+    { svg: IMAGES.btcsvg, coin1: "Bitcoin", coin2: "BTC/USDT", price1: "$2092.56", price2: "+2.97%", class: "text-success", },
+    { svg: IMAGES.ethsvg, coin1: "Ethereum", coin2: "ETH", price1: "$20392.36", price2: "+2.97%", class: "text-danger", },
+    { svg: IMAGES.bnb1svg, coin1: "Ripple", coin2: "RPL", price1: "$34281.24", price2: "+3.97%", class: "text-success", },
+    { svg: IMAGES.oxsvg, coin1: "Ethereum", coin2: "ETH", price1: "$34281.24", price2: "+3.97%", class: "text-success", },
+    { svg: IMAGES.appcsvg, coin1: "Ripple", coin2: "RPL", price1: "$34281.24", price2: "+3.97%", class: "text-success", },
 ]

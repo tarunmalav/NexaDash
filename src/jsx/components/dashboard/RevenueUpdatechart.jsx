@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { Dropdown, Nav, Tab } from "react-bootstrap";
 import Activitychart from "../../components/dashboard/Activitychart";
 import Activitychart2 from "../../components/dashboard/Activitychart2";
 import Activitychart3 from "../../components/dashboard/Activitychart3";
 import { IMAGES } from "../../constant/Theme";
-import { useState } from "react";
+
 function RevenueUpdatechart() {
     const [globalSelect, setGlobalSelect] = useState('Yearly');
     return (

@@ -45,7 +45,7 @@ const PieChart1 = () => {
                 options={options}
                 series={series}
                 type="donut"
-                height={150}  // This gets overridden by responsive rules
+                height={150} 
                 width={239}
             />
         </>

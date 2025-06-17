@@ -61,10 +61,9 @@
 
 [data-theme-version="dark"] .select2dark .css-t3ipsp-control,
 [data-theme-version="dark"] .select2dark .css-13cymwt-control,
-[data-theme-version="dark"] .select2dark .css-1nmdiq5-menu {
+[data-theme-version="dark"] .select2dark .css-1nmdiq5-menu{
   background-color: #171617 !important;
 }
-
 [data-theme-version="dark"] .select2dark .css-13cymwt-control {
   border-color: #454454 !important;
 }

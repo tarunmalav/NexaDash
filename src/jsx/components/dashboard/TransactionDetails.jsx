@@ -2,6 +2,7 @@ import { Dropdown } from "react-bootstrap";
 import { SVGICON } from "../../constant/Theme"
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 export const hometabledata = [
     { id: 129361171, client: 'Rolex leo', payment: <span className="text-success">$376.24</span>, status: <span className="badge badge-primary light border-0">Completed</span>, },
     { id: 129361171, client: 'Rolex leo', payment: <span className="text-success">$376.24</span>, status: <span className="badge badge-primary light border-0">Completed</span>, },
@@ -13,6 +14,7 @@ export const hometabledata = [
     { id: 129361171, client: 'Rolex leo', payment: <span className="text-success">$376.24</span>, status: <span className="badge badge-primary light border-0">Completed</span>, },
     { id: 129361178, client: 'Jaction leo', payment: <span className="text-success">$376.24</span>, status: <span className="badge badge-primary light border-0">Completed</span>, },
 ]
+
 function TransactionsDetails() {
     const chackboxFun = (type) => {
         setTimeout(() => {

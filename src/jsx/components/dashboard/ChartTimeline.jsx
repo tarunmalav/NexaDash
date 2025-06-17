@@ -26,13 +26,6 @@ const ChartTimeline = () => {
                 endingShape: "rounded",
                 startingShape: "rounded",
                 borderRadius: 5,
-
-                /* colors: {
-                    backgroundBarColors: ['#111111', '#111111', '#111111', '#111111','#111111','#111111'],
-                    backgroundBarOpacity: 1,
-                    backgroundBarRadius: 5,
-                }, */
-
             },
             distributed: true
         },
@@ -50,14 +43,7 @@ const ChartTimeline = () => {
                 shade: 'dark',
                 type: 'vertical',
                 shadeIntensity: 0.5,
-                //gradientToColors: ['#FFEABA'],
-                //inverseColors: true,
-                //opacityFrom: 1,
-                //opacityTo: 0,
-                //stops: [0, 100]
                 colorStops: [
-
-
                     {
                         offset: 0,
                         color: '#FFEABA',
@@ -68,9 +54,6 @@ const ChartTimeline = () => {
                         color: '#111111',
                         opacity: 1
                     }
-
-
-
                 ]
             }
         },
@@ -148,7 +131,6 @@ const ChartTimeline = () => {
                         data: [300, 250, 600, 600, 400, 450],
                     }
                 ],
-
             }
         },
         {
@@ -175,7 +157,7 @@ const ChartTimeline = () => {
             <ReactApexChart
                 options={optons}
                 series={series}
-                type="bar" 
+                type="bar"
                 height={250}
             />
         </>

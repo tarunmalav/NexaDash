@@ -4,15 +4,13 @@ const NewCustomers = () => {
     const series = [
         {
             name: 'Net Profit',
-            data: [100, 300, 200, 250, 200, 250, 200],
-            /* radius: 30,	 */
+            data: [100, 300, 200, 250, 200, 250, 200], 
         },
     ]
     const optons = {
         chart: {
             type: 'area',
-            height: 70,
-            //width: 400,
+            height: 70, 
             toolbar: {
                 show: false,
             },

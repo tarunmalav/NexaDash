@@ -69,8 +69,6 @@ function SideBar() {
     return (
         <>
             <div
-                // onMouseEnter={() => ChangeIconSidebar(true)}
-                // onMouseLeave={() => ChangeIconSidebar(false)}
                 className={`deznav ${iconHover} ${sidebarposition.value === "fixed" &&
                     sidebarLayout.value === "horizontal" &&
                     headerposition.value === "static"

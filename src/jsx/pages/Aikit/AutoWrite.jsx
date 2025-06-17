@@ -64,29 +64,29 @@ const AutoWrite = () => {
 
 												</div>
 												<div className="mb-3">
-													<label htmlhtmlhtmlFor="exampleFormControlInput2" className="form-label">Write a brief description of the topic you want to write about...</label>
+													<label htmlFor="exampleFormControlInput2" className="form-label">Write a brief description of the topic you want to write about...</label>
 													<input type="text" className="form-control" id="exampleFormControlInput2" placeholder="Find My Device" />
 												</div>
 
 												<label className="form-label">Post type</label>
 												<div className="mb-3">
 													<Form.Select className="default-select form-control new-select">
-														<option selected>Post</option>
-														<option value="1">Product</option>
+														<option defaultValue>Post</option>
+														<option>Product</option>
 													</Form.Select>
 												</div>
 												<label className="form-label">Post category</label>
 												<div className="mb-3">
 													<Form.Select className="default-select form-control new-select">
-														<option selected>Uncategorized</option>
-														<option value="1">Categorized</option>
+														<option defaultValue>Uncategorized</option>
+														<option>Categorized</option>
 													</Form.Select>
 												</div>
 												<label className="form-label">Post status</label>
 												<div className="mb-3">
 													<Form.Select className="default-select form-control new-select">
-														<option selected>Draft</option>
-														<option value="1">Categorized</option>
+														<option defaultValue>Draft</option>
+														<option>Categorized</option>
 													</Form.Select>
 												</div>
 												<div className="row">
@@ -262,7 +262,6 @@ Title:'
 					</div>
 				</div>
 			</div>
-
 		</>
 	);
 };

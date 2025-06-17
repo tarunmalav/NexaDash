@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
-import { IMAGES, SVGICON } from "../../constant/Theme";
+import { IMAGES } from "../../constant/Theme";
 import fscreen from "fscreen";
 import FrontMenu from "../FrontMenu";
 import SidebarToggle from "../SidebrToggle";
+import Select from 'react-select';
+import { headerselect } from "../../constant/Alldata";
 
 function Header({ onNote }) {
 	const handleFullscreenToggle = () => {
@@ -22,8 +24,10 @@ function Header({ onNote }) {
 			element.classList.toggle('active');
 		}
 	};
-	const [selectedOption, setSelectedOption] = useState("English");
-
+	const [selectedOption, setSelectedOption] = useState(headerselect[0]);
+	const handleChange = e => {
+		setSelectedOption(e);
+	}
 	return (
 		<>
 			<div className="header">
@@ -44,18 +48,20 @@ function Header({ onNote }) {
 								</form>
 								<FrontMenu />
 							</div>
-							<div className="select-country headdropdown">
-								{SVGICON.selectcountry}
-								<Dropdown className="c-pointer">
-									<Dropdown.Toggle as="div" className="nav-link"> {selectedOption} </Dropdown.Toggle>
-									<Dropdown.Menu className="dropdown-menu dropdown-menu-end" align="end">
-										<Dropdown.Item onClick={() => setSelectedOption("English")}>English</Dropdown.Item>
-										<Dropdown.Item onClick={() => setSelectedOption("Finland")}>Finland</Dropdown.Item>
-										<Dropdown.Item onClick={() => setSelectedOption("France")}>France</Dropdown.Item>
-									</Dropdown.Menu>
-								</Dropdown> 
-							</div>
-							<ul className="navbar-nav header-right"> 
+							<Select
+								className="select-country select2dark custom-react-select imageselect"
+								isSearchable={false}
+								value={selectedOption}
+								options={headerselect}
+								onChange={handleChange}
+								getOptionLabel={e => (
+									<div className="d-flex align-items-center">
+										<img src={e.icon} alt="" style={{ marginRight: 5 }} />
+										<span style={{ marginLeft: 5 }}>{e.label}</span>
+									</div>
+								)}
+							/>
+							<ul className="navbar-nav header-right">
 								<Dropdown
 									as="li"
 									className="nav-item dropdown notification_dropdown"

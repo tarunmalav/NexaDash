@@ -1,4 +1,3 @@
-import React from "react";
 import ReactApexChart from "react-apexcharts";
 
 const  DepositlineChart = ({chartcolor}) =>{
@@ -23,7 +22,6 @@ const  DepositlineChart = ({chartcolor}) =>{
                 enabled: true
             }
         },
-        //colors:['var(--primary)'],
         colors:[chartcolor],
 		dataLabels: {
 		  enabled: false,

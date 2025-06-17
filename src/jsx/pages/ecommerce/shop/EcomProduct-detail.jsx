@@ -409,7 +409,7 @@ function ProductDetail() {
                                                                 <div className="col-xl-12">
                                                                     <div className="mb-3">
                                                                         <label htmlFor="exampleFormControlTextarea3" className="form-label required">Messasge</label>
-                                                                        <textarea className="form-control" id="exampleFormControlTextarea3" rows="3">Messasge</textarea>
+                                                                        <textarea className="form-control" rows="3" >Messasge</textarea>
                                                                     </div>
                                                                 </div>
                                                                 <div>

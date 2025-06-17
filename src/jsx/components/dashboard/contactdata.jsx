@@ -1,6 +1,5 @@
 import { IMAGES } from "../../constant/Theme"
-
-// import { contactdataa } from "../constant/Alldata"  
+ 
 export const contactdataa = [
     { image: <img className="avatar avatar-lg avatar-circle mb-2" src={IMAGES.avtar1} />, name: "Jordana Niclany", email: "jordan@mail.com" },
     { image: <div className="avatar avatar-label avatar-lg bg-success-light text-success avatar-circle mb-2 mx-auto">KD</div>, name: "Jacob Jack", email: "jordan@mail.com" },

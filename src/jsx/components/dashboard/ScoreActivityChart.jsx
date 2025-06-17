@@ -1,15 +1,10 @@
-
-
-import ReactApexChart from "react-apexcharts";
-
-
+import ReactApexChart from "react-apexcharts";  
 
 const ScoreActivityChart = () => {
     const series = [
         {
             name: '',
-            data: [120, 90, 70, 40, 50, 18, 70, 90, 70, 40, 50, 18],
-            //radius: 12,	
+            data: [120, 90, 70, 40, 50, 18, 70, 90, 70, 40, 50, 18], 
         },
         {
             name: '',

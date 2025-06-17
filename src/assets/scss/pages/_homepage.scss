@@ -745,7 +745,20 @@
 	@include respond("laptop") {
 		display: none;
 	}
+
+	.css-13cymwt-control,
+	.css-t3ipsp-control {
+		border: 0 !important;
+		background-color: transparent !important;
+		box-shadow: none !important;
+
+		span {
+			color: #000;
+		}
+	}
 }
+
+
 
 @include respond("phone-land") {
 	.widget-media {
@@ -1513,26 +1526,6 @@
 	/* Remove default focus outline */
 	.react-datepicker__day:focus {
 		outline: none;
-	}
-}
-
-// dropdown select header and home
-.headdropdown {
-	.dropdown {
-		.nav-link {
-			color: #000000;
-		}
-	}
-}
-
-[data-theme-version="dark"],
-[data-headerbg="color_4"] {
-	.headdropdown {
-		.dropdown {
-			.nav-link {
-				color: #ffffff;
-			}
-		}
 	}
 }
 

@@ -1,24 +1,11 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Bar } from "react-chartjs-2";
 
 class LifeTimeEarning extends Component {
   render() {
     const data = {
       defaultFontFamily: "Poppins",
-      labels: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ],
+      labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ],
       datasets: [
         {
           label: "My First dataset",

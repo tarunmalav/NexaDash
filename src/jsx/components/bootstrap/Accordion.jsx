@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 import { Link } from "react-scroll";
 import Highlight from 'react-highlight';
 import { Row, Col, Card, Accordion, Tab, Nav } from "react-bootstrap";  
@@ -68,7 +68,7 @@ const UiAccordion = () => {
                     <li key={index}  className={index === activeLink ? 'active' : ''}>
                       <Link to={item.to} smooth={true}
                         className="scroll c-pointer"
-                        activeclassName="active"
+                        activeclass="active"
                         spy={true}
                         onClick={() => setActiveLink(index)}
                       >{item.title}</Link>

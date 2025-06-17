@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import  { Fragment, useState } from "react";
 import Highlight from "react-highlight";
 import { Link } from 'react-scroll';
 import img1 from "../../../assets/images/card/1.png";
@@ -47,7 +47,7 @@ const UiCards = () => {
                     <li key={ind} className={ind === activeLink ? 'active' : ''}>
                       <Link to={item.to} smooth={true}
                         className={`scroll  c-pointer`}
-                        activeclassName="active"
+                        activeclass="active"
                         spy={true}
                         onClick={() => setActiveLink(ind)}
                       >

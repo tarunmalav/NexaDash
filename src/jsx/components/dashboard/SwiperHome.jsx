@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IMAGES } from "../../constant/Theme";
+
 function SwiperHome() {
     return (
         <Swiper className="owl-carousel owl-carousel owl-loaded front-view-slider"

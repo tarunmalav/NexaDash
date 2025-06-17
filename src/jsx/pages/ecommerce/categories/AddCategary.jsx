@@ -63,7 +63,7 @@ function AddCategory() {
                                             <div className="col-xl-6 col-sm-6">
                                                 <div className="check-ai"  >
                                                     <div className="form-check">
-                                                        <input className="form-check-input" type="radio" value="manual" name="automationSelect" id="ManualInput" checked />
+                                                        <input className="form-check-input" type="radio" value="manual" name="automationSelect" id="ManualInput" defaultChecked />
                                                         <label className="form-check-label" htmlFor="ManualInput">
                                                             <span className="text-dark d-block font-w600 fs-15 mb-2">Manual</span>
                                                             <span>Add products to this category one by one by manually selecting this category during product creation or update.</span>
@@ -74,7 +74,7 @@ function AddCategory() {
                                             <div className="col-xl-6 col-sm-6 mt-sm-0 mt-3">
                                                 <div className="check-ai"   >
                                                     <div className="form-check">
-                                                        <input className="form-check-input" type="radio" value="automatic" name="automationSelect" id="AutomaticInput" checked />
+                                                        <input className="form-check-input" type="radio" value="automatic" name="automationSelect" id="AutomaticInput" defaultChecked />
                                                         <label className="form-check-label" htmlFor="AutomaticInput">
                                                             <span className="text-dark d-block font-w600 fs-15 mb-2">Automatic</span>
                                                             <span>Add products to this category one by one by manually selecting this category during product creation or update.</span>
@@ -89,7 +89,7 @@ function AddCategory() {
                                                             <div className="mb-3">
                                                                 <label className="form-label required">Product Tag</label>
                                                                 <select className=" default-select w-100" aria-label="Default select example">
-                                                                    <option selected>Product Title</option>
+                                                                    <option defaultValue>Product Title</option>
                                                                     <option value="1">Product Tag</option>
                                                                     <option value="2">Product Price</option>
                                                                 </select>
@@ -99,7 +99,7 @@ function AddCategory() {
                                                             <div className="mb-3">
                                                                 <label className="form-label required">Product Margin</label>
                                                                 <select className=" default-select w-100" aria-label="Default select example">
-                                                                    <option selected>is less then</option>
+                                                                    <option defaultValue>is less then</option>
                                                                     <option value="1">is equal to</option>
                                                                     <option value="2">is greater then</option>
                                                                 </select>

@@ -1,10 +1,8 @@
-
 import { useState } from "react";
 import PageTitle from "../../layouts/PageTitle";
 import { Row, Col, Card, Placeholder, Tab, Nav } from "react-bootstrap";
 import Highlight from "react-highlight";
-import { Link } from 'react-scroll';
-
+import { Link } from 'react-scroll'; 
 import card2 from '../../../assets/images/card/2.png'
 
 const sidebarLink = [
@@ -17,9 +15,7 @@ const sidebarLink = [
 ];
 
 const UiPlaceHolder = () => {
-    const [activeLink, setActiveLink] = useState(0);
-
-
+    const [activeLink, setActiveLink] = useState(0);  
     return (
         <>
             <PageTitle pageContent="Placeholder" motherMenu={"Home"} activeMenu={"Placeholder"} />
@@ -34,22 +30,19 @@ const UiPlaceHolder = () => {
                         <div className="demo-right ">
                             <div className="demo-right-inner dlab-scroll navigation navbar " id="right-sidebar">
                                 <h4 className="title">Placeholder</h4>
-                                <ul className="navbar-nav nav" id="menu-bar">
-
+                                <ul className="navbar-nav nav" id="menu-bar"> 
                                     {sidebarLink.map((item, ind) => (
-                                        <li key={ind}
-                                        >
+                                        <li key={ind} className={ind === activeLink ? 'active' : ''}>
                                             <Link to={item.to} smooth={true}
-                                                className={`scroll  c-pointer ${ind === activeLink ? 'active' : ''} `}
-                                                activeclassName="active"
+                                                className={`scroll  c-pointer`}
+                                                activeclass="active"
                                                 spy={true}
                                                 onClick={() => setActiveLink(ind)}
                                             >
                                                 {item.title}
                                             </Link>
                                         </li>
-                                    ))}
-
+                                    ))}  
                                 </ul>
                             </div>
                         </div>

@@ -1,9 +1,7 @@
 import { Fragment, useState } from "react";
-import Highlight from "react-highlight";
-
+import Highlight from "react-highlight";  
 import { Link } from 'react-scroll';
-import PageTitle from "../../layouts/PageTitle";
-
+import PageTitle from "../../layouts/PageTitle"; 
 import { Row, Col, Card, ProgressBar, Tab, Nav } from "react-bootstrap";
 
 const sidebarLink = [
@@ -47,11 +45,10 @@ const UiProgressBar = () => {
               <div className="demo-right-tabs" id="right-sidebar">
                 <ul className="navbar-nav" id="menu-bar">
                   {sidebarLink.map((item, ind) => (
-                    <li key={ind}
-                    >
+                    <li key={ind} className={ind === activeLink ? 'active' : ''} >
                       <Link to={item.to} smooth={true}
-                        className={`scroll  c-pointer ${ind === activeLink ? 'active' : ''} `}
-                        activeclassName="active"
+                        className={`scroll  c-pointer`}
+                        activeclass="active"
                         spy={true}
                         onClick={() => setActiveLink(ind)}
                       >

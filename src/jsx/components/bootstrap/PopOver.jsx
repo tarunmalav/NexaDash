@@ -3,7 +3,6 @@ import {
   Row,
   Col,
   Card,
-  Popover,
   Tooltip,
   OverlayTrigger,
   Button,

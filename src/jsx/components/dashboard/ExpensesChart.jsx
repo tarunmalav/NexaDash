@@ -5,7 +5,6 @@ const ExpensesChart = () => {
         {
             name: 'Running',
             data: [40, 80, 70],
-            //radius: 12,	
         },
         {
             name: 'Cycling',
@@ -26,7 +25,6 @@ const ExpensesChart = () => {
             bar: {
                 horizontal: false,
                 columnWidth: '100%',
-                // endingShape: "rounded",
                  borderRadiusApplication: 'end',
                 borderRadius: 8,
             },

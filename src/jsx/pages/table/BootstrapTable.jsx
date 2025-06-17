@@ -88,11 +88,11 @@ const BootstrapTable = () => {
               <div className="demo-right-tabs" id="rightSidebarScroll">
                 <ul className="navbar-nav" id="menu-bar">
                   {sidebarLink.map((item, ind) => (
-                    <li key={ind}
+                    <li key={ind} className={ind ===  activeLink ? 'active' : ''}
                     >
                       <Link to={item.to} smooth={true}
-                        className={`scroll  c-pointer ${ind === activeLink ? 'active' : ''} `}
-                        activeclassName="active"
+                        className={`scroll  c-pointer`}
+                        activeclass="active"
                         spy={true}
                         onClick={() => setActiveLink(ind)}
                       >

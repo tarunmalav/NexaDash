@@ -148,7 +148,7 @@ class EventCalendar extends Component {
                      <Card.Body>
                         <div className="app-fullcalendar fc fc-media-screen fc-direction-ltr fc-theme-standard" id="mycalendartest">
                            <FullCalendar
-                              defaultView="dayGridMonth"
+                              // defaultView="dayGridMonth"
                               headerToolbar={{
                                  center: "title",
                                  left: "prev,next today",

@@ -5,7 +5,6 @@ const EarningChart = () => {
         {
             name: 'Net Profit',
             data: [667, 400, 380, 500, 600, 510, 610, 520, 400, 600, 510, 610, 610],
-            /* radius: 30,	 */
         },
     ]
     const chartWidth = 545
@@ -21,10 +20,6 @@ const EarningChart = () => {
             zoom: {
                 enabled: false
             },
-            /* sparkline: {
-                enabled: true
-            } */
-
         },
 
         colors: ['#38BDE7'],

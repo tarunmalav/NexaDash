@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -8,8 +7,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-//import faker from 'faker';
+import { Bar } from 'react-chartjs-2'; 
 
 ChartJS.register(
   CategoryScale,
@@ -70,7 +68,6 @@ export const data = {
         {        
           label: "My First dataset",
 					backgroundColor: "rgba(255,255,255,0.8)",
-					//backgroundcolor:'rgba(255,255,255,0.8)',
 					strokeColor: "rgba(58,223,174,1)",
 					pointColor: "rgba(0,0,0,0)",
 					pointStrokeColor: "rgba(58,223,174,1)",

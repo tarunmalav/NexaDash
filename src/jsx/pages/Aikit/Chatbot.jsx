@@ -16,24 +16,24 @@ const options = [
 	{ value: '0', label: 'All' },
 	{ value: '1', label: 'One' },
 ]
+const initialState = {
+	mainColor: "#0d99ff",
+	titleColor: "#2c2c2c",
+	aiBubbleColor: "#495A69",
+	aiTextColor: "#9084B1",
+	userBubbleColor: "#9084B1",
+	userTextColor: "#0d99ff",
+};
+function reducer(state, action) {
+	return {
+		...state,
+		[action.type]: action.payload,
+	};
+}
 function Chatbot() {
 	const [selectedOption, setSelectedOption] = useState(data[0]);
 	const handleChange = e => {
 		setSelectedOption(e);
-	}
-	const initialState = {
-		mainColor: "#0d99ff",
-		titleColor: "#2c2c2c",
-		aiBubbleColor: "#495A69",
-		aiTextColor: "#9084B1",
-		userBubbleColor: "#9084B1",
-		userTextColor: "#0d99ff",
-	};
-	function reducer(state, action) {
-		return {
-			...state,
-			[action.type]: action.payload,
-		};
 	}
 	const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -68,18 +68,18 @@ function Chatbot() {
 									<div className="col-xl-2">
 										<p className="mb-2">Choose content type:</p>
 										<div className="btn-group d-block" role="group">
-											<input type="radio" className="btn-check" name="btnradio" id="btnradio1" checked />
+											<input type="radio" className="btn-check" name="btnradio" id="btnradio1" defaultChecked />
 											<label className="btn btn-outline-primary btn-sm rounded" htmlFor="btnradio1">Yes</label>
-											<input type="radio" className="btn-check" name="btnradio" id="btnradio2" checked />
+											<input type="radio" className="btn-check" name="btnradio" id="btnradio2" defaultChecked />
 											<label className="btn btn-outline-primary btn-sm rounded ms-2" htmlFor="btnradio2">No</label>
 										</div>
 									</div>
 									<div className="col-xl-3">
 										<p className="mb-2">Default view:</p>
 										<div className="btn-group d-block" role="group" >
-											<input type="radio" className="btn-check" name="btnradio" id="btnradio3" checked />
+											<input type="radio" className="btn-check" name="btnradio" id="btnradio3" defaultChecked />
 											<label className="btn btn-outline-primary btn-sm rounded" htmlFor="btnradio3">Collapsed</label>
-											<input type="radio" className="btn-check" name="btnradio" id="btnradio4" checked />
+											<input type="radio" className="btn-check" name="btnradio" id="btnradio4" defaultChecked />
 											<label className="btn btn-outline-primary btn-sm rounded ms-2" htmlFor="btnradio4">Expanded</label>
 
 										</div>
@@ -90,7 +90,7 @@ function Chatbot() {
 										<label className="form-label">Chatbot model</label>
 										<div className="mb-3">
 											<Form.Select className="default-select form-control new-select">
-												<option selected>gpt-3.5-turbo</option>
+												<option defaultValue>gpt-3.5-turbo</option>
 												<option value="1">gpt-3.6-turbo</option>
 											</Form.Select>
 											<div id="emailHelp" className="form-text">For best results, please use chat models like gpt-3.5-turbo or gpt-4.</div>
@@ -100,7 +100,7 @@ function Chatbot() {
 										<label className="form-label">Show Chatbot on</label>
 										<div className="mb-3">
 											<Form.Select className="default-select form-control new-select">
-												<option selected>Frontend Only</option>
+												<option defaultValue>Frontend Only</option>
 												<option value="1">Backend Only</option>
 											</Form.Select>
 										</div>

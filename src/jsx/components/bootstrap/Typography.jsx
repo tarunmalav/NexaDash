@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { Link } from 'react-router-dom';
 import PageTitle from "../../layouts/PageTitle";
 import { Row, Col, Card } from "react-bootstrap";

@@ -59,11 +59,10 @@ const tabData = [
               <div className="demo-right-tabs" id="right-sidebar">
                 <ul className="navbar-nav" id="menu-bar">
                   {sidebarLink.map((item, ind) => (
-                    <li key={ind}
-                    >
+                    <li key={ind} className={ind === activeLink ? 'active' : ''} >
                       <Link to={item.to} smooth={true}
-                        className={`scroll c-pointer ${ind === activeLink ? 'active' : ''} `}
-                        activeclassName="active"
+                        className={`scroll c-pointer`}
+                        activeclass="active"
                         spy={true}
                         onClick={() => setActiveLink(ind)}
                       >
@@ -538,7 +537,7 @@ const tabData = [
                                 <Col sm={4} id="order-2">
                                   <Nav as="div" variant="pills" className="flex-column ms-2">
                                     {tabData.map((data, i) => (
-                                      <Nav.Item as="a" key={i}>
+                                      <Nav.Item key={i}>
                                         <Nav.Link eventKey={data.name.toLowerCase()}>
                                           {data.name}
                                         </Nav.Link>

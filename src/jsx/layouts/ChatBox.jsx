@@ -1,22 +1,19 @@
-import React, { useState } from "react";
-
-/// Components
+import { useState } from "react"; 
 import Notes from "../components/chatBox/Notes";
 import Alerts from "../components/chatBox/Alerts";
 import Chat from "../components/chatBox/Chat";
 import { Link } from "react-router-dom";
 
+const dataToggle = [
+   { href: "#notes", name: "Notes" },
+   { href: "#alerts", name: "Alerts" },
+   { href: "#chat", name: "Chat" },
+];
+
 const ChatBox = ({ onClick, toggle }) => {
    const [toggleTab, settoggleTab] = useState(
       window.location.hash.slice(1) ? window.location.hash.slice(1) : "chat"
-   );
-
-   const dataToggle = [
-      { href: "#notes", name: "Notes" },
-      { href: "#alerts", name: "Alerts" },
-      { href: "#chat", name: "Chat" },
-   ];
-
+   );  
    return (
       <div className={`chatbox ${toggle === "chatbox" ? "active" : ""}`}>
          <div className="chatbox-close" onClick={() => onClick()}></div>

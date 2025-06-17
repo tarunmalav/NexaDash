@@ -19,8 +19,10 @@ const VisiterChart = () => {
         chart: {
             height: 230,
             type: 'bar',
-            toolbar: false,
-        }, 
+            toolbar: {
+                show: false
+            },
+        },
         colors: ["var(--primary)"],
         legend: {
             show: false,
@@ -74,28 +76,28 @@ const VisiterChart = () => {
         }
     };
 
-    const dataSeries = (seriesType) => {   
-        let data = [];   
-            switch (seriesType) {
-                case "week":
-                    data = [30, 52, 25, 75, 52, 100, 25, 40];
-                    break;
-                case "month":
-                    data = [30, 35, 45, 35, 55, 45, 35, 70];
-                    break;
-                case "year":
-                    data = [50, 40, 55, 25, 90, 40, 35, 55];
-                    break;
-                case "all":
-                    data = [34, 60, 75, 40, 45, 60, 30, 55];
-                    break;
-                default:
-                    data = [50, 40, 55, 25, 45, 40, 35];
-            }  
+    const dataSeries = (seriesType) => {
+        let data = [];
+        switch (seriesType) {
+            case "week":
+                data = [30, 52, 25, 75, 52, 100, 25, 40];
+                break;
+            case "month":
+                data = [30, 35, 45, 35, 55, 45, 35, 70];
+                break;
+            case "year":
+                data = [50, 40, 55, 25, 90, 40, 35, 55];
+                break;
+            case "all":
+                data = [34, 60, 75, 40, 45, 60, 30, 55];
+                break;
+            default:
+                data = [50, 40, 55, 25, 45, 40, 35];
+        }
         setSeries([
-            { name: "Visitors",  data: data }, 
+            { name: "Visitors", data: data },
         ]);
-    }  
+    }
 
     return (
         <>
@@ -110,7 +112,7 @@ const VisiterChart = () => {
                                 </Nav.Link>
                             </Nav.Item>
                         ))}
-                    </Nav> 
+                    </Nav>
                 </div>
                 <div className="card-body pb-0 ps-1">
                     <div className="head-title ps-3">
@@ -122,7 +124,7 @@ const VisiterChart = () => {
                             series={series}
                             type="bar"
                             height={230}
-                            // width={562}
+                        // width={562}
                         />
                     </div>
                 </div>

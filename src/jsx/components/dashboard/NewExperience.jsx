@@ -4,8 +4,7 @@ const NewExperience = () => {
 	const series = [
 		{
 			name: 'Net Profit',
-			data: [100, 300, 200, 250, 200, 240, 180, 230, 200, 250, 300],
-			/* radius: 30,	 */
+			data: [100, 300, 200, 250, 200, 240, 180, 230, 200, 250, 300], 
 		},
 	]
 	const optons = {

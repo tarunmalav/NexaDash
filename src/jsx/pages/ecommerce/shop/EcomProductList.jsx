@@ -10,7 +10,6 @@ function ProductList() {
             <PageTitle activeMenu="Ecommerce" motherMenu="Shop" pageContent="Product List"/>
             <div className="container-fluid">
                 <div className="row">
-                    {/* <ShopSidebar className="col-xl-2 col-xxl-3 col-md-4"/> */}
                     <ShopSidebar className="col-xl-2 col-xxl-3 col-md-4" />
                     <div className="col-xl-10 col-xxl-9 col-md-8">
                         <div className="row">
@@ -55,7 +54,7 @@ function ProductList() {
                                                                 <h6>Color</h6>
                                                                 <div className="d-flex align-items-center color-filter">
                                                                     <div className="form-check">
-                                                                        <input className="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel11" value="#24262B" aria-label="..." checked="" />
+                                                                        <input className="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel11" value="#24262B" aria-label="..."  />
                                                                         <span style={{ backgroundColor: 'rgb(208, 237, 255)' }}></span>
                                                                     </div>
                                                                     <div className="form-check">

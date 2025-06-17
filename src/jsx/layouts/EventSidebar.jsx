@@ -2,14 +2,7 @@ import { useState } from "react";
 import { IMAGES, SVGICON } from "../constant/Theme";
 import { Dropdown, Nav, Tab } from "react-bootstrap";
 import { Link } from "react-router-dom";
-const transactions = [
-	{ icon: IMAGES.bitcoinsvg, name: "Bitcoin", symbol: "BTC", time: "06:24:45 AM", amount: "+ $5,221", status: "Completed", statusClass: "success", },
-	{ icon: IMAGES.ethereumsvg, name: "Ethereum", symbol: "ETH", time: "06:24:45 AM", amount: "+ $6,321", status: "Cancel", statusClass: "danger", },
-	{ icon: IMAGES.bnpsvg, name: "BNB", symbol: "bnb", time: "07:25:45 AM", amount: "+ $8,221", status: "Cancel", statusClass: "danger", },
-	{ icon: IMAGES.bitcoinsvg, name: "Bitcoin", symbol: "BTC", time: "06:24:45 AM", amount: "+ $4,321", status: "Completed", statusClass: "success", },
-	{ icon: IMAGES.bitcoinsvg, name: "Bitcoin", symbol: "BTC", time: "06:24:45 AM", amount: "+ $3,123", status: "IN progress", statusClass: "warning", },
-	{ icon: IMAGES.ethereumsvg, name: "Ethereum", symbol: "ETH", time: "06:24:45 AM", amount: "+ $5,381", status: "Cancel", statusClass: "danger", },
-]; 
+import { transactions } from "../constant/Alldata";
 
 function Eventsidebar() {
 	const [file, setFile] = useState(null)

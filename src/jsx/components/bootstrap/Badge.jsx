@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Link } from 'react-scroll';
 import Highlight from 'react-highlight';
 
@@ -45,7 +45,7 @@ const UiBadge = () => {
                     <li key={ind} className={ind === activeLink ? 'active' : ''}>
                       <Link to={item.to}
                         className={`scroll c-pointer`}
-                        activeclassName="active"
+                        activeClass="active"
                         spy={true}
                         smooth={true}
                         onClick={() => setActiveLink(ind)}

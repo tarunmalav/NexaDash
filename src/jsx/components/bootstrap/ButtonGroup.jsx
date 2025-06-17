@@ -45,12 +45,11 @@ const UiButtonGroup = () => {
               <div className="demo-right-tabs" id="right-sidebar">
                 <ul className="navbar-nav" id="menu-bar">
                   {sidebarLink.map((item, ind) => (
-                    <li key={ind}
-                    >
+                    <li key={ind} className={ind === activeLink ? 'active' : ''} >
                       <Link to={item.to} smooth={true}
-                        className={`scroll c-pointer ${ind === activeLink ? 'active' : ''} `}
+                        className={`scroll c-pointer`}
                         spy={true}
-                        activeclassName="active"
+                        activeclass="active"
                         onClick={() => setActiveLink(ind)}
                       >
                         {item.title}

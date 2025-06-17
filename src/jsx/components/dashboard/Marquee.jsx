@@ -1,13 +1,6 @@
 import Marquee from "react-fast-marquee";
-import { IMAGES } from "../../constant/Theme";
+import { cryptolist } from "../../constant/Alldata";
 
-export const cryptolist = [
-    { svg: IMAGES.btcsvg, coin1: "Bitcoin", coin2: "BTC/USDT", price1: "$2092.56", price2: "+2.97%", class: "text-success", },
-    { svg: IMAGES.ethsvg, coin1: "Ethereum", coin2: "ETH", price1: "$20392.36", price2: "+2.97%", class: "text-danger", },
-    { svg: IMAGES.bnb1svg, coin1: "Ripple", coin2: "RPL", price1: "$34281.24", price2: "+3.97%", class: "text-success", },
-    { svg: IMAGES.oxsvg, coin1: "Ethereum", coin2: "ETH", price1: "$34281.24", price2: "+3.97%", class: "text-success", },
-    { svg: IMAGES.appcsvg, coin1: "Ripple", coin2: "RPL", price1: "$34281.24", price2: "+3.97%", class: "text-success", },
-]
 function Marqueedata() {
     return (
         <>

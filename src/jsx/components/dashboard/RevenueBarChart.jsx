@@ -5,7 +5,6 @@ const RevenueBarChart = () => {
         {
             name: 'Running',
             data: [50, 90, 90],
-            // radius: 12,	
         },
         {
             name: 'Cycling',
@@ -25,7 +24,6 @@ const RevenueBarChart = () => {
             bar: {
                 horizontal: false,
                 columnWidth: '100%',
-                // endingShape: "rounded",
                 borderRadius: 8,
                 borderRadiusApplication: 'end'
             },

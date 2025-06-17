@@ -1,5 +1,3 @@
-
-
 import ReactApexChart from "react-apexcharts";
 
 const ProductOverviewChart2 = () => {

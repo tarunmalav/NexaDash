@@ -30,8 +30,8 @@ function Eventsidebar2() {
                     </div>
                     <div id="world-map" className="active-map" style={{position: "relative", overflow: "hidden", backgroundColor:"transparent"}}>
                         {SVGICON.worldmap}
-                        <div className="jqvmap-zoomin">+</div>
-                        <div className="jqvmap-zoomout">−</div>
+                        <div className="jqvmap-zoomin">{"+"}</div>
+                        <div className="jqvmap-zoomout">{"−"}</div>
                     </div>
                     <div className="active-country dz-scroll">
                         <div>

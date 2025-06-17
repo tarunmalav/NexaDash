@@ -61,9 +61,9 @@ const Setting2 = () => {
         }
     }
     const handleSidebarChange = (data) => {
-        setSelectedSidebar(data.value); // update local state
-        changeSideBarLayout({ value: data.value, label: data.label }); // call context method
-        document.body.setAttribute("data-sidebar-style", data.value); // apply actual effect
+        setSelectedSidebar(data.value);
+        changeSideBarLayout({ value: data.value, label: data.label });
+        document.body.setAttribute("data-sidebar-style", data.value);
     };
 
     return (

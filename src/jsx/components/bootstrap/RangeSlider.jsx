@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import PageTitle from "../../layouts/PageTitle";
-import { Row, Col, Card, Tab, Nav, Spinner, Button, Form } from "react-bootstrap";
+import { Row, Col, Card, Tab, Nav, Form } from "react-bootstrap";
 import Highlight from "react-highlight";
 import { Link } from 'react-scroll';
 
@@ -29,14 +29,12 @@ const UiRangeSlider = () => {
                         <div className="demo-right ">
                             <div className="demo-right-inner dlab-scroll navigation navbar " id="right-sidebar">
                                 <h4 className="title">Range Slider</h4>
-                                <ul className="navbar-nav nav" id="menu-bar">
-
+                                <ul className="navbar-nav nav" id="menu-bar"> 
                                     {sidebarLink.map((item, ind) => (
-                                        <li key={ind}
-                                        >
+                                        <li key={ind} className={ind === activeLink ? 'active' : ''} >
                                             <Link to={item.to} smooth={true}
-                                                className={`scroll  c-pointer ${ind === activeLink ? 'active' : ''} `}
-                                                activeclassName="active"
+                                                className={`scroll  c-pointer`}
+                                                activeclass="active"
                                                 spy={true}
                                                 onClick={() => setActiveLink(ind)}
                                             >
