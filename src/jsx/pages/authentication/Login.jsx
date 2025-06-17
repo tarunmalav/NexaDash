@@ -1,21 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { connect, useDispatch } from 'react-redux';
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {
 	loadingToggleAction, loginAction,
 } from '../../../store/actions/AuthActions';
 
 import logo from "../../../assets/images/logo-full.png";
 import login from "../../../assets/images/login.png";
-// import LogoWhite from '../../assets/images/logo/logofull-white.png';
-// import bg6 from '../../assets/images/background/bg6.jpg';
-
 function Login(props) {
 
 	useEffect(() => {
 		document.body.classList.add('vh-100');
 	}, [])
-const [openEyes, setOpenEyes] = useState(true);
+	const [openEyes, setOpenEyes] = useState(true);
 	const navigate = useNavigate();
 	const [email, setEmail] = useState('demo@example.com');
 	let errorsObj = { email: '', password: '' };
@@ -44,7 +41,7 @@ const [openEyes, setOpenEyes] = useState(true);
 		dispatch(loginAction(email, password, navigate));
 	}
 	return (
-		<> 
+		<>
 			<div className="authincation h-100">
 				<div className="container-fluid h-100">
 					<div className="row h-100">
@@ -66,14 +63,14 @@ const [openEyes, setOpenEyes] = useState(true);
 									</div>
 								)}
 								<form onSubmit={onLogin}>
-									<div className="mb-4"> 
+									<div className="mb-4">
 										<label className="mb-1">Email<span className="text-danger"> *</span></label>
 										<input type="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} />
 										{errors.email && <div className="text-danger fs-12">{errors.email}</div>}
 									</div>
 									<div className="mb-4 position-relative">
 										<label className="mb-1">Password<span className="text-danger"> *</span></label>
-										<input type={openEyes ? "password" : "value"}  className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} />	
+										<input type={openEyes ? "password" : "value"} className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} />
 										{errors.password && <div className="text-danger fs-12">{errors.password}</div>}
 										<span className={`show-pass eye ${openEyes ? '' : 'active'}`} onClick={() => setOpenEyes(!openEyes)}>
 											<i className="fa fa-eye-slash" />

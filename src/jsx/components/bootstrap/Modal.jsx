@@ -26,9 +26,7 @@ const reducer = (state, active) =>{
 	}	
 }
 
-const UiModal = () => {
-	
-  
+const UiModal = () => {  
   const [state ,dispatch] = useReducer(reducer, init);
   return (
 	<>

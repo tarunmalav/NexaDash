@@ -1,4 +1,4 @@
-import React, { Fragment, useReducer } from "react";
+import { Fragment, useReducer } from "react";
 import { Button, Dropdown, Modal, Tab, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import LightGallery from 'lightgallery/react';
@@ -40,13 +40,12 @@ const reducer = (state, action) => {
 	}
 }
 
-const AppProfile = () => { 	const onInit = () => {
-		//console.log('lightGallery has been initialized');
-	};
+const AppProfile = () => {
+	const onInit = () => { };
 	const [state, dispatch] = useReducer(reducer, initialState);
 	return (
 		<Fragment>
-			<PageTitle activeMenu="Profile Detail" motherMenu="App" pageContent="Profile Detail"/>
+			<PageTitle activeMenu="Profile Detail" motherMenu="App" pageContent="Profile Detail" />
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-12">
@@ -76,7 +75,7 @@ const AppProfile = () => { 	const onInit = () => {
 												aria-expanded="true"
 											>
 												<svg
-													xmlns="http://www.w3.org/2000/svg" 
+													xmlns="http://www.w3.org/2000/svg"
 													width="18px"
 													height="18px"
 													viewBox="0 0 24 24"
@@ -238,16 +237,10 @@ const AppProfile = () => { 	const onInit = () => {
 															<Link to={"#"} className="btn btn-primary light px-3 me-2" onClick={() => dispatch({ type: 'linkModal' })}>
 																<i className="fa fa-link m-0" />{" "}
 															</Link>
-															{/* Modal */}
-
 															<Link to={"#"} className="btn btn-primary light px-3 me-1" data-target="#cameraModal" onClick={() => dispatch({ type: 'cameraModal' })}>
 																<i className="fa fa-camera m-0" />{" "}
 															</Link>
-															{/* Modal */}
-
 															<Link to={"#"} className="btn btn-primary ms-1" data-target="#postModal" onClick={() => dispatch({ type: 'postModal' })}>Post</Link>
-															{/* Modal */}
-
 														</div>
 
 														<div className="profile-uoloaded-post border-bottom-1 pb-5">

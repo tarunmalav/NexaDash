@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { useState, Fragment, useReducer } from "react";
 import DatePicker from "react-datepicker";
 import PageTitle from "../../../layouts/PageTitle";
 import TimePicker from 'react-time-picker';
@@ -6,10 +6,20 @@ import "react-datepicker/dist/react-datepicker.css";
 import 'react-time-picker/dist/TimePicker.css';
 import 'react-clock/dist/Clock.css';
 
+const initialState = {
+  SimpleMode: "#28475d",
+  ComplexMode: "#2c2c2c",
+  GradiantMode: "#495A69",
+};
+function reducer(state, action) {
+  return {
+    ...state,
+    [action.type]: action.payload,
+  };
+}
+
 function Pickers() {
-  const [colorChange, setColorChange] = useState("#28475d");
-  const [colorChange2, setColorChange2] = useState("#2c2c2c");
-  const [colorChange3, setColorChange3] = useState("#495A69");
+  const [state, dispatch] = useReducer(reducer, initialState);
   const [dateRange, setDateRange] = useState([null, null]);
   const [startDate2, endDate2] = dateRange;
   const [value, onChange] = useState('10:00');
@@ -114,7 +124,7 @@ function Pickers() {
                   <div className="col-md-6 col-xl-3 mb-3">
                     <label className="form-label">Now time</label>
                     <div className="input-group ampmlabel">
-                      <TimePicker align="left" onChange={onChange} value={value} minutePlaceholder="12" hourPlaceholder="24" className="form-control" clockIcon={null} clearIcon={null} amPmAriaLabel=""/>
+                      <TimePicker align="left" onChange={onChange} value={value} minutePlaceholder="12" hourPlaceholder="24" className="form-control" clockIcon={null} clearIcon={null} amPmAriaLabel="" />
                       <button type="button" id="check-minutes" className="btn waves-effect waves-light btn-ft btn-success z-0">Check the minutes</button>
                     </div>
                   </div>
@@ -143,8 +153,8 @@ function Pickers() {
                       <input
                         type="color"
                         className="as_colorpicker asColorPicker-trigger border-0"
-                        value={colorChange}
-                        onChange={(e) => setColorChange(e.target.value)}
+                        value={state.SimpleMode}
+                        onChange={(e) => dispatch({ type: "SimpleMode", payload: e.target.value })}
                       />
                     </div>
                   </div>
@@ -154,9 +164,8 @@ function Pickers() {
                       <input
                         type="color"
                         className="as_colorpicker asColorPicker-trigger border-0"
-                        value={colorChange2}
-                        onChange={(e) => setColorChange2(e.target.value)}
-
+                        value={state.ComplexMode}
+                        onChange={(e) => dispatch({ type: "ComplexMode", payload: e.target.value })}
                       />
                     </div>
                   </div>
@@ -166,9 +175,8 @@ function Pickers() {
                       <input
                         type="color"
                         className="as_colorpicker asColorPicker-trigger border-0"
-                        value={colorChange3}
-                        onChange={(e) => setColorChange3(e.target.value)}
-
+                        value={state.GradiantMode}
+                        onChange={(e) => dispatch({ type: "GradiantMode", payload: e.target.value })}
                       />
                     </div>
                   </div>

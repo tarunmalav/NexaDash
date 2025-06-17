@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import { Collapse } from 'react-bootstrap';
@@ -98,7 +98,7 @@ const screenOption = [
 
 const ContentAdd = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
-    const [file, setFile] = React.useState(null)
+    const [file, setFile] = useState(null)
     const fileHandler = (e) => {
         setFile(e.target.files[0]);
     }

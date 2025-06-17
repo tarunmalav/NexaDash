@@ -38,7 +38,6 @@ const AccordArray = [
 ]
 
 function Prompt() {
-    const [data, setData] = useState(AccordArray);
     const [show, setShow] = useState(false);
     const [deleteItem, setDeleteItem] = useState(AccordArray);
 

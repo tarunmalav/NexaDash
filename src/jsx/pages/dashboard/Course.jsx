@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { IMAGES } from "../../constant/Theme"
 import ScoreActivityChart from "../../components/dashboard/ScoreActivityChart"
 import LearningActivityChart from "../../components/dashboard/LearningActivityChart"
