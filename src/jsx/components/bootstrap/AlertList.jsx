@@ -24,7 +24,6 @@ const AlertList = () => {
     const [activeLink, setActiveLink] = useState(0);
     return (
         <>
-
             <h4 className="title">Alert</h4>
             <div className="demo-right-tabs" id="rightSidebarScroll">
 

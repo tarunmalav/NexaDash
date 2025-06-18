@@ -858,7 +858,7 @@ const UiCards = () => {
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="card-title-4" className="dz-card">
                       <img
-                        className="card-img-top img-fluid"
+                        className=" img-fluid"
                         src={img1}
                         alt="Card cap"
                       />
@@ -916,7 +916,7 @@ const UiCards = () => {
                   <Tab.Container defaultActiveKey="Preview">
                     <Card name="card-title-5" className="dz-card">
                       <img
-                        className="card-img-top img-fluid"
+                        className="img-fluid"
                         src={img2}
                         alt="Card cap"
                       />

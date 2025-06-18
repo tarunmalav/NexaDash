@@ -133,16 +133,15 @@ function ProductTable() {
     const activePag = useRef(0);
     const [test, setTest] = useState(0);
 
-    const [selectValue, setSelectValue] = useState('All Time');
     const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
     const [tableData, setTableData] = useState([]);
-    const handleSort = (key) => {
-        let direction = 'asc';
-        if (sortConfig.key === key && sortConfig.direction === 'asc') {
-            direction = 'desc';
-        }
-        setSortConfig({ key, direction });
-    };
+    // const handleSort = (key) => {
+    //     let direction = 'asc';
+    //     if (sortConfig.key === key && sortConfig.direction === 'asc') {
+    //         direction = 'desc';
+    //     }
+    //     setSortConfig({ key, direction });
+    // };
 
     const getSortedData = () => {
         let sorted = [...categorytabledta];

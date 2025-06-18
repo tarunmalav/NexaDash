@@ -88,7 +88,7 @@ function Register(props) {
 											</div>
 										</div>
 										<div className="mb-4">
-											<Link to="/page-forgot-password" className="btn-link text-primary">Sign in</Link>
+											<Link to="/page-login" className="btn-link text-primary">Sign in</Link>
 										</div>
 									</div>
 									<div className="text-center mb-4 d-grid">

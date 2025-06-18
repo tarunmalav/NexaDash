@@ -41,7 +41,7 @@ const tabData = [
       "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.      ",
     },
   ];
-  const UiTab = () => {
+const UiTab = () => {
   const [activeLink, setActiveLink] = useState(0);
   return (
     <Fragment>

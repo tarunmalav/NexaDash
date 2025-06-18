@@ -70,7 +70,7 @@ export const MenuList = [
     {
         title: 'Apps', classsChange: 'mm-collapse', iconStyle:  SVGICON.Apps,
         content: [
-            { title: 'chat', to: 'chat', },
+            { title: 'Chat', to: 'chat', },
             {
                 title: 'Users Manager', hasMenu: true,
                 content: [

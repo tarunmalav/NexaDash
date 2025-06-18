@@ -45,7 +45,6 @@ const sidebarData = [
 
 ];
 const UiAccordion = () => {
-
   const [activeLink, setActiveLink] = useState(0);
   return (
     <Fragment>

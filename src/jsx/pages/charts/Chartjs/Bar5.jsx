@@ -14,7 +14,7 @@ class BarChart5 extends Component {
           borderWidth: "0",
           backgroundColor: "rgba(0,115,255, 0.5)",
           hoverBackgroundColor: "rgba(0,115,255, 0.5)",
-		  barThickness: 40
+		      barPercentage: 0.5,
         },
       ],
     };

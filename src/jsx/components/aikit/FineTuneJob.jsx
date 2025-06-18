@@ -12,7 +12,6 @@ const data = [
 ]
 
 const FineTuneJob = () => {
-
     const [selectedOption, setSelectedOption] = useState(data[0]);
     const handleChange = e => {
         setSelectedOption(e);

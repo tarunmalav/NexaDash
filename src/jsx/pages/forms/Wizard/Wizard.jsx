@@ -19,7 +19,6 @@ function Wizard() {
 								<h4 className="card-title">Form step</h4>
 							</div>
 							<div className="card-body">
-
 								<div className="form-wizard">
 									<Stepper as="ul" className="nav nav-wizard " activeStep={goSteps} label={false}>
 										<Step as="li" className="nav-link" onClick={() => setGoSteps(0)} />

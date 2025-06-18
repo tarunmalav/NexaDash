@@ -33,15 +33,15 @@ function Setting() {
 		setSelectedOption(e);
 	}
 
-	const [select, setSelect] = useState("")
-	const handleRadioClick = (event) => {
-		setSelect(event.target.value);
-	};
+	// const [select, setSelect] = useState("")
+	// const handleRadioClick = (event) => {
+	// 	setSelect(event.target.value);
+	// };
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		console.log('Selected value:', select);
-	}
+	// const handleSubmit = (event) => {
+	// 	event.preventDefault();
+	// 	console.log('Selected value:', select);
+	// }
 	return (
 		<Fragment>
 			<PageTitle activeMenu="Settings" motherMenu="Home" pageContent={"Settings"}/>

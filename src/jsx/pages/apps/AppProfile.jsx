@@ -70,7 +70,7 @@ const AppProfile = () => {
 										<Dropdown className="dropdown ms-auto" align="end">
 											<Dropdown.Toggle
 												variant="primary"
-												className="btn btn-primary light sharp i-false"
+												className="btn btn-primary light sharp i-false lh-1"
 												data-toggle="dropdown"
 												aria-expanded="true"
 											>

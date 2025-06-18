@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import {Link} from 'react-router-dom';
 const MsgBox = ({ avatar1, avatar2, openMsg,  offMsg }) => {
    const [toggle, setToggle] = useState(false);
@@ -112,7 +112,7 @@ const MsgBox = ({ avatar1, avatar2, openMsg,  offMsg }) => {
             </div>
          </div>
          <div
-            className={`card-body msg_card_body  dz-scroll ps ps--active-y  ${
+            className={`card-body msg_card_body  dz-scroll ${
                openMsg ? "" : ""
             } `}
             id="DZ_W_Contacts_Body3"

@@ -12,18 +12,18 @@ const chartHeaderData = [
 const ProjectOverviewChart2 = () => {
     const [series, setSeries] = useState([
         {
-					name: 'Neurology',
-					type: 'column',
-					data: [75, 85, 72, 100, 50, 100, 80, 75, 95, 35, 75, 100]
-				}, {
-					name: 'Dental Care',
-					type: 'area',
-					data: [44, 65, 55, 75, 45, 55, 40, 60, 75, 45, 50, 42]
-				}, {
-					name: 'Gynocology',
-					type: 'line',
-					data: [30, 25, 45, 30, 25, 35, 20, 45, 35, 20, 35, 20]
-				}
+			name: 'Neurology',
+			type: 'column',
+			data: [75, 85, 72, 100, 50, 100, 80, 75, 95, 35, 75, 100]
+		}, {
+			name: 'Dental Care',
+			type: 'area',
+			data: [44, 65, 55, 75, 45, 55, 40, 60, 75, 45, 50, 42]
+		}, {
+			name: 'Gynocology',
+			type: 'line',
+			data: [30, 25, 45, 30, 25, 35, 20, 45, 35, 20, 35, 20]
+		}
     ]);
 
     const options = {

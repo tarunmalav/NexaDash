@@ -10,7 +10,7 @@ const LockScreen = () => {
     navigate("/");
   };
   const [openEyes, setOpenEyes] = useState(true);
- useEffect(() => {
+  useEffect(() => {
     document.querySelector("html").setAttribute("class", "h-100");
     document.body.classList.add("vh-100");
   }, []);

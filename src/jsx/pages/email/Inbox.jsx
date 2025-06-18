@@ -5,6 +5,7 @@ import { useState } from "react"
 import PageTitle from "../../layouts/PageTitle"
 import { inboxdata } from "../../constant/Alldata"
 import InboxSidebar from "../../element/InboxSidebar"
+
 function Inbox() {
     useEffect(() => {
         const element = document.querySelector(".content-body");

@@ -39,7 +39,7 @@ function ProductDetail() {
         setCount(count + 1);
     };
     const decrement = () => {
-        if (count > 0) {
+        if (count > 1) {
             setCount(count - 1);
         }
     };
@@ -158,7 +158,7 @@ function ProductDetail() {
                                                         <div className="col-xl-5 col-6 ">
                                                             <div className="quntity">
                                                                 <button onClick={decrement}>-</button>
-                                                                <input className="form-control mx-2" data-value type="text" value={count} />
+                                                                <input className="form-control mx-2" data-value type="text" value={count} onChange={()=>{}}/>
                                                                 <button onClick={increment}>+</button>
 
                                                             </div>
@@ -409,7 +409,11 @@ function ProductDetail() {
                                                                 <div className="col-xl-12">
                                                                     <div className="mb-3">
                                                                         <label htmlFor="exampleFormControlTextarea3" className="form-label required">Messasge</label>
-                                                                        <textarea className="form-control" rows="3" >Messasge</textarea>
+                                                                        <textarea className="form-control" rows="3" 
+                                                                             defaultValue="Messasge"
+                                                                        />
+                                                                                
+                                                                            
                                                                     </div>
                                                                 </div>
                                                                 <div>
